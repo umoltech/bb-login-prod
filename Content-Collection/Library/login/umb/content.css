@@ -1,0 +1,2363 @@
+/* ADDED lines 2112 - 2114 on 2012-08-02 by Peter Tattlebaum */
+/* Default Link Styles -------------------------------------------- */
+a {color: #005A8B;}
+#content a:hover {color: #00334E;}
+#content p a:visited {}
+/* Headlines ------------------------------------------------------ */
+h1 {
+	display: none;
+}
+h1#pageTitle {
+	display: block;
+	color: #D47600;
+	font: normal 1.79em/28px Georgia, Times, sans-serif;
+	padding: 0 0 26px;
+	margin: 0 15px 0 246px;
+}
+#content h1#pageTitle {
+	padding: 0 0 10px;
+	margin: 0;
+}
+.pageWhy #content h1#pageTitle {
+	padding-bottom: 17px;
+}
+.pageWide h1#pageTitle {
+	padding-bottom: 14px;
+}
+#container #sec h1#pageTitle {
+	display: inline;
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
+}
+#topBranding h1#pageTitle {
+	color: #FFF;
+	font: bold 2.6em/28px Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+	#topBranding h1 a {
+		color: #FFF;
+	}
+		#topBranding h1 a:hover {
+			color: #C7C7C7;
+		}
+#padder h2 {color: #054669; font: normal 1.43em/24px Georgia, Times, serif; padding: 0 0 21px;}
+.pageWide #secondary h2 {padding: 0 0 3px;}
+#padder h3 {color: #988F86; font: bold 1.29em/22px Arial, Helvetica, sans-serif; padding: 0 0 5px;}
+#padder h4 {color: #C59217; font: normal 1em/20px Georgia; padding: 0;}
+#padder h5 {color: #3A3A3A; font: italic normal 1em/20px Georgia; padding: 0 0 8px;}
+#padder h6 {}
+
+#padder .alt1 h2,
+#padder .alt1 h3,
+#padder .alt1 h4,
+#padder .alt1 h5,
+#padder .alt1 h6 {padding: 0 0 3px;}
+
+#content p, #secondary p,
+#content ul, #secondary ul,
+#content ol, #secondary ol,
+#content dt, #secondary dt {
+	padding-bottom: 20px;
+}
+
+#content ul li ul{ padding-bottom: 0px!important; padding-top:10px;}
+#content ul li ul li{ padding-bottom: 0px!important; }
+
+
+/*add block quote styling jmw 10/26/11 */
+#padder blockquote {
+    margin: 0px 20px 20px 20px;
+    padding: 10px;
+    background: #F8F8F8;
+    border:1px solid #FFFFFF;
+	border-radius: 5px 5px;
+    -webkit-border-radius: 5px 5px;
+	-moz-border-radius: 5px 5px;
+	-webkit-box-shadow: 0 1px 10px rgba(0,0,100,.1);
+	-moz-box-shadow: 0 1px 10px rgba(0,0,100,.1);
+	box-shadow: 0 1px 10px rgba(0,0,100,.1);
+}
+#padder blockquote p {}
+#content img {
+	display: block;
+	float: left;
+	margin: 5px 10px 10px 0;
+}
+
+#padder ul {}
+	#padder ul li {
+		background: url(http://assets.umb.edu/styles/images/icons/arrowBlue.png) 7px 7px no-repeat;
+		padding: 0 0 10px 20px;
+	}
+		#padder ul li ul {}
+			#padder ul li ul li {}
+
+#padder ul.rsslist li {
+	 background: url(http://assets.umb.edu/styles/images/icons/rss.png) 1px 2px no-repeat;
+	 padding: 0 0 2px 20px;
+}
+
+#padder ul.anchors,
+#padder ul.linklist {
+	padding-left: 0;
+}
+	#padder ul.anchors li {
+		background: url(http://assets.umb.edu/styles/images/icons/arrowYellowDown.png) 2px 8px no-repeat;
+		padding: 0 0 2px 15px;
+	}
+	#padder ul.linklist li {
+		background: none;
+		padding: 0 0 12px 0; /* original value for bottom is 2px */
+	}
+	#padder .col ul.linklist li {
+		padding-bottom: 4px;
+	}
+		#padder ul.anchors a,
+		#padder ul.linklist a {
+			color: #005A8B;
+		}
+			#padder ul.anchors a:hover,
+			#padder ul.linklist a:hover {
+				color: #00334E;
+			}
+
+
+#padder ol {
+	line-height: 15px;
+	padding-left: 21px;
+}
+.ie6 #padder ol,
+.ie7 #padder ol {
+	padding-left: 25px;
+}
+	#padder ol li {
+		padding: 0 0 12px;
+	}
+		#padder ol li ol {}
+			#padder ol li ol li {}
+
+#padder .resultsList {
+	list-style: none;
+	padding: 0 100px 25px 0;
+}
+	#padder .resultsList li {
+		padding: 14px 0 14px;
+	}
+		#padder .resultsList a {
+			display: block;
+			text-decoration: underline;
+			padding: 0 0 4px;
+		}
+
+/* highlight keywords in search results */
+#padder .resultsList li span, #padder .resultsList span{
+    color: #D47600;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#padder ul li ol,
+#padder ol li ul {}
+	#padder ul li ol li,
+	#padder ol li ul li {}
+
+#container ul.itemList {
+	font-family: Arial, Helvetica, sans-serif;
+}
+	#container ul.itemList li {
+		background: none;
+		padding: 0 0 8px;
+	}
+		#container ul.itemList img {
+			margin: 2px 10px 6px 0;
+		}
+		#container ul.itemList p {
+			color: #3A3A3A;
+			padding: 0;
+		}
+			#container ul.itemList a:hover p {
+				color: #00334E;
+			}
+		#container ul.itemList .eventMeta {
+			display: block;
+			color: #767676;
+			font-size: 0.92em;
+			text-transform: uppercase;
+		}
+		#container ul.itemList h4 {
+			color: #005A8B;
+			font: bold 1em Arial, Helvetica, sans-serif;
+			padding: 0;
+		}
+			#container ul.itemList a:hover h4 {
+				color: #00334E;
+			}
+
+#padder .desclist {}
+	#padder .desclist li {
+		background: none;
+		padding: 0 0 11px;
+	}
+		#padder .desclist .head,
+		#padder .desclist a .head {
+			color: #005A8B;
+		}
+			#padder .desclist a:hover .head {
+				color: #00334E;
+			}
+		#padder .desclist p {
+			font: 0.86em/16px Arial, Helvetica, sans-serif;
+			padding: 0;
+		}
+
+#padder .showHideList {}
+	#padder .showHideList li {
+		background: none;
+		padding: 1px 0 0 18px;
+		margin: 0 0 0 2px;
+	}
+	#padder .showHideList li.expand {
+		background: url(http://assets.umb.edu/styles/images/icons/plusMinus.png) 7px 9px no-repeat;
+	}
+	#padder .showHideList li.contract {
+		background: #F8F8F8 url(http://assets.umb.edu/styles/images/icons/plusMinus.png) -991px 9px no-repeat;
+	}
+	#padder .showHideList .trigger {
+		color: #005A8B;
+		font-size: 1em;
+		cursor: pointer;
+		padding: 0 0 3px;
+	}
+		#padder .showHideList .trigger:hover {
+			color: #00334E;
+		}
+	#padder .showHideList .item {
+		font: 0.86em/18px Arial, Helvetica, sans-serif;
+		padding: 0 20px 5px 0;
+		margin: 0 0 5px;
+	}
+		#padder .showHideList a {}
+			#padder .showHideList a:hover {
+				color: #00334E;
+			}
+
+#padder .longList {}
+	#padder .longList li.more,
+	#padder .longList li.less {
+		color: #005A8B;
+		font-weight: bold;
+		padding-left: 12px;
+		cursor: pointer;
+	}
+	#padder .longList li.more {
+		background: url(http://assets.umb.edu/styles/images/icons/plusMinus.png) 0px 7px no-repeat;
+	}
+	#padder .longList li.less {
+		background: url(http://assets.umb.edu/styles/images/icons/plusMinus.png) -998px 7px no-repeat;
+	}
+
+#padder dl {}
+	#padder dl dt {}
+	#padder dl dd {}
+/* Columns -------------------------------------------------------- */
+#padder .cols2,
+#padder .cols3 {
+	padding: 18px 0 0 0;
+	border-top: 1px solid #E2F1F9;
+}
+#secondary .cols2,
+.pageCenters #padder .cols2 {
+	border: none;
+}
+#padder fieldset .cols2,
+#padder fieldset .cols3 {
+	padding: 5px 0 0 0;
+	border: none;
+}
+#padder .cols2wide {
+	border: none;
+}
+#padder .cols3 {}
+	.cols2 .col,
+	.cols2 .colWide,
+	.cols3 .col {
+		float: left;
+	}
+	#padder .cols2 .col {
+		width: 215px;
+		margin: 0 20px 0 0;
+	}
+	#secondary .cols2 .col {
+		width: 318px;
+	}
+	.ie6 #padder .cols2 .col {
+		overflow: hidden;
+	}
+	#padder .cols2wide .col {
+		width: 442px;
+		padding: 0 34px 0 0;
+		border-right: 1px solid #E5E6E6;
+		margin: 0;
+	}
+	#padder .cols2 .colR {
+		margin: 0;
+	}
+	#padder .cols2wide .colR {
+		width: 342px;
+		padding: 0 0 0 30px;
+		border: none;
+		border-left: 1px solid #E5E6E6;
+		margin: 0 0 0 -1px;
+	}
+	#padder .cols3 .col {
+		width: 190px;
+		padding: 0 35px 0 0;
+	}
+	#padder .cols2 .colSm {
+		width: 189px;
+	}
+	#padder .cols2 .colWide {
+		width: 241px;
+		padding: 0;
+		margin: 0 0 0 -1px;
+	}
+		#padder .col h3 {
+			line-height: 18px;
+			padding: 0 0 12px;
+		}
+
+	#padder fieldset .cols2 .col {
+		width: 205px;
+	}
+	#padder fieldset .cols3 .col {
+		width: 115px;
+	}
+	.pageWide #padder fieldset .cols3 .col {
+		width: 190px;
+	}
+/* Modules -------------------------------------------------------- */
+.module {
+	position: relative;
+}
+#content .module {
+	margin: 0 0 20px;
+}
+#auxiliary .module {
+	position: relative;
+	padding: 0 0 15px;
+	border-bottom: 1px solid #E2F1F9;
+	margin: 0 0 16px;
+}
+	.module .head {
+		position: relative;
+	}
+		.module .head span {
+			position: absolute;
+				left: 0;
+				top: 0;
+			background-image: url(http://assets.umb.edu/styles/images/modules/modHeadlines.png);
+			background-repeat: no-repeat;
+		}
+		.ie6 .module .head span {
+			background-image: url(http://assets.umb.edu/styles/images/modules/IE6_modHeadlines.png);
+		}
+	#padder p.more {
+		padding: 0;
+	}
+	.module a.more,
+	.module .more a {
+		color: #005A8B;
+	}
+		.module a.more span,
+		.module .more a span {
+			color: #D47600;
+		}
+		.module a.more span.arrow,
+		.current a span.arrow {
+			position: relative;
+				left: 1px;
+				top: 4px;
+				overflow: hidden;
+			display: inline-block;
+			height: 15px;
+			background: url(http://assets.umb.edu/styles/images/icons/icons.png) 2px -30px no-repeat;
+			padding: 0 15px 0 0;
+			margin-top: -3px;
+		}
+		.ie7 .current a span.arrow {
+			top: 1px;
+		}
+			#padder .more a:hover,
+			#padder a.more:hover {
+				color: #00334E;
+			}
+
+#content .inlineImg {
+	float: none;
+	width: 450px;
+		overflow: hidden;
+	border: 3px solid #FFF;
+	margin: 0 0 20px -3px;
+	-webkit-box-shadow: 0px 0px 5px #B0B0B0;
+	-moz-box-shadow: 0px 0px 5px #B0B0B0;
+	box-shadow: 0px 0px 5px #B0B0B0;
+}
+	#content .inlineImg img {
+		float: none;
+		margin: 0;
+	}
+.pageWide #content .wideContent .inlineImg {
+	width: 776px;
+}
+.ie6 #content .inlineImg,
+.ie7 #content .inlineImg,
+.ie8 #content .inlineImg,
+.ie9 #content .inlineImg {
+	width: 466px;
+	/*background: url(http://assets.umb.edu/styles/images/structure/inlineImgBG.png) 0 0 no-repeat;*/
+	margin: -5px 0 12px -8px;
+}
+.ie6 #content .wideContent .inlineImg,
+.ie7 #content .wideContent .inlineImg,
+.ie8 #content .wideContent .inlineImg,
+.ie9 #content .wideContent .inlineImg {
+	width: 792px;
+	background-position: -466px 0;
+}
+	.ie6 #content .inlineImg .content,
+	.ie7 #content .inlineImg .content,
+	.ie8 #content .inlineImg .content,
+	.ie9 #content .inlineImg .content {
+		display: block;
+		padding: 8px 8px 0 8px;
+	}
+
+	.ie6 #content .inlineImg img,
+	.ie7 #content .inlineImg img,
+	.ie8 #content .inlineImg img,
+	.ie9 #content .inlineImg img {
+		border: none;
+		margin: 0;
+	}
+	.ie6 #content .inlineImg .btm,
+	.ie7 #content .inlineImg .btm,
+	.ie8 #content .inlineImg .btm,
+	.ie9 #content .inlineImg .btm {
+		display: block;
+		height: 8px;
+			overflow: hidden;
+		background: red url(http://assets.umb.edu/styles/images/structure/inlineImgBG.png) 0 -508px no-repeat;
+	}
+	.ie6 #content .wideContent .inlineImg .btm,
+	.ie7 #content .wideContent .inlineImg .btm,
+	.ie8 #content .wideContent .inlineImg .btm,
+	.ie9 #content .wideContent .inlineImg .btm {
+		background: red url(http://assets.umb.edu/styles/images/structure/inlineImgBG.png) -466px -508px no-repeat;
+	}
+
+#content .meta {
+	padding: 0 0 10px;
+	border-bottom: 1px solid #E2F1F9;
+	margin: 0 0 16px;
+}
+	#content .meta .head {
+		line-height: 20px;
+		padding: 0;
+	}
+	#content .meta ul {
+		color: #9A9A9A;
+		line-height: 18px;
+		padding: 0 0 8px;
+	}
+		#content .meta li {
+			background: none;
+			padding: 0;
+		}
+
+.modDrop,
+#padder .modDrop {
+	border: none;
+}
+#padder .modTools {
+	padding: 0 0 16px;
+	background: url(http://assets.umb.edu/styles/images/modules/modDropBG.png) 0 bottom no-repeat;
+	background-position: left bottom;
+	margin: -7px 0 0 0;
+}
+.ie6 #padder .modTools,
+.ie7 #padder .modTools {
+	height: 30px;
+}
+.ie6 #padder .modDropOpen,
+.ie7 #padder .modDropOpen {
+	height: auto;
+}
+.modExplore {
+	background: #ECECEC url(http://assets.umb.edu/styles/images/modules/modDrop2BG.png) 0 0 repeat-x;
+	font: 1.4em/14px Arial;
+	border: 1px solid #D7D7D7;
+	margin: 0 12px 16px 12px;
+}
+	.modDrop .trigger {
+		cursor: pointer;
+	}
+	#padder .modTools .trigger {
+		background: url(http://assets.umb.edu/styles/images/modules/modDropBG.png) -190px 0 no-repeat;
+		color: #005A8B;
+		font: bold 1.17em/16px Arial;
+		padding: 8px 34px 6px 11px;
+	}
+		.modTools.modDropOpen .trigger {
+			background-position: 0 0;
+			color: #403E3E;
+		}
+		#padder .modDrop .trigger:hover {
+			color: #00334E;
+		}
+	.modExplore .trigger {
+		position: relative;
+		color: #D47600;
+		font-size: 1em;
+		font-weight: bold;
+		letter-spacing: -.01em;
+		word-spacing: -0.1em;
+		padding: 15px 5px 13px 15px;
+	}
+		.modExplore .trigger span {
+			position: absolute;
+				left: -15px;
+				top: 13px;
+			width: 31px;
+			height: 31px;
+				overflow: hidden;
+			background: url(http://assets.umb.edu/styles/images/icons/plusMinus-round.png);
+		}
+			.modExplore.modDropOpen .trigger span {
+				background-position: -500px 0;
+			}
+	.modTools .item {
+		padding: 6px 10px 16px 13px;
+	}
+	.modExplore .item {
+		padding: 0 0 11px 0;
+		margin: -1px 0 0 0;
+	}
+	.jsOn #container .modDrop .item {
+		display: none;
+	}
+		#padder .modTools li {
+			background: none;
+			font: 0.92em/12px Arial;
+			padding: 3px 0 2px 0;
+		}
+		#padder .modExplore li {
+			padding: 0 0 1px;
+		}
+			.modTools li a {
+				color: #005A8B;
+			}
+			#container .modExplore li a {
+				display: block;
+				color: #005A8B;
+				padding: 3px 17px;
+				border-top: 1px solid #ECECEC;
+				border-bottom: 1px solid #ECECEC;
+			}
+			#container .ie6 .modExplore li a {
+				width: 159px;
+			}
+				#padder .modTools li a:hover {
+					color: #00334E;
+				}
+				#container .modExplore li a:hover {
+					background: #FFF;
+					border-top: 1px solid #E1E1E1;
+					border-bottom: 1px solid #E1E1E1;
+				}
+
+#content .modFlex {
+	background: #E0EFF8;
+	color: #545454;
+	font: 0.93em/18px Arial, Helvetica, sans-serif;
+	padding: 20px 20px 0 20px;
+	border: 3px solid #FFF;
+	-webkit-box-shadow: 0px 0px 5px #DCDCDC;
+	-moz-box-shadow: 0px 0px 5px #DCDCDC;
+	box-shadow: 0px 0px 5px #DCDCDC;
+}
+.ie6 #content .modFlex,
+.ie7 #content .modFlex,
+.ie8 #content .modFlex,
+.ie9 #content .modFlex {
+	background: red url(http://assets.umb.edu/styles/images/modules/IE_modFlexBG.png) no-repeat;
+	padding: 27px 27px 0 27px;
+	border: none;
+}
+#content .col .modFlex {
+		overflow: hidden;
+	padding: 15px 15px 7px 15px;
+}
+.ie6 #content .col .modFlex,
+.ie7 #content .col .modFlex,
+.ie8 #content .col .modFlex,
+.ie9 #content .col .modFlex {
+	padding-bottom: 14px;
+}
+.ie6 #content .col .modFlex,
+.ie7 #content .col .modFlex,
+.ie8 #content .col .modFlex,
+.ie9 #content .col .modFlex {
+	left: -4px;
+	width: 193px;
+	background-position: -450px 0;
+	margin-right: -100px;
+}
+#auxiliary .modFlex {}
+	#content .modFlex .img {
+		display: block;
+		float: left;
+		width: 150px;
+			overflow: hidden;
+		margin: -20px 20px 0 -20px;
+	}
+	.ie6 #content .modFlex .img {
+		margin-left: -10px;
+	}
+	#content .col .modFlex .img {
+		float: none;
+		width: 209px;
+		margin: -15px 0 18px -15px;
+	}
+	.ie6 #content .col .modFlex .img {
+		margin: -8px 0 18px -7px;
+	}
+	.ie7 #content .col .modFlex .img,
+	.ie8 #content .col .modFlex .img,
+	.ie9 #content .col .modFlex .img {
+		margin: -8px 0 18px -8px;
+	}
+		#content .modFlex .img img {
+			display: block;
+			margin: 0;
+		}
+	#content .modFlex h2 {
+		color: #054669;
+		font: 1.08em Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		padding: 0 0 1px;
+	}
+	#auxiliary .modFlex h2 {
+		color: #054669;
+		font: bold 1.17em/18px Arial;
+		padding: 0;
+	}
+	#content .modFlex p {
+		padding: 0 0 10px;
+	}
+		#padder .modFlex p a {}
+			#padder .modFlex p a span {}
+			#padder .modFlex p a:hover {
+				color: #00334E;
+			}
+				#padder .modFlex p a:hover span {}
+	#content .modFlex .btm {
+		position: absolute;
+			left: 0;
+			bottom: -8px;
+		display: none;
+		width: 450px;
+		height: 10px;
+			overflow: hidden;
+		background: url(http://assets.umb.edu/styles/images/modules/IE_modFlexBG.png) 0 -590px no-repeat;
+	}
+	#content .col .modFlex .btm {
+			bottom: 0;
+		width: 224px;
+		background-position: -450px -590px;
+	}
+	.ie6 #content .modFlex .btm,
+	.ie7 #content .modFlex .btm,
+	.ie8 #content .modFlex .btm,
+	.ie9 #content .modFlex .btm {
+		display: block;
+	}
+
+#container .modRounded {
+	display: block;
+	background: url(http://assets.umb.edu/styles/images/modules/modRoundedBG.png) 0 bottom no-repeat;
+	color: #3A3A3A;
+	font: 0.92em/14px Arial;
+	padding: 0 10px 40px 10px;
+}
+	#container .ie6 .modRounded {
+		width: 170px;
+	}
+	#container .modRounded .head {
+		display: block;
+		width: 170px;
+		background: url(http://assets.umb.edu/styles/images/modules/modRoundedBG.png) 0 top no-repeat;
+		color: #005A8B;
+		font: bold 1.17em/16px Arial;
+		padding: 15px 10px 5px 10px;
+		margin: 0 0 0 -10px;
+	}
+	#container .modRounded:hover .head {
+		color: #00334E;
+	}
+
+#auxiliary .modList {
+	line-height: 15px;
+}
+#content .modConnect {
+	margin-bottom: 0;
+}
+	#padder .modList .head {
+		width: 190px;
+		height: 20px;
+			overflow: hidden;
+		color: #CCC;
+		font: bold 1em/14px Arial;
+		text-indent: -999em;
+		padding: 0;
+	}
+		.modList .head span {
+			width: 190px;
+			height: 20px;
+		}
+		.modConnect .head span {}
+		.modSeeAlso .head span {
+			background-position: 0 -20px;
+		}
+	.modList ul {}
+		#padder .modList li {
+			background: none;
+			padding: 0 0 3px;
+		}
+			#padder .modList li a {
+				color: #005A8B;
+			}
+				#padder .modList li a span {
+					color: #D47600;
+				}
+				#padder .modList li a:hover {
+					color: #00334E;
+				}
+					#padder .modList li a:hover span {}
+
+#padder .modGalleries {
+	background: url(http://assets.umb.edu/styles/images/modules/modGalleriesBG.png) 0 bottom no-repeat;
+	padding: 12px 10px 28px 17px;
+	border-top: 1px solid #D7D7D7;
+	margin: 0 0 24px;
+}
+	#padder .modGalleries li {
+		padding: 0 0 4px;
+	}
+		#padder .modGalleries a h2 {
+			float: right;
+			width: 112px;
+			color: #005A8B;
+			font: normal 1em/14px Arial;
+			padding: 5px 0;
+		}
+			#padder .modGalleries a:hover h2 {
+				color: #00334E;
+			}
+		#padder .modGalleries img {
+			float: left;
+		}
+
+#container .modWhy {
+	padding-bottom: 0;
+}
+#navigation .modWhy {
+	margin: 0 0 20px 21px;
+}
+	#container .modWhy .head {
+		width: 190px;
+		height: 28px;
+			overflow: hidden;
+		color: #CCC;
+		font: bold 1.33em/18px Arial, Helvetica, sans-serif;
+		text-indent: -999em;
+		padding: 0;
+	}
+		#container .modWhy .head span {
+			width: 190px;
+			height: 28px;
+			background-position: 0 -40px;
+		}
+	.modWhy .img {
+		border: 4px solid #ECEBE9;
+	}
+	#container .modWhy .modDrop .trigger {
+		position: relative;
+		width: 205px;
+		background: url(http://assets.umb.edu/styles/images/icons/plusMinus-round.png) 174px 0 no-repeat;
+		color: #D47600;
+		padding: 23px 0 0 0;
+		margin: -21px -100px 0 0;
+	}
+	#navigation .modWhy .modDrop .trigger {
+		font-size: 1.4em;
+	}
+		#container .modWhy .modDropOpen .trigger {
+			background-position: -326px 0;
+		}
+	#container .modWhy .sub {
+		color: #9A9A9A;
+		line-height: 15px;
+		padding-bottom: 14px;
+	}
+	#navigation .modWhy .sub {
+		font-size: 1.2em;
+	}
+	.modWhy .item {
+		background: url(http://assets.umb.edu/styles/images/modules/modWhyDropBG.png) 0 bottom repeat-x;
+		color: #3A3A3A;
+		line-height: 15px;
+		padding: 0 10px 14px 10px;
+	}
+	#navigation .modWhy .item {
+		font-size: 1.2em;
+	}
+		.modWhy .more {}
+
+#container .modAnnouncements {
+	background: #F1F1F1 url(http://assets.umb.edu/styles/images/modules/modAnnouncementsBG.png) 0 bottom repeat-x;
+	color: #737373;
+	font-family: Arial;
+	line-height: 15px;
+	font-weight: bold;
+	padding: 8px 17px;
+	border: 1px solid #E1E1E1;
+	margin: 0 0 20px;
+}
+#navigation .modAnnouncements {
+	margin: 0 0 20px 14px;
+}
+	#container .modAnnouncements .head {
+		color: #909090;
+		font-family: Arial;
+		font-size: 0.79em;
+		padding: 0;
+	}
+	#navigation .modAnnouncements .head {
+		font-size: 1.1em;
+		font-weight: normal;
+		padding: 4px 0;
+	}
+		#container .modAnnouncements ul {
+			padding: 0;
+		}
+		#navigation .modAnnouncements ul {
+			font-size: 1.4em;
+			line-height: 15px;
+		}
+			#container .modAnnouncements li {
+				background: url(http://assets.umb.edu/styles/images/icons/arrowGray.png) 3px 4px no-repeat;
+				padding: 0 0 9px 16px;
+			}
+				#container .modAnnouncements li a {
+					color: #474747;
+					font-weight: bold;
+				}
+					#container .modAnnouncements li a:hover {
+						color: #737373;
+					}
+
+#container .modTabs {
+	clear: both;
+	font: 0.86em/15px Arial, Helvetica, sans-serif;
+	padding: 0 0 24px;
+	border-right: 1px solid #D7D7D7;
+	border-left: 1px solid #D7D7D7;
+}
+#navigation .modTabs {
+	font-size: 1.2em;
+	margin: 0 0 20px 14px;
+}
+.ie6 #container .modTabs {
+	border-bottom: 1px solid #D7D7D7;
+}
+#container .modTabsWide {
+	margin: 0 16px 7px 246px;
+}
+	#container .modTabs .tabNav {
+		width: 100%;
+		background: url(http://assets.umb.edu/styles/images/modules/modTabs_tabBG.png) -399px 0 no-repeat;
+		padding: 0 0 0 1px;
+		border-right: 1px solid #FFF;
+		margin: 0 0 -1px -1px;
+	}
+	.ie6 #container .modTabs .tabNav {}
+		#container .modTabs .tabNav li {
+			float: left;
+			background: url(http://assets.umb.edu/styles/images/modules/modTabs_tabBG.png) right bottom no-repeat;
+			color: #888F88;
+			padding: 0;
+			cursor: pointer;
+		}
+			.modTabs .tabNav li .tab {
+				display: block;
+				min-height: 15px;
+				padding: 0 15px 5px 6px;
+				margin: 0 1px 0 0;
+			}
+			.ie6 .modTabs .tabNav li .tab {
+				float: left;
+				height: 15px;
+			}
+			.modTabs .tabNav li.tabActive .tab {
+				display: block;
+				background: #FFF;
+				color: #D77F11;
+				border-bottom: 1px solid #FFF;
+			}
+			.modTabs .tabNav li .tab:hover {}
+	.modTabs div.item {
+		padding: 14px 10px 20px 14px;
+		border-top: 1px solid #D7D7D7;
+	}
+	.jsOn .modTabs div.item {
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+		#container .modTabs div.item h3 {
+			font-size: 1em;
+			padding: 0 0 6px;
+		}
+			#container .modTabs div.item h4 span {
+				color: #D47600;
+			}
+		#container .modTabs div.item ul {
+			padding: 0 0 2px;
+			border-bottom: 1px solid #E7E7E7;
+			margin: 0 0 14px;
+		}
+			#container .modTabs div.item li {
+				padding: 0 0 13px;
+			}
+				#container .modTabs div.item li img {
+					float: left;
+					margin: 2px 10px 6px 0;
+				}
+			#container .modTabs div.item .more {
+				padding: 0 0 5px;
+			}
+	#container .modTabs .cols2 {
+		padding: 8px 0 0 20px;
+		border: none;
+		margin: 0 0 24px;
+	}
+		#container .modTabs .col {
+			width: 319px;
+			padding-top: 5px;
+			border-right: 1px solid #E7E7E7;
+			margin: 0 0 0 -1px;
+		}
+		#container .modTabs .colR {
+			width: 241px;
+			border: none;
+			border-left: 1px solid #E7E7E7;
+			padding-left: 29px;
+		}
+			#container .modTabs .col .itemList li {
+				background: none;
+			}
+				#container .modTabs .col .itemList img {
+					display: block;
+					float: left;
+				}
+	.modTabs .btm {
+		position: absolute;
+			left: -1px;
+			bottom: 0;
+		clear: both;
+		display: block;
+		width: 100%;
+		height: 12px;
+			overflow: hidden;
+		background: url(http://assets.umb.edu/styles/images/modules/modTabsBG.png) center -12px no-repeat;
+		padding: 0 1px;
+	}
+	.col .modTabs .btm,
+	#navigation .modTabs .btm {
+		background-position: center 0;
+	}
+	.ie6 .col .modTabs .btm {
+		display: none;
+	}
+
+#padder .modHighLight {}
+#padder .cols2 .modHighlight {
+	color: #767676;
+	padding: 0 20px 0 0;
+	margin: 0;
+}
+	#padder .modHighlight a {
+		display: block;
+	}
+	.ie6 #padder .modHighlight a,
+	.ie7 #padder .modHighlight a {
+		width: 298px;
+	}
+	#padder .modHighlight img {
+		float: none;
+		margin: 0 0 13px;
+	}
+	#container #padder .modHighlight .head {
+		color: #005A8B;
+		font: bold 1.33em/20px Arial, Helvetica, sans-serif;
+			padding: 0;
+	}
+		#padder .modHighlight .head a:hover {
+			color: #00334E;
+		}
+		#padder .modHighlight .head span {
+			position: static;
+			display: inline;
+			background: none;
+			color: #D47600;
+		}
+	#padder .modHighlight p {
+		padding: 0 0 15px;
+	}
+
+#content .modResultsMeta {
+	padding-bottom: 20px;
+}
+
+#content .modLegend {
+	clear: both;
+	color: #80381F;
+	font-size: 0.86em;
+	line-height: 14px;
+	font-style: italic;
+	padding: 11px;
+	border: 1px solid #ECECEC;
+}
+	#content .modLegend li {
+		background: none;
+		padding: 0;
+	}
+
+#content .modLeadership {
+	width: 450px;
+	background: url(http://assets.umb.edu/styles/images/modules/modLeadershipBG.png) 0 0 no-repeat;
+	padding: 31px 0 0 0;
+}
+	#content .modLeadership .head {
+		width: 352px;
+		height: 23px;
+			overflow: hidden;
+		color: #454343;
+		font: normal 1.14em Georgia;
+		padding: 0;
+		margin: 0 0 0 27px;
+	}
+		#content .modLeadership .head em {
+			color: #C59217;
+			font-weight: normal;
+		}
+		#content .modLeadership .head span {
+			width: 352px;
+			height: 23px;
+			background: url(http://assets.umb.edu/styles/images/modules/modLeadershipHL.png) 0 0 no-repeat;
+		}
+	#content .modLeadership .content {
+		padding: 19px 26px 3px 26px;
+	}
+		#content .modLeadership ul.itemList img {
+			margin-right: 14px;
+		}
+	#content .modLeadership .btm {
+		display: block;
+		width: 450px;
+		height: 10px;
+		background: url(http://assets.umb.edu/styles/images/modules/modLeadershipBG.png) 0 bottom no-repeat;
+	}
+
+#auxiliary .modWhyNav {
+	padding: 26px 0 0 0;
+	border: none;
+}
+	#auxiliary .modWhyNav ul {}
+		#auxiliary .modWhyNav li {
+			padding: 0 0 33px;
+		}
+			#auxiliary .modWhyNav li a {
+				display: block;
+				width: 190px;
+				color: #9A9A9A;
+				line-height: 15px;
+			}
+				#auxiliary .modWhyNav li a .img {
+					position: relative;
+					width: 180px;
+					height: 115px;
+						overflow: hidden;
+					border: 5px solid #EFEEEC;
+					margin: 0 0 5px;
+				}
+					#auxiliary .modWhyNav li a img {
+						display: block;
+					}
+					#auxiliary .modWhyNav .cover {
+						position: absolute;
+							left: 0;
+							top: 0;
+						display: none;
+						width: 180px;
+						height: 115px;
+						background: #4FA1D2;
+						opacity: 0.5;
+						-moz-opacity: 0.5;
+						filter:alpha(opacity=50);
+					}
+				#auxiliary .modWhyNav li a span.arrow {
+					color: #D47600;
+					font-weight: bold;
+				}
+				#auxiliary .modWhyNav li a:hover {
+					color: #00334E;
+				}
+					#auxiliary .modWhyNav li a:hover .img,
+					#auxiliary .modWhyNav li.active .img {
+						border-color: #A0CFEB;
+					}
+					#auxiliary .modWhyNav li.active .cover {
+						display: block;
+					}
+
+#content .alt1 {
+	color: #767676;
+	font: 0.86em/18px Arial, Helvetica, sans-serif;
+}
+	#content .alt1 h1#pageTitle {
+		font-size: 2.08em;
+		padding-bottom: 2px;
+	}
+		#content .alt1 .articleTags a {
+			color: #4C4A4A;
+			font-weight: bold;
+		}
+			#content .alt1 .articleTags a:hover {
+				color: red;
+			}
+	#content .articleMeta {
+		color: #4A4A4A;
+		padding: 0 0 21px;
+	}
+		#content .articleMeta p {
+			padding: 0 0 2px;
+		}
+
+#articleComments {
+	clear: both;
+	color: #4A4A4A;
+	padding: 11px 0 0 0;
+	border-top: 1px solid #E2F1F9;
+}
+	#padder #articleComments .head {
+		color: #D47600;
+		font: bold 1em Arial, Helvetica, sans-serif;
+		padding: 0 0 17px;
+	}
+	#articleComments ul {
+		float: left;
+		width: 370px;
+		margin: 0 32px 0 0;
+	}
+		#articleComments ul li {
+			background: #F8F8F8;
+			padding: 8px 10px 8px 14px;
+			margin: 0 0 5px;
+		}
+			#articleComments li p {
+				padding: 0;
+			}
+			#articleComments li .commentMeta {
+				color: #767676;
+			}
+	#articleComments .commentForm {
+		float: left;
+		width: 254px;
+	}
+		#padder #articleComments .commentForm .head {
+			padding-bottom: 3px;
+		}
+		#articleComments .commentForm p {
+			line-height: 21px;
+			padding: 0 0 10px;
+		}
+		#articleComments .commentForm fieldset {
+			width: 254px;
+		}
+		#articleComments .commentForm fieldset p {
+			line-height: 18px;
+		}
+		#articleComments p label {
+			width: 254px;
+		}
+		#content #articleComments p input {		
+			width: 244px;
+		}
+		#content #articleComments textarea {
+			width: 244px;
+		}
+		#content #articleComments p label input {
+			width: auto;
+		}
+		#articleComments p .req {
+			font-size: 0.83em;
+		}
+	.captcha {
+		padding: 0 0 15px;
+	}
+	#articleComments .commentSubmit {
+		float: left;
+		margin: 0 27px 0 0;
+	}
+	#articleComments p.cancel {
+		padding-top: 10px;
+	}
+
+#content .articleTools {
+	float: right;
+	width: 250px;
+	text-align: right;
+	padding: 3px 0 7px 0;
+}
+	#content .articleTools img {
+		display: inline;
+		float: none;
+		margin: 0 5px 0 0;
+	}
+
+#content .articleTags {
+	float: left;
+	width: 370px;
+}
+
+#container .modTagCloud {
+	border: none;
+	margin: 0 12px 20px 12px;
+}
+	#container .modTagCloud .tabNav {
+		background: transparent;
+	}
+		#container .modTagCloud .tabNav li {
+			float: left;
+			width: 96px;
+			background: #FFF;
+			color: #D47600;
+			font-size: 1.4em;
+			font-weight: bold;
+			text-align: center;
+			padding: 13px 0 7px 0;
+			border: 1px solid #D7D7D7;
+			margin: 0 0 -1px;
+			cursor: pointer;
+		}
+		#container .modTagCloud .tabNav .tabActive {
+			border-bottom: none;
+			cursor: default;
+		}
+		#container .modTagCloud .tabNav .item1 {
+			margin-left: -1px;
+		}
+	#container .modTagCloud .head {}
+	#container .modTagCloud .item {
+		clear: both;
+		background: #FFF;
+		padding: 14px 10px;
+		border: 1px solid #D7D7D7;
+	}
+	#container .modTagCloud .item {
+		line-height: 18px;
+	}
+		#container .modTagCloud a {
+			padding: 0 4px;
+		}
+			#container .modTagCloud a:hover {
+				color: #D77F11;
+			}
+
+#padder #content .pagination {
+	position: relative;
+	clear: both;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 16px 0 35px 0;
+	border-top: 1px solid #E2F1F9;
+	margin: 0;
+}
+#padder #content p.pagination {
+	padding-bottom: 20px;
+}
+		#padder .pagination a {
+			display: inline-block;
+			color: #005A8B;
+			padding: 0 3px;
+			margin: 0 2px;
+		}
+			#padder .pagination li a:hover {
+				color: #D47600;
+			}
+		#padder .pagination strong {
+			display: inline-block;
+			color: #D47600;
+			padding: 0 5px 1px 4px;
+			border: 1px solid #E2F1F9;
+		}
+		.ie6 #padder .pagination strong,
+		.ie7 #padder .pagination strong {
+			position: relative;
+				top: 2px;
+		}
+	#padder .pagination .page_total {
+		position: absolute;
+			right: 0;
+			top: 16px;
+		display: block;
+	}
+
+.bio {
+	padding: 0 230px 0 0;
+}
+.bioWide {
+	padding-right: 0;
+}
+	.bio .vcard {
+		padding: 0 0 14px;
+	}
+	.bio .separator {
+		display: block;
+		width: 363px;
+		height: 1px;
+			overflow: hidden;
+		background: #E2F1F9;
+		margin: 0 0 25px;
+	}
+	#content .bio .pic {
+		float: right;
+		width: 282px;
+		border: 3px solid #FFF;
+		margin: 0 -250px 0 0;
+		-webkit-box-shadow: 0px 0px 5px #B0B0B0;
+		-moz-box-shadow: 0px 0px 5px #B0B0B0;
+		box-shadow: 0px 0px 5px #B0B0B0;
+	}
+	.ie6 #content .bio .pic {
+		margin-right: -125px;
+	}
+	.ie6 #content .bio .pic,
+	.ie7 #content .bio .pic,
+	.ie8 #content .bio .pic,
+	.ie9 #content .bio .pic {
+		width: 282px;
+		padding: 8px 8px 0 8px;
+		background: url(http://assets.umb.edu/styles/images/structure/inlineImg-bio-BG.png) no-repeat;
+	}
+	.ie6 #content .bio .pic .btm,
+	.ie7 #content .bio .pic .btm,
+	.ie8 #content .bio .pic .btm,
+	.ie9 #content .bio .pic .btm {
+		display: block;
+		width: 298px;
+		height: 8px;
+			overflow: hidden;
+		background: url(http://assets.umb.edu/styles/images/structure/inlineImg-bio-BG.png) 0 -492px no-repeat;
+		margin: 0 0 0 -8px;
+	}
+		#content .vcard img {
+			margin: 0;
+		}
+	#content .bio h1#pageTitle {
+		padding: 0 0 21px;
+	}
+	#content #bioName {
+		color: #988F86;
+		font: normal 1em/18px Arial, Helvetica, sans-serif;
+		padding: 0 0 1px;
+	}
+	#content .expert {
+		display: inline-block;
+		width: 40px;
+		height: 11px;
+			overflow: hidden;
+		background: url(http://assets.umb.edu/styles/images/icons/expert.png) right 0 no-repeat;
+		text-indent: -999em;
+		padding: 0 0 0 6px;
+	}
+	.ie6 #content .expert,
+	.ie7 #content .expert {
+		position: relative;
+			top: -4px;
+	}
+		#content #bioName strong {
+			font-size: 1.29em;
+			font-weight: bold;
+		}
+	#content .bio .info {}
+		#content .bio .info li {
+			background: none;
+			padding: 0;
+		}
+		#content .bio .info .title {
+			padding: 0 0 20px;
+		}
+			#content .bio .title span {
+				display: block;
+			}
+
+.toolbar {
+	height: 40px;
+	font: 0.86em/18px Arial, Helvetica, sans-serif;
+	text-align: right;
+	padding: 23px 224px 0 0;
+	margin: 0 15px 0 246px;
+}
+	.toolbar a {
+		color: #004971;
+		font-weight: bold;
+	}
+		.toolbar a:hover {
+			color: #00334E;
+		}
+
+	#container .toolbar .search {
+		left: 485px;
+		top: -5px;
+	}
+		#container .toolbar .search label {
+			position: absolute;
+				left: -999em;
+		}
+		#container .toolbar .search input {
+			font-size: 12px;
+		}
+
+.newsList {
+	clear: both;
+	padding: 0;
+}
+	#padder .newsList li {
+		background: none;
+		padding: 0 0 18px;
+	}
+		#padder .newsList img {
+			float: left;
+			margin-right: 15px;
+		}
+		#padder .newsList .head {
+			clear: right;
+			font: bold 1.33em/20px Arial, Helvetica, sans-serif;
+			padding: 0;
+		}
+		.ie6 #padder .newsList .head,
+		.ie7 #padder .newsList .head {
+			float: left;
+			min-width: 50%;
+		}
+			#padder .newsList .head span {
+				color: #D47600;
+			}
+		#padder .newsList p {
+			padding: 0 0 3px;
+		}
+		#padder .newsList .authored {
+			width: 75%;
+			color: #4A4A4A;
+		}
+		#padder .newsList .excerptMeta a {
+			color: #4C4A4A;
+			font-weight: bold;
+		}
+		#padder .excerptMeta a.commentLink {
+			color: #005A8B;
+			font-weight: normal;
+		}
+			#padder .newsList a:hover .head,
+			#padder .newsList a:hover {
+				color: #00334E;
+			}
+
+#content .modAlphaList {}
+#content .modLetterList {
+	background: #F6F6F6;
+	text-align: center;
+	font: bold 1.21em/24px Arial, Helvetica, sans-serif;
+	padding: 6px 26px;
+	border: 1px solid #E5E6E6;
+	margin: 0 0 9px;
+}
+	#content .modLetterList a {
+		color: #005A8B;
+		padding: 0 6px;
+	}
+	#content .modLetterList {}
+	#content .modLetterList {}
+	#content .modLetterList {}
+	#content .modAlphaList .alphaHead {
+		color: #988F86;
+		font: bold 1.29em/22px Arial,
+		Helvetica, sans-serif;
+		padding: 0 0 8px;
+	}
+
+#topper {
+	position: relative;
+	border: 3px solid #FFF;
+	margin: 0 12px 0 246px;
+	-webkit-box-shadow: 0px 0px 5px #AFAFAF;
+	-moz-box-shadow: 0px 0px 5px #AFAFAF;
+	box-shadow: 0px 0px 5px #AFAFAF;
+}
+.pageCenters #topper {
+	margin-bottom: 16px;
+}
+.ie6 #topper,
+.ie7 #topper,
+.ie8 #topper,
+.ie9 #topper {
+	position: relative;
+		left: -5px;
+	border: none;
+	width: 676px;
+	padding: 8px 8px 0 8px;
+	box-shadow: none;
+}
+.modSwapper,
+.modSlides {
+	min-height: 365px;
+}
+.ie6 .modSwapper {
+	background: #005A8B;
+}
+.ie7 .modSwapper,
+.ie8 .modSwapper,
+.ie9 .modSwapper {
+	background: url(http://assets.umb.edu/styles/images/modules/IE_modSwapperBG.png) no-repeat;
+}
+.ie6 .modSlides {
+	background: #383838;
+}
+.ie7 .modSlides,
+.ie8 .modSlides,
+.ie9 .modSlides {
+	background: url(http://assets.umb.edu/styles/images/modules/IE_modSlidesBG.png) no-repeat;
+}
+.ie7 .intro,
+.ie8 .intro,
+.ie9 .intro {
+	background: url(http://assets.umb.edu/styles/images/modules/IE_introBG.png) no-repeat;
+}
+#topper.intro {
+	margin-top: 21px;
+}
+.withTopper #topper.intro {
+	top: -38px;
+	margin-bottom: -38px;
+}
+	#topper img {
+		display: block;
+		margin: 0;
+	}
+#padder .modSwapper {
+	position: relative;
+	font-size: 0.71em;
+}
+	#padder .modSwapper .bg {
+		position: absolute;
+			left: 0px;
+			top: 0px;
+			z-index: 10;
+		width: 676px;
+		height: 100%;
+		background: #005A8B;
+		opacity: 0.9;
+		-moz-opacity: 0.9;
+		filter:alpha(opacity=90);
+	}
+	#padder .modSlides .bg {
+		background: #383838;
+	}
+	.ie6 #padder .modSwapper .bg,
+	.ie7 #padder .modSwapper .bg,
+	.ie8 #padder .modSwapper .bg,
+	.ie9 #padder .modSwapper .bg {
+		display: none;
+	}
+	#padder .modSwapper .content {
+		position: relative;
+			z-index: 20;
+		padding: 12px 0 19px 19px;
+	}
+	#padder .modSwapper .head {
+		color: #FFF;
+		font: bold 2.2em/24px Arial, Helvetica, sans-serif;
+		padding: 0 261px 14px 0;
+	}
+	#padder .modSlides .images {
+		float: left;
+		width: 396px;
+			overflow: hidden;
+		margin: 15px 0 0 0;
+	}
+		#padder .modSwapper .mainImg {
+			position: relative;
+			float: left;
+			width: 386px;
+			height: 242px;
+				overflow: hidden;
+			background: #FFF;
+			border: 5px solid #FFF;
+		}
+		#padder .modSlides .mainImg {
+			float: none;
+		}
+			#padder .modSwapper .mainImg img {
+				float: none;
+			}
+			#padder .modSwapper .mainImg embed,
+			#padder .modSwapper .mainImg object,
+			#padder .modSwapper .mainImg iframe {
+				display: block;
+			}
+	#padder .modSwapper .action {
+		float: left;
+		width: 241px;
+		padding: 0 0 0 10px;
+	}
+		#padder .modSwapper ul {
+			clear: both;
+			font: 1.4em/18px Arial;
+			padding: 6px 0 55px;
+		}
+		#padder .modSlides ul.thumbs {
+			
+			width: 410px;
+			padding-bottom: 0;
+		}
+			#padder .modSwapper ul li {
+				background: none;
+				padding: 0;
+			}
+			.ie6 #padder .modSwapper ul li {
+				display: inline;
+			}
+			#padder .modSlides ul.thumbs li {
+				position: relative;
+				float: left;
+			}
+			#padder .modSwapper .link {
+				font-weight: bold;
+				color: #A0CFEB;
+				padding: 1px 6px;
+					cursor: pointer;
+			}
+			#padder .modSlides ul.thumbs .link {
+				padding: 0;
+				border: 5px solid #FFF;
+				margin: 0 4px 0 0;
+			}
+				#padder .modSwapper .action .active .link {
+					background: #084B70;
+					color: #DFE6E6;
+				}
+				#padder .modSwapper .link:hover {
+					color: #FFF;
+				}
+			.jsOn #padder .modSwapper ul .img,
+			.jsOn #padder .modSwapper .more {
+				position: absolute;
+					left: -999em;
+				width: 1px;
+					overflow: hidden;
+			}
+	#padder .modSwapper .current {
+		color: #E5E6E6;
+		font: 1.2em/14px Arial, Helvetica, sans-serif;
+	}
+	#padder .modSlides .current {
+		padding-top: 81px;
+	}
+		#padder .modSwapper .current .head {
+			display: block;
+			font-size: 1.50em;
+			line-height: 22px;
+			padding: 0;
+		}
+		#padder .modSwapper .current a {
+			display: block;
+			width: 235px;
+			background: url(http://assets.umb.edu/styles/images/icons/arrowWhite.png) 0 3px no-repeat;
+			color: #E5E6E6;
+			padding: 0 0 0 16px;
+			margin: 0 0 0 -10px;
+		}
+			#padder .modSwapper .current a:hover {
+				color: #FFF;
+			}
+		#padder .modSwapper a span.arrow {
+			background-position: -23px 0;
+		}
+		#padder .modSlides .arrowActive {
+			position: absolute;
+				left: 44px;
+				top: 0;
+			width: 12px;
+			height: 4px;
+				overflow: hidden;
+			background: url(http://assets.umb.edu/styles/images/icons/arrowTopperSlide.png);
+		}
+	#topper .btm {
+		position: absolute;
+			left: 0;
+			bottom: -10px;
+		display: none;
+		width: 692px;
+		height: 10px;
+			overflow: hidden;
+	}
+	#padder .modSwapper .btm {
+		background: url(http://assets.umb.edu/styles/images/modules/IE_modSwapperBG.png) 0 bottom no-repeat;
+	}
+	#padder .modSlides .btm {
+		background: url(http://assets.umb.edu/styles/images/modules/IE_modSlidesBG.png) 0 bottom no-repeat;
+	}
+	#padder .intro .btm {
+		height: 8px;
+		bottom: -8px;
+		background: url(http://assets.umb.edu/styles/images/modules/IE_introBG.png) 0 -342px no-repeat;
+	}
+	.ie7 #topper .btm,
+	.ie8 #topper .btm,
+	.ie9 #topper .btm {
+		display: block;
+	}
+
+.modBlogs {
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom: 1px solid #D7D7D7;
+}
+	#padder .modBlogs .head {
+		color: #D47600;
+		font: 1.79em/25px Georgia, Times, serif;
+		padding: 0 0 22px;
+	}
+	#auxiliary .modBlogs .head {
+		font-size: 1.67em;
+		padding: 0 0 14px;
+	}
+	#padder .modBlogs .blog {
+		font-size: 0.79em;
+		line-height: 13px;
+		padding: 0 0 2px;
+	}
+	#auxiliary .modBlogs .blog {
+		font-size: 0.92em;
+	}
+		#padder .modBlogs .blog img {
+			border: 4px solid #EFEEEC;
+			margin: 0 12px 10px 0;
+		}
+		#auxiliary .modBlogs .blog img {
+			float: left;
+		}
+		#padder .modBlogs .blogName {
+			color: #005A8B;
+			font-size: 1em;
+			line-height: 11px;
+			padding: 0 0 1px;
+		}
+		#padder .modBlogs .blog ul {
+			padding: 0;
+		}
+			#padder .modBlogs .blog li {
+				background: none;
+				padding: 0;
+			}
+	#padder .modBlogs .more {
+		display: block;
+		clear: both;
+		color: #414042;
+		font-size: 0.86em;
+		line-height: 15px;
+		padding: 0 0 15px;
+	}
+	#auxiliary .modBlogs .more {
+		font-size: 1.09em;
+	}
+	.ie6 #padder .modBlogs,
+	.ie7 #padder .modBlogs {
+		width: 205px;
+	}
+		#padder .modBlogs .postTitle {
+			color: #005A8B;
+			font: bold 1em Arial, Helvetica, sans-serif;
+			padding: 0 0 7px;
+		}
+	#padder .modBlogs .more .read {
+		display: block;
+		color: #005A8B;
+		font-weight: normal;
+		text-align: right;
+	}
+	#padder .modBlogs p {
+		padding: 0 0 4px;
+	}
+	#padder .modBlogs .more:hover,
+	#padder .modBlogs .more:hover .postTitle,
+	#padder .modBlogs .more:hover .read {
+		color: #00334E;
+	}
+
+#padder .modRoundLink {
+	float: right;
+	width: 190px;
+	background: url(http://assets.umb.edu/styles/images/modules/modRoundedLinkBG.png) 0 bottom no-repeat;
+	background-position: left bottom;
+	padding: 0 0 16px;
+	margin-bottom: 0;
+}
+.ie6 #padder .modRoundLink,
+.ie7 #padder .modRoundLink {
+	height: 30px;
+}
+	#padder .modRoundLink .trigger {
+		display: block;
+		background: url(http://assets.umb.edu/styles/images/modules/modRoundedLinkBG.png) -190px 0 no-repeat;
+		color: #005A8B;
+		font: bold 0.86em/16px Arial;
+		padding: 8px 34px 6px 11px;
+	}
+		#padder .modRoundLink .trigger:hover {
+			color: #00334E;
+		}
+
+.modCalList {
+	background: #F8F8F8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.86em;
+	line-height: 15px;
+	padding: 19px 10px 12px 13px;
+}
+	.col .modCalList {}
+	.ie6 .col .modCalList {
+		margin-right: -30px;
+	}
+	#padder .modCalList .itemList {
+		padding: 0;
+		border-bottom: 1px solid #E4E4E4;
+		margin: 0 0 16px;
+	}
+		#padder .modCalList .itemList li {
+			padding: 0 0 20px;
+		}
+			#padder .modCalList .head {
+				color: #D47600;
+				font: bold 1em Arial, Helvetica, sans-serif;
+				padding: 0 0 20px;
+			}
+
+#padder .modOrgs {
+	border: 1px solid #D7D7D7;
+	margin-bottom: 7px;
+}
+	.modOrgs .choose {
+		padding: 0 10px 0 18px;
+	}
+		#padder .modOrgs .choose .head {
+			width: 414px;
+			height: 36px;
+				overflow: hidden;
+			color: #CCC;
+			font: bold 1em/14px Arial;
+			text-indent: -999em;
+			padding: 0 0 8px;
+		}
+			.modOrgs .choose .head span {
+				width: 414px;
+				height: 36px;
+				background: url(http://assets.umb.edu/styles/images/modules/modOrgsHL.png);
+			}
+		#padder .modOrgs .label {
+			float: left;
+			width: 134px;
+			padding: 0;
+			margin: 0 10px 16px 0;
+		}
+	#content .modOrgs .modSelectList {
+		float: left;
+		top: -3px;
+		margin: 0 0 16px;
+	}
+	.modOrgs .item {
+		clear: both;
+		font: 0.86em/16px Arial, Helvetica, sans-serif;
+		padding: 27px 15px 0 19px;
+		border-top: 1px solid #D7D7D7;
+	}
+	.ie6 .modOrgs .item,
+	.ie7 .modOrgs .item {
+		padding-top: 14px;
+	}
+		#padder .modOrgs .item img {
+			margin: 3px 13px 10px 0;
+		}
+		#padder .modOrgs .item .head {
+			font-size: 1.17em;
+			line-height: 18px;
+			padding: 0 0 1px;
+		}
+	#container #padder .moreOrgs {
+		font-size: 0.86em;
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: right;
+		padding: 0 0 17px;
+	}
+		#padder .moreOrgs a {
+			padding: 0 0 0 22px;
+		}
+			#padder .moreOrgs a span {
+				color: #D47600;
+			}
+
+
+#padder .modSelectList {
+	position: relative;
+		z-index: 100;
+	width: 272px;
+	line-height: 17px;
+}
+.jsOn .modSelectList {
+	background: url(http://assets.umb.edu/styles/images/modules/modSelectListBG.png) no-repeat;
+}
+	#padder .modSelectList ul {
+		padding: 0;
+	}
+	.jsOn #padder .modSelectList ul {
+		position: absolute;
+			left: 0;
+			z-index: 10;
+		display: none;
+		width: 270px;
+		height: 244px;
+			overflow: auto;
+		background: #DDEEF8;
+		border-right: 1px solid #C5E3F5;
+		border-left: 1px solid #C5E3F5;
+		padding: 0 0 10px 0;
+	}
+	.ie6 .jsOn #padder .modSelectList ul {
+		background: #DDEEF8;
+	}
+		#padder .modSelectList li {
+			background: none;
+			line-height: 20px;
+			padding: 3px 25px 0 10px;
+		}
+	#padder .modSelectList p.active {
+		position: relative;
+			z-index: 10;
+		color: #005A8B;
+		padding: 5px 25px 0 10px;
+		cursor: pointer;
+	}
+	.modSelectList .btm {
+		position: absolute;
+			left: 0;
+			bottom: -4px;
+			z-index: 9;
+		display: block;
+		width: 272px;
+		height: 6px;
+			overflow: hidden;
+		background: url(http://assets.umb.edu/styles/images/modules/modSelectListBG.png) 0 -294px;
+	}
+	.modSelectListActive .btm {
+		bottom: -260px;
+	}
+
+#textLayer {
+	position: fixed;
+		left: 50%;
+		top: 0;
+		z-index: 100;
+	display: none;
+	width: 600px;
+	font: 1.4em/20px Arial, Helvetica, sans-serif;
+	margin: 0 0 0 -300px;
+}
+.ie6 #textLayer {
+	position: absolute;
+}
+	#textLayerBG {
+		position: fixed;
+			left: 0;
+			top: 0;
+			z-index: 10;
+		display: none;
+		width: 100%;
+		height: 100%;
+		background: #000;
+	}
+	#textLayer .content {
+		position: relative;
+			z-index: 20;
+		width: 500px;
+		background: #FFF;
+		padding: 40px 50px;
+		border: 5px solid #cdd0cd;
+		overflow: auto;
+	}
+	#textLayer .close {
+		position: absolute;
+			left: 50%;
+			top: 16px;
+			z-index: 100;
+		display: block;
+		width: 30px;
+		height: 30px;
+		overflow: hidden;
+		background: url(http://assets.umb.edu/styles/images/icons/close.png);
+		cursor: pointer;
+		margin: 0 0 0 248px;
+	}
+#textLayer h2 {color: #054669; font: bold 1.43em/24px Georgia, Times, serif; padding: 0 0 10px; border-bottom: 1px solid #E5E6E6; margin: 0 0 15px;}
+#textLayer h3 {color: #988F86; font: bold 1.29em/22px Arial, Helvetica, sans-serif; padding: 0 0 5px;}
+#textLayer h4 {color: #C59217; font: normal 1em/20px Georgia; padding: 0;}
+#textLayer h5 {color: #3A3A3A; font: italic normal 1em/20px Georgia; padding: 0 0 8px;}
+#textLayer p, 
+#textLayer ul,
+#textLayer ol,
+#textLayer dt {
+	padding-bottom: 20px;
+}
+#textLayer blockquote {}
+	#textLayer blockquote p {}
+#textLayer img {
+	display: block;
+	float: left;
+	margin: 5px 10px 10px 0;
+}
+	#textLayer ul li {
+		background: url(http://assets.umb.edu/styles/images/icons/arrowBlue.png) 7px 7px no-repeat;
+		padding: 0 0 10px 20px;
+	}
+		#textLayer ul li ul {}
+			#textLayer ul li ul li {}
+#textLayer ol {
+	line-height: 15px;
+	padding-left: 21px;
+}
+.ie6 #textLayer ol,
+.ie7 #textLayer ol {
+	padding-left: 25px;
+}
+	#textLayer ol li {
+		padding: 0 0 12px;
+	}
+
+/* Tables --------------------------------------------------------- */
+#content table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 0 20px;
+}
+	#content td {
+		background: #F8F8F8;
+		font-size: 0.79em;
+		line-height: 14px;
+		color: #3A3A3A;
+		vertical-align: top;
+		padding: 7px 5px 8px 11px;
+	}
+	#content tr.odd td {
+		background: #E5E6E6;
+		border-bottom: 1px solid #FFF;
+	}
+	#content thead tr td,
+	#content thead tr.odd td,
+	#content tr th {
+		color: #054669;
+		font-size: 0.86em;
+		line-height: 14px;
+		font-weight: bold;
+		background: #DDEDF7;
+		text-align: left;
+		padding: 11px 5px 9px 11px;
+		border-bottom: 1px solid #FFF;
+	}
+	#content tfoot tr td,
+	#content tfoot tr.odd td {}
+
+#content table.plain {}
+	#content table.plain td,
+	#content table.plain tr.odd td {
+		background: none;
+		border: none;
+	}
+	#content table.plain thead tr.odd td {}
+	#content table.plain tfoot tr td,
+	#content table.plain tfoot tr.odd td {}
+	
+/* Caption styles for News, Events and The Point articles ---------------------------------------------------------- */	
+.captionDiv {width:255px;float:left;padding:0 0 6px 0;}	
+.captionText {font-size:0.8em/18px;font-family:Arial, Helvetica, sans-serif;font-style:italic;padding:0 10px 0 0;}	
+
+/* Forms ---------------------------------------------------------- */
+#content fieldset {
+	border: none;
+	padding: 0 0 20px;
+}
+#content .pageWide fieldset {
+	width: 700px;
+}
+#content legend {
+	color: #133764;
+	font-size: 1.14em;
+	font-weight: bold;
+	padding: 0 0 5px;
+}
+#content label {
+	display: block;
+	padding: 0 0 3px;
+}
+/* Always put text inputs inside paragraph tags. This enables the
+separation of text inputs & submit inputs for styling without classes
+or IDs. */
+#content input {}
+#content fieldset p {
+	padding: 0 0 10px;
+}
+#content p input {
+	display: inline;
+	width: 381px;
+	font: 1em Arial, Helvetica, sans-serif;
+	padding: 3px 5px 4px 5px;
+	margin: 0 10px 10px 0;
+}
+.ie6 #content p input,
+.ie7 #content p input,
+.ie8 #content p input,
+.ie9 #content p input {
+	vertical-align: -6px;
+}
+#content label input {
+	position: relative;
+		top: 2px;
+	width: auto;
+	margin: 0 5px 5px 0;
+}
+.ie6 #content label input,
+.ie7 #content label input,
+.ie8 #content label input,
+.ie9 #content label input {
+	top: -3px;
+}
+#content p.formFloat input {
+	width: 178px;
+}
+#content p.phone .areaCode,
+#content p.phone .prefix,
+#content p.phone .line {
+	width: 30px;
+	margin-right: 5px;
+}
+#content p.phone .areaCode {
+	margin-right: 0;
+}
+#content p.phone .line {
+	width: 70px;
+}
+#content p.phone .ext {
+	width: 35px;
+}
+#content p.date .month,
+#content p.date .day,
+#content p.date .year {
+	width: 30px;
+	margin-right: 4px;
+}
+#content p.date .year {
+	width: 70px;
+}
+#content select {
+	width: 300px;
+	padding: 3px 0 0 0;
+}
+.ie6 #content select,
+.ie7 #content select,
+.ie8 #content select,
+.ie9 #content select {
+	width: auto;
+	max-width: 440px;
+}
+.ie6 .pageWide #content select,
+.ie7 .pageWide #content select,
+.ie8 .pageWide #content select,
+.ie9 .pageWide #content select {
+	max-width: 650px;
+}
+	#content select option {
+		padding: 0 0 4px 5px;
+	}
+#content textarea {
+	display: block;
+	clear: both;
+	width: 381px;
+	font: 1em Arial, Helvetica, sans-serif;
+	padding: 3px 5px 4px 5px;
+	margin: 0 0 20px;
+}
+#content .submit {
+	width: 393px;
+	text-align: left;
+}
+	#content .submit input {
+		display: block;
+		float: right;
+		margin: 0;
+	}
+	#content .submit .cancel {
+		display: inline;
+	}
+#content p .req,
+#content p .required {
+	color: #D47600;
+	font-weight: bold;
+}
+#content p.req,
+#content p.required,
+#content .ex {
+	color: #969696;
+	font-size: 0.86em;
+	font-style: italic;
+}
+#content .ex {
+	display: inline-block;
+}
+/* Clearfixes ----------------------------------------------------- */
+.cols2,
+.cols3,
+.tabNav,
+.modGalleries li,
+.itemList li,
+.modFlex,
+.modSwapper .content,
+.pagContainer,
+.pagination,
+.modBlogs .blog,
+.newsList li {height: 1%;}
+.cols2:after,
+.cols3:after,
+.tabNav:after,
+.modGalleries li:after,
+.itemList li:after,
+.modFlex:after,
+.modSwapper .content:after,
+.pagContainer:after,
+.pagination:after,
+.modBlogs .blog:after,
+.service_catalog:after, /*added jmw  10/24/11 */
+.push_right:after, /*added jmw 10/24/11  */
+.newsList li:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+*> .cols2,
+*> .cols3,
+*> .tabNav,
+*> .modGalleries li,
+*> .itemList li,
+*> .modFlex,
+*> .modSwapper .content,
+*> .pagContainer,
+*> .pagination,
+*> .modBlogs .blog,
+*> .newsList li {min-height: 1px; height: auto;}
+/* Test Styles ---------------------------------------------------- */
+.red    {background: red !important;}
+.blue   {background: blue !important;}
+.green  {background: green !important;}
+.olive  {background: olive !important;}
+.orange {background: orange !important;}
+.black  {background: black !important;}
+.gray   {background: gray !important;}
+.silver {background: silver !important;}
+.white  {background: white !important;}
+
+/***************** styles for service catalog - added jmw  10/24/11  *********************/
+.service_catalog{
+margin: 10px 0px 5px 0px;
+}
+
+.service_catalog img, .service_catalog .sc_title {
+   float: left;
+   margin: 0px 15px 0px 0px;
+}
+.service_catalog .push_right{
+    margin-left: 175px;
+
+}
+.service_catalog .divide {
+    border-top: 1px solid #E2F1F9;
+    margin-bottom: 20px;
+}
+.sc_options {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #E2F1F9;
+}
+.h3_side{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #E2F1F9;
+}
+.h3_top{
+    margin-top: 10px;
+}
+.contact_image{
+    display:block;
+    z-index:25;
+}
+.sc_icons{
+
+    text-align: center;
+}
+.sc_icons img{
+    margin: 0px 5px 0px 5px;
+    text-align: center;
+}
+
+.sc_icons a{
+    margin: 0px;
+    padding: 0px;
+    background: #F8F8F8;
+    display: inline;
+}
+
+.imagedropshadow {
+	padding: 5px;
+	border: solid 1px #EFEFEF;
+    border-radius: 5px 5px;
+    -webkit-border-radius: 5px 5px;
+    -moz-border-radius: 5px 5px;
+}
+a:hover img.imagedropshadow {
+	border: solid 1px #CCC;
+	-moz-box-shadow: 1px 1px 5px #999;
+	-webkit-box-shadow: 1px 1px 5px #999;
+        box-shadow: 1px 1px 5px #999;
+}
+img.icon_active {
+	border: solid 1px #CCC;
+	-moz-box-shadow: 1px 1px 5px #999;
+	-webkit-box-shadow: 1px 1px 5px #999;
+        box-shadow: 1px 1px 5px #999;
+}
+
