@@ -29,7 +29,7 @@
 	}
 	#loginBoxContainer { }
 	#loginBlockColumnLeft { float: left; width: 350px; margin-right: 50px; }
-	#loginBlockColumnLeft p { margin-bottom: 40px; font-size: 11pt; line-height: 16pt; }
+	#loginBlockColumnLeft p { margin-bottom: 20px; font-size: 11pt; line-height: 16pt; }
 	#loginBox { 
 		float: left; 
 		width: 300px; 
@@ -49,6 +49,7 @@
 	.loginBlock a:hover, #loginBox a:hover { text-decoration: underline; }
 	#loginAnnouncements li { background-color: #FFFFCC; }
 	.login-page #copyright .logo { display: none; }
+	a.pdf { background: url('/images/cs/fileicons/filetype_pdf_ia.png') 0 0 no-repeat; padding-left: 25px; padding-top: 5px; }
 </style>
 </bbNG:cssBlock>
 
@@ -87,6 +88,13 @@
             <p>Welcome to the home of the ESE professional development courses on Blackboard Learn.
 			Enter your username and password on the right to access your course materials
 			and to interact with your instructor and other course participants.</p>
+			<p>Helpful tips for first time users:</p>
+			<p>Your USERNAME is the email address you used to register for your course. 
+			Please log in with the email address where you received your registration confirmation.</p>
+			<p>If you are using Blackboard for the FIRST TIME, you need to set your password. 
+			Please click the link to the right and follow the instructions.</p>
+			<p><a class="pdf" href="/bbcswebdav/library/login/dese/ese-blackboard-instructions.pdf" target="_blank">Click here for detailed instructions and screenshots</a>.</p>
+			<p>Still need help? Click here: <a href="http://ese.echelp.org" target="_blank">http://ese.echelp.org</a></p> 
           </div>
 		  
 		  <div id="loginBox">         
