@@ -20,9 +20,9 @@
 	#loginBoxContainer { }
 	#loginBoxContainer #loginBoxHeader { padding: 0 10px 10px 10px; margin: 0 20px 0 20px; }
 	#loginBoxContainer #loginBoxFooter { clear: both; padding: 10px 10px 0 10px; margin: 0 20px 0 20px; }
-	#loginBlockColumnLeft { float: left; width: 390px; padding-left: 30px; padding-right: 29px; }
-	#loginBlockColumnRight { float: left; width: 390px; padding-left: 30px; padding-right: 30px; border-left: 1px dashed #666666; }
-	.loginBlock { background-color: white; padding: 10px 20px 20px 20px; border: 1px solid #999999; margin-bottom: 20px; }
+	#loginBlockColumnLeft { float: left; width: 390px; padding-left: 30px; padding-right: 29px; border-right: 1px dashed #666666; }
+	#loginBlockColumnRight { float: left; width: 390px; padding-left: 30px; padding-right: 30px; }
+	.loginBlock { background-color: white; padding: 10px 20px 20px 20px; border: 1px solid #999999; margin-top: 20px; margin-bottom: 20px; }
 	.loginBlock h2 { padding: 0; font-size: 125%; }
 	.loginBlock h3 { padding: 0; font-size: 110%; }
 	.loginBlock p { margin-bottom: 10px; }
@@ -42,10 +42,12 @@
 	.loginFormVista { margin-bottom: 30px; }
 	.loginFormVista td { padding: 2px; }
 	#vistaFormFields .button-1 { font-size: 130%; margin: 15px 0 0 230px; padding: 7px 22px 7px 22px; width: auto; }
-	#loginAnnouncements { padding-top: 5px; }
-	#loginAnnouncements ul { width: 840px; }
-	#loginAnnouncements li { background-color: #FFFFCC; }
+	/* #loginAnnouncements { padding-top: 5px; } */
+	#loginAnnouncements { padding-top: 0; }
+	#loginAnnouncements ul { width: 388px; border: 1px solid #999999; } /* 840px */
+	#loginAnnouncements li { background-color: #FFFFCC; margin-bottom: 0; }
 	.login-page #copyright { background-color: #E5E5E5; bottom: 0; margin-top: 0; position: relative; padding-bottom: 30px; }
+	#loginAnnouncementAlert { background-color: #FFFF66; padding: 10px 20px; margin-bottom: 10px; color: red; font-size: 125%; font-weight: bold; text-align: center; }
 </style>
 </bbNG:cssBlock>
 
@@ -68,7 +70,7 @@
 
       <div class="clearfix loginBody">
         
-		
+		<div id="loginAnnouncementAlert" style="display:none"></div>
 		<div id="loginBoxContainer">
           <div id="loginBoxHeader">
             The University of Massachusetts Medical School will begin moving to a new Learning Management System, 
@@ -85,6 +87,7 @@
 			<div id="loginBox">
 				<loginUI:loginForm />				
             </div>
+			<loginUI:systemAnnouncements maxItems="5" />
 			<div class="loginBlock">
               <h3>New Bb Learn Users:</h3>
 			  <span style="color:red">Please note you will have the same user name in Bb Learn as you do in BLS Vista, 
@@ -144,7 +147,7 @@
 			  <a href="http://umw.echelp.org">http://umw.echelp.org</a></p>
 			  <p>E-mail Support: <a href="mailto:worcestersupport@umassonline.net">worcestersupport@umassonline.net</a></p>
 			</div>	
-			<loginUI:systemAnnouncements maxItems="5" />			
+			<%-- TEMP: placeholder for announcements --%>			
           </div>
         </div>
 		
