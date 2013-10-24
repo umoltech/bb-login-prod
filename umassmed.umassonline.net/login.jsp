@@ -45,7 +45,8 @@
 	/* #loginAnnouncements { padding-top: 5px; } */
 	#loginAnnouncements { padding-top: 0; }
 	#loginAnnouncements ul { width: 388px; border: 1px solid #999999; } /* 840px */
-	#loginAnnouncements li { background-color: #FFFFCC; margin-bottom: 0; }
+	#loginAnnouncements li { background-color: #FFFFCC; color: #000000; margin-bottom: 0; }
+	#loginAnnouncements ul li strong:first-child { font-family: inherit; }
 	.login-page #copyright { background-color: #E5E5E5; bottom: 0; margin-top: 0; position: relative; padding-bottom: 30px; }
 	#loginAnnouncementAlert { background-color: #FFFF66; padding: 10px 20px; margin-bottom: 10px; color: red; font-size: 125%; font-weight: bold; text-align: center; }
 </style>
