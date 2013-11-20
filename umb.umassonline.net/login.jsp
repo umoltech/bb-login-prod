@@ -310,7 +310,7 @@ div.loginBody { padding-top: 0px; width: 300px; background: #F1F5F8; }
 					<div class="col2bb">
 						<img class="bbBioImage" src="/bbcswebdav/library/login/umb/student.jpg" title="Student">
 						<ul class="fBB">
-							<li><h2><a href="http://www.umb.edu/it/getting_started/students">IT Services for Students</a></h2></li>
+							<li><h2><a href="http://www.umb.edu/it/students">IT Services for Students</a></h2></li>
 							<li>Virtual Computer Lab</li>
 							<li>Special pricing on hardware and software</li>
 							<li>$9.99 a year for McAfee AntiVirus Plus</li>
