@@ -135,6 +135,13 @@
 			</div>
 			--%>
 			<div class="loginBlock" style="background-color:#FFFFCC">
+				<%--
+				<h3>Service Announcement</h3>
+				<p>Blackboard Vista will be unavailable on Sunday, October 26th 
+				from 4:00AM - 8:00AM for a system servicing. Please contact your local 
+				help desk with any questions.</p>
+				<p>&nbsp;</p>
+				--%>
 				<h3>Service Window Every Wednesday 4am - 7am</h3>
 				<p>There will be a Blackboard Vista servicing and maintenance window held every 
 				Wednesday from 4am to 7am ET. During this time, Blackboard Vista may not be available.</p>
