@@ -140,7 +140,7 @@
 							<loginUI:loginForm />          
 						</div>
 						<div id="loginLogo">
-							<img src="/bbcswebdav/library/login/uls/digital-connectors-program.gif" alt="Digital Connectors Program" />
+							<img src="/bbcswebdav/library/login/uls/be-the-stem-program.gif" alt="Be the S.T.E.M. Program" />
 						</div>
 					</div>
 					
