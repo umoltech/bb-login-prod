@@ -85,10 +85,10 @@ li#sublogo{font-weight: normal;}
 #ulccbb2{width: 310px; margin-left: 115px; font-size: 12px;}
 #bbAlerts{width: 450px; min-height: 200px; border: 1px solid #D4D4D4; margin-bottom: 20px; background-color: #FFFFDD;}
 
-div.loginBody { padding-top: 0px; width: 300px; background: #F1F5F8; }
+div.loginBody { padding-top: 0px; margin-top: 20px; width: 300px; background: #F1F5F8; }
 #loginBox ul { width: 300px; }
 #loginBox li { padding-bottom: 6px; }
-#loginBox li label { text-transform: none; }
+#loginBox li label { text-transform: none; color: #000; }
 #loginBox input[type="text"], #loginBox input[type="password"] { padding: 3px; }
 #loginAnnouncements ul { width: 400px; }
 #loginAnnouncements li { box-shadow: none; }
@@ -287,8 +287,7 @@ div.loginBody { padding-top: 0px; width: 300px; background: #F1F5F8; }
 					<h2 class="orBB">Login</h2>
 
 					<div class="col1bb">
-						<p style="font-size:110%"><strong>Using Blackboard Vista? <a href="https://login.umassonline.net/boston.cfm">Visit the Blackboard Vista login page</a>.</strong></p>
-						<p>&nbsp;<br />Enter UMass Boston email username and password below.<br />
+						<p>Enter UMass Boston email username and password below.<br />
 						<a href="http://www.umb.edu/it/getting_services/support_for_online_courses_blackboard/blackboard_learn_9_student_support#BBlogin" target="_blank">How to login</a></p>
 
 						<div class="clearfix loginBody">
