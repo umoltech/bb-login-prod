@@ -49,6 +49,7 @@
 	#loginAnnouncements ul li strong:first-child { font-family: inherit; }
 	.login-page #copyright { background-color: #E5E5E5; bottom: 0; margin-top: 0; position: relative; padding-bottom: 30px; }
 	#loginAnnouncementAlert { background-color: #FFFF66; padding: 10px 20px; margin-bottom: 10px; color: red; font-size: 125%; font-weight: bold; text-align: center; }
+	#loginBoxContainer #loginBoxHeader.header-announcement { border: 1px solid #FF9999; padding-top: 10px; background-color: #FFFFFF; color: #FF0000; }
 </style>
 </bbNG:cssBlock>
 
@@ -183,6 +184,20 @@
 	jQuery.noConflict();
 	jQuery(document).ready( function() {				
 		jQuery('.forgot').children('a').text('Need Your Password?');
+		
+		jQuery('#loginAnnouncements > ul > li > strong').each( function() {
+			var this_title = jQuery(this).text();
+			var this_content = jQuery(this).parent('li').children('.vtbegenerated').html();
+			if (this_title.indexOf('Supported Browsers and Operating Systems') >= 0) {
+				jQuery('#loginBoxHeader').html(this_content).addClass('header-announcement');
+				jQuery(this).parent('li').remove();
+				jQuery('#loginBoxHeader > p > span > a').attr('target', '_blank'); 
+				
+				var this_content = jQuery('#loginBoxHeader').html();
+				var this_new_content = this_content.replace(/#000000/gi, '#FF0000');
+				jQuery('#loginBoxHeader').html(this_new_content);
+			}
+		});
 	});
 </script>
 	
