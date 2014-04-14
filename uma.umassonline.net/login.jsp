@@ -288,7 +288,9 @@ div.popup {
 	}
 
 	function bblearn_check_surveys(id, pw) {   	
-    
+		// TEMP: 13-Apr-2014 OWL 502 Gateway workaround
+		bblearn_submit_form();	
+	
 		if(bblearn.elements.surveychecked) {
 			bblearn_submit_form();
 		}
