@@ -77,20 +77,20 @@
                 <h3>Blackboard Learn Login:</h3>
 				<loginUI:errorMessage />
                 
-                <div id="bblearn-popup" class="popup" style="height:285px">
+                <div id="bblearn-popup" class="popup">
                   <div id="bblearn-popup-msg">
 		  <p style="font-weight:bold">Evaluate Your Course(s) and Instruction</p>
 		    <p>For at least one of your courses, the opportunity to evaluate the course and instruction is online and easier than ever!</p>
 		    <p>Your responses are completely confidential, and any results reported will remain anonymous and will in no way affect your grades.</p>
 		    <p>Your evaluation is very important and helps us improve the quality of the educational experience for all students. It only takes a few minutes, so please complete your evaluation(s) now!</p>
-
+        <p><a id="bblearn-survey-url" target="_blank" onclick="javascript:bblearn_close_survey_popup()" href=""> > Start Now </a></p>
 		  
 		                    </div>
-                  <p><a id="bblearn-survey-url" target="_blank" onclick="javascript:bblearn_close_survey_popup()" href=""> > Start Now </a></p>
+                  
                   <p><a href="javascript:bblearn_close_survey_popup()"> > Remind me later </a></p>
                 </div>
                         
-                <form accept-charset="UTF-8" id="bblearn-loginform" method="post" action="https://uma.umassonline.net/webapps/login/">
+                <form accept-charset="UTF-8" id="bblearn-loginform" method="post">
                   <input type="hidden" value="login" name="action" />                              
                   <input type="hidden" value="" name="new_loc" />
                   <table>
@@ -121,15 +121,6 @@
             </td>
             <td width="55%" valign="top">
 				<loginUI:systemAnnouncements maxItems="5" />
-				<!--
-				<div class="announcement">
-					<h3>Service Window Every Wednesday 4-7AM</h3>
-					<p>There will be a Blackboard Learn servicing and maintenance window held every 
-					Wednesday from 4-7AM ET. During this time, Blackboard Learn may not be available.</p>
-					<p>Thank you,<br />
-					The Blackboard Learn LMS Administrators</p>
-				</div>
-				-->
             </td>
           </tr>
         </tbody>
@@ -171,8 +162,8 @@
       </div>
       <div class="footsites">
         <a href="http://www.umass.edu">UMass Amherst</a> |
-        <a href="http://www.umb.edu"">UMass Boston</a> |
-        <a href="http://www.umassd.edu"">UMass Dartmouth</a> |
+        <a href="http://www.umb.edu">UMass Boston</a> |
+        <a href="http://www.umassd.edu">UMass Dartmouth</a> |
         <a href="http://www.uml.edu">UMass Lowell</a> |
         <a href="http://www.umassmed.edu">UMass Worcester</a> |
         <a href="http://www.umassclub.com">UMass Club</a> |
@@ -187,6 +178,9 @@
 <style type="text/css">
 tr:nth-child(2n) {
     background-color: transparent;
+}
+div.popup {
+	height: 380px;
 }
 </style>
 </bbNG:cssBlock>
@@ -203,6 +197,7 @@ tr:nth-child(2n) {
 			password: '#bblearn-password',
 			start_now: '#surveyurl',
 			popup: '#bblearn-popup',
+			popupmsg: '#bblearn-popup-msg',
 			submit: '#edit-submit',
 			server: 'owl-umacontedonlinecourseeval',
 			datasrc: 'OwlUMAContEdOnlineCourseEval',
@@ -215,25 +210,44 @@ tr:nth-child(2n) {
 	};
   
 	function openCourseEvalPopUp(jsonpData) {
-		if(jsonpData[0].length < 3) {
-			bblearn_submit_form();
-		}
-
-		var numToComplete = jsonpData[0].numsurveys;
-		var url = jsonpData[0].surveyurl;
-
-		if(isNaN(numToComplete) || url.length < 1) {
+		if(!jsonpData) {
 			return bblearn_submit_form();
+		} else {
+			if(jsonpData[0].length < 3) {
+				bblearn_submit_form();
+			}
+	
+			var numToComplete = jsonpData[0].numsurveys;
+			var url = jsonpData[0].surveyurl;
+			var popupnote = jsonpData[0].popupnote;
+			
+			if(isNaN(numToComplete) || url.length < 1) {
+				return bblearn_submit_form();
+			}
+	
+			if(numToComplete < 1) {
+				return bblearn_submit_form();
+			}
+	
+			jQuery(bblearn.elements.surveyurl).attr('href', url);
+			
+			if(popupnote && popupnote.length > 0) {
+				jQuery(bblearn.elements.popupmsg).html(popupnote);
+				jQuery(bblearn.elements.start_now).attr("onclick","bblearn_delayed_submit()");
+			}
+      
+			jQuery(bblearn.elements.popup).show();  
+			
+		return false;
 		}
-
-		if(numToComplete < 1) {
-			return bblearn_submit_form();
+	}
+	
+	var timeoutID = null;
+	function bblearn_delayed_submit() {
+		if (timeoutID) {
+			window.clearTimeout(timeoutID);
 		}
-
-		jQuery(bblearn.elements.surveyurl).attr('href', url);
-		jQuery(bblearn.elements.popup).show();  
-
-		return false;  
+		timeoutID = window.setTimeout(bblearn_close_survey_popup, 2000);
 	}
 
 	function bblearn_close_survey_popup() {
@@ -273,7 +287,8 @@ tr:nth-child(2n) {
 		return false;
 	}
 
-	function bblearn_check_surveys(id, pw) {
+	function bblearn_check_surveys(id, pw) {   	
+    
 		if(bblearn.elements.surveychecked) {
 			bblearn_submit_form();
 		}
@@ -286,16 +301,25 @@ tr:nth-child(2n) {
 				datasrc: bblearn.elements.datasrc,
 				fxn: bblearn.elements.fxn,
 				Login: id,
-				Password: pw,
-				formatjsonp: 1
+				password: pw,
+				formatjsonp: 1,
+				Mode:'1',
+				callsrc:'bblearn'
 			},
 			dataType: "jsonp",
+			async: false,
 			timeout: 5000,
 			jsonp: false,
-			jsonpCallback: "openCourseEvalPopUp",
-			error: function() {
-				bblearn_submit_form();
-			}      
+			success: function(data){
+        openCourseEvalPopUp(data);
+      },
+			error: function (xhr, ajaxOptions, thrownError) {
+				if(xhr.status==200){
+					//do nothing
+				} else {
+					bblearn_submit_form();
+				}
+			}              
 		});
 	}
   
