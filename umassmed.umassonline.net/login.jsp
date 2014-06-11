@@ -15,7 +15,7 @@
 <bbNG:cssBlock>
 <style type="text/css">
 	body.login-page { background: #E5E5E5 url('/bbcswebdav/library/login/umw/page-bg.gif'); }
-	div.loginBody { width: 900px; padding: 150px 0 50px 0; background: #E5E5E5 url('/bbcswebdav/library/login/umw/umms-logo-900x130.gif') no-repeat scroll 0 0; }
+	div.loginBody { width: 900px; padding: 125px 0 50px 0; background: #E5E5E5 url('/bbcswebdav/library/login/umw/umw-banner.jpg') no-repeat scroll 0 0; }
 	div.loginBody .receipt { width: 380px; }
 	#loginBoxContainer { }
 	#loginBoxContainer #loginBoxHeader { padding: 0 10px 10px 10px; margin: 0 20px 0 20px; }
@@ -55,14 +55,8 @@
 
 <div id="loginPageContainer">
   <div id="loginPane">
-    <%-- Begin top rounder --%>
-    <div class="topRound loginBack"><b class="outer"></b><b class="middle"></b><b class="inner"></b></div>
-    <%-- End top rounder --%>
-
     <div id="loginContainer">
       <div id="loginHeader" class="clearfix">
-        <h1 class="hideoff">${productName}</h1>
-        <img src="/bbcswebdav/library/login/umw/umms-logo.gif" alt="${productName}" class="productLogo" />
         <loginUI:accessibility />
       </div>
 
