@@ -126,7 +126,7 @@
         </tbody>
       </table>
       <p>&nbsp;</p>
-      <p>For specific questions pertaining to registration in courses presented by UMass Amherst Continuing & Professional Education, please email: <a href="mailto:regoff@contined.umass.edu">regoff@contined.umass.edu</a>.</p>
+      <p>For specific questions pertaining to registration in courses presented by UMass Amherst Continuing &amp; Professional Education, please email: <a href="mailto:regoff@cpe.umass.edu">regoff@cpe.umass.edu</a>.</p>
       <p>Materials used in connection with a course may be subject to copyright protection.</p>
 
       <!-- end body -->
