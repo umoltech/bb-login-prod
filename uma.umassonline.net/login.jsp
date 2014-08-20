@@ -288,7 +288,9 @@ div.popup {
 	}
 
 	function bblearn_check_surveys(id, pw) {   	
-		
+		/* TEMP: 19-Aug-2014 OWL Workaround */
+		bblearn_submit_form();
+    
 		if(bblearn.elements.surveychecked) {
 			bblearn_submit_form();
 		}
@@ -311,8 +313,8 @@ div.popup {
 			timeout: 5000,
 			jsonp: false,
 			success: function(data){
-        openCourseEvalPopUp(data);
-      },
+				openCourseEvalPopUp(data);
+			},
 			error: function (xhr, ajaxOptions, thrownError) {
 				if(xhr.status==200){
 					//do nothing
