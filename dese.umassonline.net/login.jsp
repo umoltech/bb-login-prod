@@ -59,6 +59,7 @@
 	jQuery.noConflict();
 	jQuery(document).ready( function() {				
 		jQuery('.forgot').children('a').html('First time logging in? Click here to set your password.<br /><br />Returning user? Click here if you need to retrieve your password.');
+		jQuery('.forgot').append('<br /><br />By logging in, you agree that you have read and accepted the <a href="/bbcswebdav/library/login/dese/BBL-CVENT-aup-072714.pdf" target="_blank">Acceptable Use Policy</a>.');
 	});
 </script>
 </bbNG:jsBlock>
