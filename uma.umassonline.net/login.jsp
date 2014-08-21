@@ -79,13 +79,12 @@
                 
                 <div id="bblearn-popup" class="popup">
                   <div id="bblearn-popup-msg">
-		  <p style="font-weight:bold">Evaluate Your Course(s) and Instruction</p>
-		    <p>For at least one of your courses, the opportunity to evaluate the course and instruction is online and easier than ever!</p>
-		    <p>Your responses are completely confidential, and any results reported will remain anonymous and will in no way affect your grades.</p>
-		    <p>Your evaluation is very important and helps us improve the quality of the educational experience for all students. It only takes a few minutes, so please complete your evaluation(s) now!</p>
-        <p><a id="bblearn-survey-url" target="_blank" onclick="javascript:bblearn_close_survey_popup()" href=""> > Start Now </a></p>
-		  
-		                    </div>
+                    <p style="font-weight:bold">Evaluate Your Course(s) and Instruction</p>
+                    <p>For at least one of your courses, the opportunity to evaluate the course and instruction is online and easier than ever!</p>
+                    <p>Your responses are completely confidential, and any results reported will remain anonymous and will in no way affect your grades.</p>
+                    <p>Your evaluation is very important and helps us improve the quality of the educational experience for all students. It only takes a few minutes, so please complete your evaluation(s) now!</p>
+                    <p><a id="bblearn-survey-url" target="_blank" onclick="javascript:bblearn_close_survey_popup()" href=""> > Start Now </a></p>
+                  </div>
                   
                   <p><a href="javascript:bblearn_close_survey_popup()"> > Remind me later </a></p>
                 </div>
@@ -204,11 +203,13 @@ div.popup {
 			fxn: 'cevallogin',
 			surveyurl: '#bblearn-survey-url',
 			surveychecked: false,
-			owlUrl: 'https://owl3.oit.umass.edu/owlj/servlet/OwlPreLogin'
+			owlUrl: 'https://owl.oit.umass.edu/owlj/servlet/OwlPreLogin'
 		},
 		prefix: 'uma_'
 	};
-  
+    
+        var courseevalavailable = false;
+	
 	function openCourseEvalPopUp(jsonpData) {
 		if(!jsonpData) {
 			return bblearn_submit_form();
@@ -235,7 +236,9 @@ div.popup {
 				jQuery(bblearn.elements.popupmsg).html(popupnote);
 				jQuery(bblearn.elements.start_now).attr("onclick","bblearn_delayed_submit()");
 			}
-      
+			
+			courseevalavailable = true;
+			
 			jQuery(bblearn.elements.popup).show();  
 			
 		return false;
@@ -248,6 +251,22 @@ div.popup {
 			window.clearTimeout(timeoutID);
 		}
 		timeoutID = window.setTimeout(bblearn_close_survey_popup, 2000);
+	}
+	
+	var timeoutID2 = null;
+	
+	function bblearn_check_error_and_submit() {
+	  if(timeoutID2) {
+		 window.clearTimeout(timeoutID2);
+	  }
+	  timeoutID2 = window.setTimeout(bblearn_submit_on_error, 3000);
+	}
+    
+	
+	function bblearn_submit_on_error() {
+		if(courseevalavailable==false) {
+	  	  return bblearn_submit_form();	
+		}
 	}
 
 	function bblearn_close_survey_popup() {
@@ -284,13 +303,13 @@ div.popup {
 		}
 
 		bblearn_check_surveys(id, pw);
+		
+		bblearn_check_error_and_submit();
+		
 		return false;
 	}
 
-	function bblearn_check_surveys(id, pw) {   	
-		/* TEMP: 19-Aug-2014 OWL Workaround */
-		bblearn_submit_form();
-    
+	function bblearn_check_surveys(id, pw) {	
 		if(bblearn.elements.surveychecked) {
 			bblearn_submit_form();
 		}
