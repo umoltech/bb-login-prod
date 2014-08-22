@@ -17,25 +17,10 @@
    
   <bbNG:jsBlock>
     <script type="text/javascript">
-      function loadLoginPage()
-      {
-    	  if ( top != self )
-    	  {
-    		  top.location.replace( self.location.href );
-    		}
-    	  if(document.forms.login.user_id != undefined)
-    		{
-    		  document.forms.login.user_id.focus();
-    		}
-    	  setTimeout("triggerScreenreaderAlert()", 500);
-      }
-      
-      function triggerScreenreaderAlert()
-      {
-    	if ( document.getElementById( 'loginErrorMessage' ) )
-  	    {
-    	  $( 'loginErrorMessage' ).update( $('loginErrorMessage').innerHTML );
-  	    }
+      function loadLoginPage() {
+        if (top != self) {
+    		top.location.replace(self.location.href);
+    	  }
       }
     </script>
   </bbNG:jsBlock>
@@ -75,6 +60,21 @@
 			#loginAnnouncements li {
 				background-color: #FFFF99;
 			}
+			
+			#jumpBox { 
+				width: 400px; 
+				margin: 0 auto 40px auto; 
+				text-align: center; 
+			}
+			
+			#jumpBox form { 
+				margin-bottom: 20px; 
+			}    
+			
+			#jumpBox form button { 
+				width: 350px; 
+				cursor: pointer;
+			}
 		</style>
 	</bbNG:cssBlock>
 
@@ -94,9 +94,23 @@
 
       <div class="clearfix loginBody">
         <loginUI:errorMessage />
+		<div id="jumpBox">
+			<h3>Choose Your Campus:</h3>
+			<form action="https://umb.umassonline.net" method="get">
+				<button type="submit" class="submit button-1">University of Massachusetts Boston</button>
+			</form>
+			<form action="https://umassmed.umassonline.net" method="get">
+				<button type="submit" class="submit button-1">University of Massachusetts Medical School</button>
+			</form>
+			<form action="https://bbl.westfield.ma.edu" method="get">
+				<button type="submit" class="submit button-1">Westfield State University</button>
+			</form>
+		</div>
 
         <div id="loginBox">
-          <loginUI:loginForm />          
+		  <!--
+			<loginUI:loginForm />          
+		  -->
         </div>
 
         <div id="loginOptions">
