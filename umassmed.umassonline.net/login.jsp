@@ -22,13 +22,16 @@
 	#loginBoxContainer #loginBoxFooter { clear: both; padding: 10px 10px 0 10px; margin: 0 20px 0 20px; }
 	#loginBlockColumnLeft { float: left; width: 390px; padding-left: 30px; padding-right: 29px; border-right: 1px dashed #666666; }
 	#loginBlockColumnRight { float: left; width: 390px; padding-left: 30px; padding-right: 30px; }
+	.loginBlockColumn { padding-left: 30px; padding-right: 30px; }
 	.loginBlock { background-color: white; padding: 10px 20px 20px 20px; border: 1px solid #999999; margin-top: 20px; margin-bottom: 20px; }
 	.loginBlock h2 { padding: 0; font-size: 125%; }
 	.loginBlock h3 { padding: 0; font-size: 110%; }
 	.loginBlock p { margin-bottom: 10px; }
 	.loginBlock ul { padding-left: 20px; list-style-type: circle; }
 	.loginAlert { background-color: #FFFFCC; position: relative; top: -150px; }
-	#loginBox { width: 350px; margin-bottom: 30px; }
+	.loginBox { width: 400px; margin-left: auto; margin-right: auto; text-align: left; }
+	.loginBox h2 { text-align: center; }
+	#loginBox { width: 400px; margin-left: auto; margin-right: auto; margin-bottom: 30px; text-align: left; }
 	#loginBox p { text-align: left; margin-bottom: 10px; }
 	#loginBox ul { width: 375px; margin-left: 8px; }
 	#loginBox li, #vistaFormFields li { padding-bottom: 5px; }
@@ -44,12 +47,12 @@
 	#vistaFormFields .button-1 { font-size: 130%; margin: 15px 0 0 230px; padding: 7px 22px 7px 22px; width: auto; }
 	/* #loginAnnouncements { padding-top: 5px; } */
 	#loginAnnouncements { padding-top: 0; }
-	#loginAnnouncements ul { width: 388px; border: 1px solid #999999; } /* 840px */
+	#loginAnnouncements ul { width: 100%; border: 1px solid #999999; } /* 840px */
 	#loginAnnouncements li { background-color: #FFFFCC; color: #000000; margin-bottom: 0; }
 	#loginAnnouncements ul li strong:first-child { font-family: inherit; }
 	.login-page #copyright { background-color: #E5E5E5; bottom: 0; margin-top: 0; position: relative; padding-bottom: 30px; }
 	#loginAnnouncementAlert { background-color: #FFFF66; padding: 10px 20px; margin-bottom: 10px; color: red; font-size: 125%; font-weight: bold; text-align: center; }
-	#loginBoxContainer #loginBoxHeader.header-announcement { border: 1px solid #FF9999; padding-top: 10px; background-color: #FFFFFF; color: #FF0000; }
+	.browser-check-label { color: #aa433c; font-weight: bold; }
 </style>
 </bbNG:cssBlock>
 
@@ -67,90 +70,52 @@
       <div class="clearfix loginBody">
         
 		<div id="loginAnnouncementAlert" style="display:none"></div>
-		<div id="loginBoxContainer">
-          <div id="loginBoxHeader">
-            The University of Massachusetts Medical School will begin moving to a new Learning Management System, 
-			Blackboard Learn (Bb Learn), beginning in May 2013 through December 2013. The new learning platform 
-			is used throughout the University of Massachusetts. The campus has taken this opportunity to work 
-			collaboratively with students, faculty and course support teams to design an institutional template 
-			with the goal of providing a consistent and easy-to-use presence across all of our courses.   
-			As your course is moved to the new Learning Management System you will receive your Bb Learn credentials 
-			in your UMass e-mail.
-          </div>		  
-		  <div id="loginBlockColumnLeft">
-			<h2>Blackboard Learn users login here:</h2>
-			<loginUI:errorMessage />
-			<div id="loginBox">
+		<div id="loginBoxContainer">	  
+		  <loginUI:errorMessage />
+		  <div class="loginBlockColumn">
+			<div id="loginBox" class="loginBox">
+				<h2>Blackboard Learn users login here:</h2>
 				<loginUI:loginForm />				
             </div>
-			<loginUI:systemAnnouncements maxItems="5" />
 			<div class="loginBlock">
-              <h3>New Bb Learn Users:</h3>
-			  <span style="color:red">Please note you will have the same user name in Bb Learn as you do in BLS Vista, 
-			  but a <span style="font-weight:bold">different password</span>.</span> 
-			  When you first log in you will be able to change your password 
-			  to match your BLS Vista password.  
-			  <a href="http://inside.umassmed.edu/uploadedFiles/IS/Services/Groups/Academic/BB_Learn/ChangingYourPassword.pdf" target="_blank">Instructions</a> 
-			  for changing your password are available.</p>
+              <h3>Need Technical Support?</h3>
+				<p>Please visit the Help Desk for Self-Help and Contact information at 
+				<a href="http://umw.echelp.org" target="_blank">http://umw.echelp.org</a></p>
+				<p>E-mail Support: <a href="mailto:worcestersupport@umassonline.net">worcestersupport@umassonline.net</a></p>
+				<p><span class="browser-check-label">Check your browser version and plug-ins:</span> 
+				<a target="_blank" href="http://browserhelp.embanet.com/bhtg/ret/browsercheck.aspx?acct=embanet&customtest=UMW&customstyle=2011_style&TB_iframe=true&height=600&width=550"><strong>Check My Browser!</strong></a></p>
 			</div>
-			
+			<loginUI:systemAnnouncements maxItems="5" />			
           </div>
-          <div id="loginBlockColumnRight">
-			<h2>Blackboard Vista users login here:</h2>
-			<div class="loginFormVista">
-				<form action="https://learning.umassonline.net/webct/authenticateUser.dowebct" method="post" name="useridForm">
-                <input type="hidden" name="timeZoneOffset" /> 
-				<input type="hidden" name="glcid" value="146.189.207.5-1097756999208-2018085017" /> 
-				<input type="hidden" name="insId" value="26334" /> 
-				<input type="hidden" name="insName" value="UMass Worcester" /> 
-				<input type="hidden" name="owl_WEBCT_LOGIN_URL" value="https://learning.umassonline.net/webct/authenticateUser.dowebct" /> 
-				<input type="hidden" name="owl_WEBCT_BASE_URL" value="https://learning.umassonline.net" />
-				<div id="vistaFormFields" class="clearfix">
-					<ul id="vistaFormList" class="clearFix">
-						<li class="clearfix">
-							<label>Username:</label>
-							<input type="text" title="Username" maxlength="100" name="webctid" />
-						</li>
-						<li class="clearfix">
-							<label>Password:</label>
-							<input type="password" title="Password" maxlength="100" name="password" />
-						</li>
-						<li class="clearfix">
-							<input type="submit" class="submit button-1" value="Login" />
-						</li>
-					</ul>
+          <div class="loginBlockColumn">
+			<div class="loginBox">
+				<h2>Blackboard Vista users login here:</h2>
+				<div class="loginFormVista">
+					<form action="https://learning.umassonline.net/webct/authenticateUser.dowebct" method="post" name="useridForm">
+					<input type="hidden" name="timeZoneOffset" /> 
+					<input type="hidden" name="glcid" value="146.189.207.5-1097756999208-2018085017" /> 
+					<input type="hidden" name="insId" value="26334" /> 
+					<input type="hidden" name="insName" value="UMass Worcester" /> 
+					<input type="hidden" name="owl_WEBCT_LOGIN_URL" value="https://learning.umassonline.net/webct/authenticateUser.dowebct" /> 
+					<input type="hidden" name="owl_WEBCT_BASE_URL" value="https://learning.umassonline.net" />
+					<div id="vistaFormFields" class="clearfix">
+						<ul id="vistaFormList" class="clearFix">
+							<li class="clearfix">
+								<label>Username:</label>
+								<input type="text" title="Username" maxlength="100" name="webctid" />
+							</li>
+							<li class="clearfix">
+								<label>Password:</label>
+								<input type="password" title="Password" maxlength="100" name="password" />
+							</li>
+							<li class="clearfix">
+								<input type="submit" class="submit button-1" value="Login" />
+							</li>
+						</ul>
+					</div>
+					</form>
 				</div>
-				</form>
 			</div>
-			<%--
-			<div class="loginBlock loginAlert">
-				<h3>Service Unavailable</h3>
-				<p>Blackboard Vista is currently unavailable due to system issues. Please contact your local help desk with any questions.</p>
-				<p>Last Updated: Aug 29, 2013 7:40 AM</p>
-			</div>
-			--%>
-			<div class="loginBlock" style="background-color:#FFFFCC">
-				<%--
-				<h3>Service Announcement</h3>
-				<p>Blackboard Vista will be unavailable on Sunday, October 26th 
-				from 4:00AM - 8:00AM for a system servicing. Please contact your local 
-				help desk with any questions.</p>
-				<p>&nbsp;</p>
-				--%>
-				<h3>Service Window Every Wednesday 4am - 7am</h3>
-				<p>There will be a Blackboard Vista servicing and maintenance window held every 
-				Wednesday from 4am to 7am ET. During this time, Blackboard Vista may not be available.</p>
-				<p>Thank you,<br />The Blackboard Vista LMS Administrators</p>
-			</div>
-          </div>
-		  <div id="loginBoxFooter">
-		    <div class="loginBlock">
-			  <h3>Need Technical Support?</h3>
-			  <p>Please visit the Help Desk for Self-Help and Contact information at
-			  <a href="http://umw.echelp.org">http://umw.echelp.org</a></p>
-			  <p>E-mail Support: <a href="mailto:worcestersupport@umassonline.net">worcestersupport@umassonline.net</a></p>
-			</div>	
-			<%-- TEMP: placeholder for announcements --%>			
           </div>
         </div>
 		
