@@ -144,6 +144,7 @@
 	jQuery(document).ready( function() {				
 		jQuery('.forgot').children('a').text('Need Your Password?');
 		
+		/*
 		jQuery('#loginAnnouncements > ul > li > strong').each( function() {
 			var this_title = jQuery(this).text();
 			var this_content = jQuery(this).parent('li').children('.vtbegenerated').html();
@@ -157,6 +158,7 @@
 				jQuery('#loginBoxHeader').html(this_new_content);
 			}
 		});
+		*/
 	});
 </script>
 	
