@@ -133,12 +133,17 @@
     <td class="rightcol">
       <div class="block">
         <h3>Need Technical Support?</h3>
-        <p>Please visit the Help Desk for Self-Help and Contact information at:</p>
-	<p><a href="http://uma.echelp.org" target="_blank">http://uma.echelp.org</a>.</p>
+        <p>Please visit the Help Desk for Self-Help and Contact information:</p>
+        <p><a href="http://supportcenter.embanet.com/uma" target="_blank">Support Center</a></p>
       </div>
       <div class="block">
         <h3>Can't find something?</h3>
-        <a href="http://www.umassonline.net/contact-us"><img height="38" alt="UMass Online - Can't find something?" width="180" border="0" src="/bbcswebdav/library/login/uma/images/buttons/need-help.jpg" /></a>
+        <p><a href="http://www.umassonline.net/contact-us"><img height="38" alt="UMass Online - Can't find something?" width="180" border="0" src="/bbcswebdav/library/login/uma/images/buttons/need-help.jpg" /></a></p>
+      </div>
+      <div class="block">
+        <h3>Use the Library?</h3>
+        <p>The UMass Amherst Libraries have a new website and would like your feedback.</p>
+        <p><a href="http://library.umass.edu/feedback/summer-session-survey/" target="_blank"><img alt="Click here for a brief survey" border="0" src="/bbcswebdav/library/login/uma/images/buttons/library-survey.gif" /></a></p>
       </div>
     </td>
   </tr>
