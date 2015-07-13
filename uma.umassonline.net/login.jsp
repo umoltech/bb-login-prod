@@ -119,7 +119,19 @@
               </div>
             </td>
             <td width="55%" valign="top">
-				<loginUI:systemAnnouncements maxItems="5" />
+              <div class="announcement">
+                <p><strong>Major Planned Network Outage: Saturday, 7/18</strong></p>
+                <p>Beginning at 6am ET, UMass Amherst IT will be performing a significant
+                network upgrade on campus. Authentication services used by Blackboard Learn
+                will be affected and users may experience access issues on Saturday morning.</p>
+                <p>For updates during this maintenance period, check the UMass Amherst
+                IT social media pages at: 
+                <a href="https://www.facebook.com/umassamherstit" target="_blank">facebook.com/umassamherstit</a>
+                or <a href="https://twitter.com/umassamherstit">twitter.com/umassamherstit</a>.</p>
+                <p>Please plan accordingly.</p>
+              </div>
+              
+              <loginUI:systemAnnouncements maxItems="5" />
             </td>
           </tr>
         </tbody>
