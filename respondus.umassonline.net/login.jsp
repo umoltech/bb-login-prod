@@ -94,23 +94,21 @@
 
       <div class="clearfix loginBody">
         <loginUI:errorMessage />
-		<div id="jumpBox">
-			<h3>Choose Your Campus:</h3>
-			<form action="https://umb.umassonline.net" method="get">
-				<button type="submit" class="submit button-1">University of Massachusetts Boston</button>
-			</form>
-			<form action="https://umassmed.umassonline.net" method="get">
-				<button type="submit" class="submit button-1">University of Massachusetts Medical School</button>
-			</form>
-			<form action="https://bbl.westfield.ma.edu" method="get">
-				<button type="submit" class="submit button-1">Westfield State University</button>
-			</form>
-		</div>
+        
+        <div id="jumpBox">
+          <h3>Choose Your Campus:</h3>
+          <form action="https://umassmed.umassonline.net" method="get">
+            <button type="submit" class="submit button-1">University of Massachusetts Medical School</button>
+          </form>
+          <form action="https://umb.umassonline.net" method="get">
+            <button type="submit" class="submit button-1">University of Massachusetts Boston</button>
+          </form>
+        </div>
 
         <div id="loginBox">
-		  <!--
-			<loginUI:loginForm />          
-		  -->
+          <!--
+          <loginUI:loginForm />          
+          -->
         </div>
 
         <div id="loginOptions">
