@@ -110,7 +110,6 @@
                         <td colspan="2">
                           <p><a href="https://www.oit.umass.edu/support/accounts/understand-your-netid-password" target="_blank">About Your NetID and Password</a></p>
                           <p><a href="https://www.oit.umass.edu/support/accounts/understand-your-netid-password#Your%20OIT%20Account%20Password" target="_blank">Forgot Your Password?</a></p>
-                          <p>Need to access Blackboard Vista? <a href="https://login.umassonline.net/amherstvista.cfm">Blackboard Vista Login</a></p>
                         </td>
                       </tr>
                     </tbody>
@@ -118,19 +117,7 @@
                 </form>
               </div>
             </td>
-            <td width="55%" valign="top">
-              <div class="announcement">
-                <p><strong>Major Planned Network Outage: Saturday, 7/18</strong></p>
-                <p>Beginning at 6am ET, UMass Amherst IT will be performing a significant
-                network upgrade on campus. Authentication services used by Blackboard Learn
-                will be affected and users may experience access issues on Saturday morning.</p>
-                <p>For updates during this maintenance period, check the UMass Amherst
-                IT social media pages at: 
-                <a href="https://www.facebook.com/umassamherstit" target="_blank">facebook.com/umassamherstit</a>
-                or <a href="https://twitter.com/umassamherstit">twitter.com/umassamherstit</a>.</p>
-                <p>Please plan accordingly.</p>
-              </div>
-              
+            <td width="55%" valign="top">              
               <loginUI:systemAnnouncements maxItems="5" />
             </td>
           </tr>
@@ -151,11 +138,6 @@
       <div class="block">
         <h3>Can't find something?</h3>
         <p><a href="http://www.umassonline.net/contact-us"><img height="38" alt="UMass Online - Can't find something?" width="180" border="0" src="/bbcswebdav/library/login/uma/images/buttons/need-help.jpg" /></a></p>
-      </div>
-      <div class="block">
-        <h3>Use the Library?</h3>
-        <p>The UMass Amherst Libraries have a new website and would like your feedback.</p>
-        <p><a href="http://library.umass.edu/feedback/summer-session-survey/" target="_blank"><img alt="Click here for a brief survey" border="0" src="/bbcswebdav/library/login/uma/images/buttons/library-survey.gif" /></a></p>
       </div>
     </td>
   </tr>
