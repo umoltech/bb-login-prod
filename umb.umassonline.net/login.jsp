@@ -126,11 +126,11 @@ div.loginBody { padding-top: 0px; margin-top: 20px; width: 300px; background: #F
 				surveychecked: false,
 				owlUrl: 'https://owl3.oit.umass.edu/owlj/servlet/OwlPreLogin',
 				vistaLink: '<a href="https://login.umassonline.net/boston.cfm">Blackboard Vista users login here</a>',
-				pwLink: '<a href="https://spmt.umb.edu">Forgot Your Password?</a>'
+				pwLink: '<a href="https://mypassword.umb.edu">Forgot Your Password?</a>'
 			},
 			forgot: {
 				bbUrl: '/webapps/blackboard/password',
-				bosUrl: 'https://spmt.umb.edu'
+				bosUrl: 'https://mypassword.umb.edu'
 			}
 		};
 		
@@ -346,10 +346,10 @@ div.loginBody { padding-top: 0px; margin-top: 20px; width: 300px; background: #F
 						<h3 class="orBB" id="normal">Alerts</h3>
 						<div class="loginAnnouncements">
 							<ul>
-								<li><strong>Dear Faculty, please don't forget 
-								to request your courses at</strong>
+								<li><strong>Dear Faculty, please don't forget to request your courses 
+                before the start of the semester:</strong>
 									<div><a href="http://www.umb.edu/iwantbblearn" 
-									target="_blank">http://www.umb.edu/iwantbblearn</a>!</div>
+									target="_blank">Request your Blackboard Learn Course</a></div>
 								</li>
 							</ul>
 						</div>
