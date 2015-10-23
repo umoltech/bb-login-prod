@@ -309,7 +309,7 @@ div.loginBody { padding-top: 0px; margin-top: 20px; width: 300px; background: #F
                		</div>
                  
 					<div class="col2bb">
-						<img class="bbBioImage" src="/bbcswebdav/library/login/umb/student_smr15.jpg" title="UMB Student">
+						<img class="bbBioImage" src="/bbcswebdav/library/login/umb/student-1114.png" title="UMB Student">
 						<ul class="fBB">
 							<li><h2><a href="http://www.umb.edu/it/students">IT Services for Students</a></h2></li>
 							<li>Virtual Computer Lab</li>
