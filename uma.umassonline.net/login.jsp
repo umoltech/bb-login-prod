@@ -69,7 +69,7 @@
       <p>Online courses become available for access one week before the start date of the class.<br />
       </p>
       
-      <p style="font-weight:bold">On Monday, December 14th you will see a slightly different login page that directs you to login based on the semester you are enrolled. 
+      <p class="upcoming">On Monday, December 14th you will see a slightly different login page that directs you to login based on the semester you are enrolled. 
             Simply login based on the term your course is in. </p>
       
       <table width="100%" cellspacing="10" cellpadding="0" border="0" align="center">
@@ -183,6 +183,11 @@ tr:nth-child(2n) {
 }
 div.popup {
 	height: 380px;
+}
+.upcoming {
+  background-color: #FFFF99;
+  padding: 10px;
+  font-weight: bold;
 }
 </style>
 </bbNG:cssBlock>
