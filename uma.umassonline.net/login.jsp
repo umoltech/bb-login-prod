@@ -65,7 +65,7 @@
       <!-- start body -->
       <h3>Welcome to UMass Amherst and UMassOnline.</h3>
       <p>Through UMassOnline, UMass Amherst Continuing & Professional Education presents online courses on the Blackboard Learn learning management system.</p>
-      <p>You must have an active OIT Account NetID to log in. <a target="_blank" href="https://www.oit.umass.edu/accounts/activate-your-account">Activate Your OIT Account</a></p>
+      <p>You must have an active IT Account NetID to log in. <a target="_blank" href="https://www.it.umass.edu/accounts/activate-your-account">Activate Your IT Account</a></p>
       <p>Online courses become available for access one week before the start date of the class.<br />
       </p>
       <table width="100%" cellspacing="10" cellpadding="0" border="0" align="center">
@@ -108,8 +108,8 @@
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <p><a href="https://www.oit.umass.edu/support/accounts/understand-your-netid-password" target="_blank">About Your NetID and Password</a></p>
-                          <p><a href="https://www.oit.umass.edu/support/accounts/understand-your-netid-password#Your%20OIT%20Account%20Password" target="_blank">Forgot Your Password?</a></p>
+                          <p><a href="https://www.it.umass.edu/support/accounts/understand-your-netid-password" target="_blank">About Your NetID and Password</a></p>
+                          <p><a href="https://www.it.umass.edu/support/accounts/understand-your-netid-password#Your%20OIT%20Account%20Password" target="_blank">Forgot Your Password?</a></p>
                         </td>
                       </tr>
                     </tbody>
