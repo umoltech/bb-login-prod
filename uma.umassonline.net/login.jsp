@@ -68,6 +68,10 @@
       <p>You must have an active IT Account NetID to log in. <a target="_blank" href="https://www.it.umass.edu/accounts/activate-your-account">Activate Your IT Account</a></p>
       <p>Online courses become available for access one week before the start date of the class.<br />
       </p>
+      
+      <p style="font-weight:bold">On Monday, December 14th you will see a slightly different login page that directs you to login based on the semester you are enrolled. 
+            Simply login based on the term your course is in. </p>
+      
       <table width="100%" cellspacing="10" cellpadding="0" border="0" align="center">
         <tbody>
           <tr>
@@ -75,7 +79,7 @@
               
               <div class="loginbox">
                 <h3>Blackboard Learn Login:</h3>
-				<loginUI:errorMessage />
+                <loginUI:errorMessage />
                 
                 <div id="bblearn-popup" class="popup">
                   <div id="bblearn-popup-msg">
