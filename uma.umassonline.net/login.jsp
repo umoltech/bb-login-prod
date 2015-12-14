@@ -108,6 +108,7 @@
                     <div class="loginbox">
                       <h3 class="center-txt">FALL Courses - Login Here</h3>
                       <loginUI:errorMessage />
+                      <!--
                       <div id="bblearn-popup" class="popup">
                         <div id="bblearn-popup-msg">
                           <p style="font-weight:bold">Evaluate Your Course(s) and Instruction</p>
@@ -140,16 +141,18 @@
                           </tbody>
                         </table>
                       </form>
+                      -->
+                      <form method="get" action="https://uma-uits.umassonline.net/webapps/login/">
+                        <p class="center-txt"><button type="submit">Login</button></p>
+                      </form>
                     </div>
                   </td>
                   <td width="45%" valign="top">              
                     <div class="loginbox">
                       <h3 class="center-txt">WINTER &amp; SPRING Courses - Login Here</h3>
-                      <!--
                       <form method="get" action="https://umol.umass.edu">
                         <p class="center-txt"><button type="submit">Login</button></p>
                       </form>
-                      -->
                     </div>
                   </td>
                 </tr>
