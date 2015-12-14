@@ -6,6 +6,39 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
+<% 
+	String targetElement = "bb-session-key";
+	String targetHeader = "referer";
+	String targetUserAttribute = "UserId: {unset id}";
+	String targetLocation = "https://umol.umass.edu/Shibboleth.sso/Logout?return=https://webauth.umass.edu/Logout";
+	String targetRefererPost = "https://uma.umassonline.net";
+	String targetRefererPre = "https://umassonline-uma.blackboard.com";
+	
+	java.util.Enumeration enuR = request.getAttributeNames();
+	java.util.Enumeration enuH = request.getHeaderNames();
+	
+	while(enuR.hasMoreElements()) {
+    String elementName = (String)enuR.nextElement();	
+		
+    if (elementName == targetElement) {		
+			Object elementValue = request.getAttribute(targetElement);
+			
+			while(enuH.hasMoreElements()) {
+				String headerName = (String)enuH.nextElement();
+				String headerValue = request.getHeader(headerName);
+				
+				if (headerName.toLowerCase().equals(targetHeader)) {
+					if (headerValue.length() > 7) {
+						if (elementValue.toString().contains(targetUserAttribute) && (headerValue.contains(targetRefererPost) || headerValue.contains(targetRefererPre))) {
+							response.setStatus(response.SC_MOVED_TEMPORARILY);
+							response.setHeader("Location", targetLocation);
+						}
+					}
+				}
+			}
+		}
+	}	
+%>
 
 <bbNG:genericPage authentication="N" wrapper="false">
 
@@ -51,102 +84,94 @@
 		</div>
 		<div class="content">
 
+      <table cellspacing="0">
+        <tr>
+          <td class="left2col">
+            <div class="breadcrumb"><a href="http://www.umassonline.net/">UMassOnline</a>&nbsp;&gt;&nbsp;UMassOnline | Amherst Login Page</div>
+            <div class="head">
+              <h1>UMass Amherst</h1>
+              <h2>Blackboard Learn Login Page</h2>
+            </div>
 
-
-<table cellspacing="0">
-  <tr>
-    <td class="left2col">
-      <div class="breadcrumb"><a href="http://www.umassonline.net/">UMassOnline</a>&nbsp;&gt;&nbsp;UMassOnline | Amherst Login Page</div>
-      <div class="head">
-        <h1>UMass Amherst</h1>
-        <h2>Blackboard Learn Login Page</h2>
-      </div>
-
-      <!-- start body -->
-      <h3>Welcome to UMass Amherst and UMassOnline.</h3>
-      <p>Through UMassOnline, UMass Amherst Continuing & Professional Education presents online courses on the Blackboard Learn learning management system.</p>
-      <p>You must have an active IT Account NetID to log in. <a target="_blank" href="https://www.it.umass.edu/accounts/activate-your-account">Activate Your IT Account</a></p>
-      <p>Online courses become available for access one week before the start date of the class.<br />
-      </p>
-      
-      <p class="upcoming">On Monday, December 14th you will see a slightly different login page that directs you to login based on the semester you are enrolled. 
-            Simply login based on the term your course is in. </p>
-      
-      <table width="100%" cellspacing="10" cellpadding="0" border="0" align="center">
-        <tbody>
-          <tr>
-            <td width="45%" valign="top">
-              
-              <div class="loginbox">
-                <h3>Blackboard Learn Login:</h3>
-                <loginUI:errorMessage />
-                
-                <div id="bblearn-popup" class="popup">
-                  <div id="bblearn-popup-msg">
-                    <p style="font-weight:bold">Evaluate Your Course(s) and Instruction</p>
-                    <p>For at least one of your courses, the opportunity to evaluate the course and instruction is online and easier than ever!</p>
-                    <p>Your responses are completely confidential, and any results reported will remain anonymous and will in no way affect your grades.</p>
-                    <p>Your evaluation is very important and helps us improve the quality of the educational experience for all students. It only takes a few minutes, so please complete your evaluation(s) now!</p>
-                    <p><a id="bblearn-survey-url" target="_blank" onclick="javascript:bblearn_close_survey_popup()" href=""> > Start Now </a></p>
-                  </div>
-                  
-                  <p><a href="javascript:bblearn_close_survey_popup()"> > Remind me later </a></p>
-                </div>
+            <!-- start body -->
+            <h3>Welcome to UMass Amherst and UMassOnline.</h3>
+            <p>Through UMassOnline, UMass Amherst Continuing & Professional Education presents online courses on the Blackboard Learn learning management system.</p>
+            <p>You must have an active IT Account NetID to log in. <a target="_blank" href="https://www.it.umass.edu/accounts/activate-your-account">Activate Your IT Account</a></p>
+            <p>Online courses become available for access one week before the start date of the class.<br />
+            </p>
+            <loginUI:systemAnnouncements maxItems="5" />
+            
+            <table width="100%" cellspacing="10" cellpadding="0" border="0" align="center">
+              <tbody>
+                <tr>
+                  <td width="45%" valign="top">             
+                    <div class="loginbox">
+                      <h3 class="center-txt">FALL Courses - Login Here</h3>
+                      <loginUI:errorMessage />
+                      <div id="bblearn-popup" class="popup">
+                        <div id="bblearn-popup-msg">
+                          <p style="font-weight:bold">Evaluate Your Course(s) and Instruction</p>
+                          <p>For at least one of your courses, the opportunity to evaluate the course and instruction is online and easier than ever!</p>
+                          <p>Your responses are completely confidential, and any results reported will remain anonymous and will in no way affect your grades.</p>
+                          <p>Your evaluation is very important and helps us improve the quality of the educational experience for all students. It only takes a few minutes, so please complete your evaluation(s) now!</p>
+                          <p><a id="bblearn-survey-url" target="_blank" onclick="javascript:bblearn_close_survey_popup()" href=""> > Start Now </a></p>
+                        </div>
                         
-                <form accept-charset="UTF-8" id="bblearn-loginform" method="post">
-                  <input type="hidden" value="login" name="action" />                              
-                  <input type="hidden" value="" name="new_loc" />
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td>NetID</td>
-                        <td><input type="text" id="bblearn-username" name="user_id" maxlength="100" title="Username" /></td>
-                      </tr>
-                      <tr>
-                        <td>Password</td>
-                        <td><input type="password" id="bblearn-password" name="password" maxlength="100" title="Password" /></td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td><input type="submit" id="edit-submit" value="Login" alt="Login" class="sub" /></td>
-                      </tr>
-                      <tr>
-                        <td colspan="2">
-                          <p><a href="https://www.it.umass.edu/support/accounts/understand-your-netid-password" target="_blank">About Your NetID and Password</a></p>
-                          <p><a href="https://www.it.umass.edu/support/accounts/understand-your-netid-password#Your%20OIT%20Account%20Password" target="_blank">Forgot Your Password?</a></p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </form>
-              </div>
-            </td>
-            <td width="55%" valign="top">              
-              <loginUI:systemAnnouncements maxItems="5" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <p>&nbsp;</p>
-      <p>For specific questions pertaining to registration in courses presented by UMass Amherst Continuing &amp; Professional Education, please email: <a href="mailto:regoff@cpe.umass.edu">regoff@cpe.umass.edu</a>.</p>
-      <p>Materials used in connection with a course may be subject to copyright protection.</p>
-
-      <!-- end body -->
-    </td>
-    <td class="rightcol">
-      <div class="block">
-        <h3>Need Technical Support?</h3>
-        <p>Please visit the Help Desk for Self-Help and Contact information:</p>
-        <p><a href="http://supportcenter.embanet.com/uma" target="_blank">Support Center</a></p>
-      </div>
-      <div class="block">
-        <h3>Can't find something?</h3>
-        <p><a href="http://www.umassonline.net/contact-us"><img height="38" alt="UMass Online - Can't find something?" width="180" border="0" src="/bbcswebdav/library/login/uma/images/buttons/need-help.jpg" /></a></p>
-      </div>
-    </td>
-  </tr>
-</table> 
-      
+                        <p><a href="javascript:bblearn_close_survey_popup()"> > Remind me later </a></p>
+                      </div>
+                      
+                      <form accept-charset="UTF-8" id="bblearn-loginform" action="https://uma-uits.umassonline.net/webapps/login/" method="post">
+                        <input type="hidden" value="login" name="action" />                              
+                        <input type="hidden" value="" name="new_loc" />
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>NetID</td>
+                              <td><input type="text" id="bblearn-username" name="user_id" maxlength="100" title="Username" /></td>
+                            </tr>
+                            <tr>
+                              <td>Password</td>
+                              <td><input type="password" id="bblearn-password" name="password" maxlength="100" title="Password" /></td>
+                            </tr>
+                            <tr>
+                              <td>&nbsp;</td>
+                              <td><input type="submit" id="edit-submit" value="Login" alt="Login" class="sub" /></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </form>
+                    </div>
+                  </td>
+                  <td width="45%" valign="top">              
+                    <div class="loginbox">
+                      <h3 class="center-txt">WINTER &amp; SPRING Courses - Login Here</h3>
+                      <form method="get" action="https://umol.umass.edu">
+                        <p class="center-txt"><button type="submit">Login</button></p>
+                      </form>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="center-txt"><a href="https://www.it.umass.edu/support/accounts/understand-your-netid-password" target="_blank">About Your NetID and Password</a></p>
+            <p class="center-txt"><a href="https://www.it.umass.edu/support/accounts/understand-your-netid-password#Your%20IT%20Account%20Password" target="_blank">Forgot Your Password?</a></p>
+            <p>For specific questions pertaining to registration in courses presented by UMass Amherst Continuing &amp; Professional Education, please email: <a href="mailto:regoff@cpe.umass.edu">regoff@cpe.umass.edu</a>.</p>
+            <p>Materials used in connection with a course may be subject to copyright protection.</p>
+            <!-- end body -->
+          </td>
+          <td class="rightcol">
+            <div class="block">
+              <h3>Need Technical Support?</h3>
+              <p>Please visit the Help Desk for Self-Help and Contact information:</p>
+              <p><a href="http://supportcenter.embanet.com/uma" target="_blank">Support Center</a></p>
+            </div>
+            <div class="block">
+              <h3>Can't find something?</h3>
+              <p><a href="http://www.umassonline.net/contact-us"><img height="38" alt="UMass Online - Can't find something?" width="180" border="0" src="/bbcswebdav/library/login/uma/images/buttons/need-help.jpg" /></a></p>
+            </div>
+          </td>
+        </tr>
+      </table>      
      
     </div>
     <div class="footer">
@@ -157,10 +182,9 @@
         <a href="http://www.umassonline.net/technical-support-and-requirements">Site Requirements</a> |
         <a href="http://www.umassonline.net/contact-us">Contact Us</a>
       </div>
-      <div class="footdisclaimer">
-        
+      <div class="footdisclaimer">        
         This is an <a href="http://www.umassonline.net/official">official</a> page/publication of the University of Massachusetts.
-        &copy;2013 University of Massachusetts.
+        &copy;2015 University of Massachusetts.
       </div>
       <div class="footsites">
         <a href="http://www.umass.edu">UMass Amherst</a> |
@@ -184,10 +208,11 @@ tr:nth-child(2n) {
 div.popup {
 	height: 380px;
 }
-.upcoming {
-  background-color: #FFFF99;
-  padding: 10px;
-  font-weight: bold;
+div.loginbox {
+  height: 120px;
+}
+.center-txt {
+  text-align: center;
 }
 </style>
 </bbNG:cssBlock>
@@ -216,7 +241,7 @@ div.popup {
 		prefix: 'uma_'
 	};
     
-        var courseevalavailable = false;
+  var courseevalavailable = false;
 	
 	function openCourseEvalPopUp(jsonpData) {
 		if(!jsonpData) {
@@ -362,12 +387,6 @@ div.popup {
 			bblearnForgotPasswordWindow.focus();
 
 			return false;    
-		});
-
-		jQuery(bblearn.elements.submit).click( function() {
-			bblearn_check_login_form();
-
-			return false;
 		});
 	});
 </script>
