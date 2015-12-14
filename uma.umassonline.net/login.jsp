@@ -18,9 +18,9 @@
 	java.util.Enumeration enuH = request.getHeaderNames();
 	
 	while(enuR.hasMoreElements()) {
-    String elementName = (String)enuR.nextElement();	
+		String elementName = (String)enuR.nextElement();	
 		
-    if (elementName == targetElement) {		
+		if (elementName == targetElement) {		
 			Object elementValue = request.getAttribute(targetElement);
 			
 			while(enuH.hasMoreElements()) {
