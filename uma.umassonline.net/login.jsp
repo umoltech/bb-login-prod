@@ -18,9 +18,9 @@
 	java.util.Enumeration enuH = request.getHeaderNames();
 	
 	while(enuR.hasMoreElements()) {
-		String elementName = (String)enuR.nextElement();	
+    String elementName = (String)enuR.nextElement();	
 		
-		if (elementName == targetElement) {		
+    if (elementName == targetElement) {		
 			Object elementValue = request.getAttribute(targetElement);
 			
 			while(enuH.hasMoreElements()) {
@@ -145,9 +145,11 @@
                   <td width="45%" valign="top">              
                     <div class="loginbox">
                       <h3 class="center-txt">WINTER &amp; SPRING Courses - Login Here</h3>
+                      <!--
                       <form method="get" action="https://umol.umass.edu">
                         <p class="center-txt"><button type="submit">Login</button></p>
                       </form>
+                      -->
                     </div>
                   </td>
                 </tr>
