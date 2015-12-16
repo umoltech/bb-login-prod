@@ -100,6 +100,8 @@ div.loginBody { padding-top: 0px; margin-top: 20px; width: 300px; background: #F
 /* OWL surveys */
 .popup { text-align: left; background-color: #B9C2DF; padding: 20px; border: 1px solid #000; width: 285px; height: 175px; position: absolute; z-index: 100; margin-left: -10px; margin-top: -30px; }
 .popup p { line-height: 24px; }
+
+.search p input { background-image: url('/bbcswebdav/library/login/umb/searchBG.png') !important; }
 </style>
 </bbNG:cssBlock>
 
@@ -369,7 +371,7 @@ div.loginBody { padding-top: 0px; margin-top: 20px; width: 300px; background: #F
 					<h2 class="orBB" id="normal">Getting Technical Help</h2>
 					<ul class="unstyled">
 						<li>24/7 technical assistance is available to students and faculty via:</li>
-						<li><a href="http://umb.echelp.org" target="_blank" class="button-1"><strong>Online Support Center</strong></a></li>
+						<li><a href="http://supportcenter.embanet.com/umb" target="_blank" class="button-1"><strong>Online Support Center</strong></a></li>
 						<li>&nbsp;</li>
 						<li>For problems resetting your password:</li>
 						<li>Call the IT Service Desk at 617.287.5220.</li>
