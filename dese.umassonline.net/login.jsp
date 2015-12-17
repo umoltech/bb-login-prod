@@ -20,7 +20,7 @@
 	body.login-page { background: #FFFFFF url('/bbcswebdav/library/login/dese/header_bg.gif') top left repeat-x; }
 	div.loginBody { 
 		width: 800px; 
-		padding: 50px; 
+		padding: 25px 50px; 
 		background: white url('/bbcswebdav/library/login/dese/middle_bg.gif') top left no-repeat;  
 		position: relative; 
 		top: 64px;
@@ -50,6 +50,8 @@
 	#loginAnnouncements li { background-color: #FFFFCC; }
 	.login-page #copyright .logo { display: none; }
 	a.pdf { background: url('/images/cs/fileicons/filetype_pdf_ia.png') 0 0 no-repeat; padding-left: 25px; padding-top: 5px; }
+  .loginAlertTop { margin-bottom: 20px; background-color: #FFFFCC; padding: 18px 24px; }
+  .loginAlertTop p { margin-bottom: 12px; }
 </style>
 </bbNG:cssBlock>
 
@@ -80,34 +82,40 @@
       </div>
 
       <div class="clearfix loginBody">
-        <loginUI:errorMessage />
-
-		
-		<div id="loginBoxContainer">
-		  <div id="loginBlockColumnLeft">
-		    <p><img src="/bbcswebdav/library/login/dese/logo.jpg" /></p>
-            <p>Welcome to the home of the ESE professional development courses on Blackboard Learn.
-			Enter your username and password on the right to access your course materials
-			and to interact with your instructor and other course participants.</p>
-			<p>Helpful tips for first time users:</p>
-			<p>Your USERNAME is the email address you used to register for your course. 
-			Please log in with the email address where you received your registration confirmation.</p>
-			<p>If you are using Blackboard for the FIRST TIME, you need to set your password. 
-			Please click the link to the right and follow the instructions.</p>
-			<p><a class="pdf" href="/bbcswebdav/library/login/dese/ese-blackboard-instructions.pdf" target="_blank">Click here for detailed instructions and screenshots</a>.</p>
-			<p>Still need help? Click here: <a href="http://ese.echelp.org" target="_blank">http://ese.echelp.org</a></p> 
-          </div>
-		  
-		  <div id="loginBox">         
-			<h3>Log in to your course</h3>
-            <loginUI:loginForm />	
-            <div id="loginLogoSmall"><img src="/bbcswebdav/library/login/dese/bb-learn.jpg" /></div>			
-          </div>
+      
+        <div class="loginAlertTop">
+          <p>Due to an internal migration in the Blackboard Learning Management System, Blackboard will be unavailable to RETELL instructors and participants from 9 AM Monday, 12/28/2015 through 5 PM Friday, 12/31/2015.</p>
+          <p>The Department asks that instructors grade accordingly given this blackout window, and will grant you an additional 5 days to complete your gradebook at the end of your course.</p>
+          <p>Regards,<br />Blackboard Administrators</p>
         </div>
+        
+        <loginUI:errorMessage />
 		
-		<loginUI:systemAnnouncements maxItems="5" />
+        <div id="loginBoxContainer">
+          <div id="loginBlockColumnLeft">
+            <p><img src="/bbcswebdav/library/login/dese/logo.jpg" /></p>
+            <p>Welcome to the home of the ESE professional development courses on Blackboard Learn.
+            Enter your username and password on the right to access your course materials
+            and to interact with your instructor and other course participants.</p>
+            <p>Helpful tips for first time users:</p>
+            <p>Your USERNAME is the email address you used to register for your course. 
+            Please log in with the email address where you received your registration confirmation.</p>
+            <p>If you are using Blackboard for the FIRST TIME, you need to set your password. 
+            Please click the link to the right and follow the instructions.</p>
+            <p><a class="pdf" href="/bbcswebdav/library/login/dese/ese-blackboard-instructions.pdf" target="_blank">Click here for detailed instructions and screenshots</a>.</p>
+            <p>Still need help? Click here: <a href="http://ese.echelp.org" target="_blank">http://ese.echelp.org</a></p> 
+          </div>
+          
+          <div id="loginBox">         
+            <h3>Log in to your course</h3>
+              <loginUI:loginForm />	
+              <div id="loginLogoSmall"><img src="/bbcswebdav/library/login/dese/bb-learn.jpg" /></div>			
+            </div>
+          </div>
 		
-		<bbNG:copyright />
+          <loginUI:systemAnnouncements maxItems="5" />
+		
+          <bbNG:copyright />
 		
         <div id="loginOptions">
           <loginUI:gatewayButtons />
