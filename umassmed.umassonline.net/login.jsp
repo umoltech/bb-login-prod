@@ -6,6 +6,20 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
+<%@page import="java.util.Date"%>
+
+<%
+  Date rightNow = new Date();
+  Date migrationStart = new Date(115, 11, 21, 17, 0);
+  Date migrationEnd = new Date(115, 11, 28, 12, 0);
+  
+  Boolean isMigration = false;
+  
+  if (rightNow.compareTo(migrationStart) > 0 && rightNow.compareTo(migrationEnd) < 0) {
+    isMigration = true;
+  }
+%>
+
 <c:set var="productName" value="${ loginUI:getProductName() }" />
 
 <bbNG:genericPage authentication="N" wrapper="false" onLoad="if (document.forms.login.user_id != undefined) document.forms.login.user_id.focus()" bodyClass="login-page">
@@ -79,7 +93,14 @@
             <div class="loginBlock">
               <div id="loginBox" class="loginBox">
                 <h2>Blackboard Learn Login</h2>
-                <loginUI:loginForm />				
+                <% if (isMigration) { %>
+                  <div class="migration">
+                    <p><strong>Please Note</strong></p>
+                    <p>This system is unavailable due to a content migration until Dec 28 at Noon EST.</p>
+                  </div>
+                <% } else { %>
+                  <loginUI:loginForm />
+                <% } %>				
               </div>
               <div id="helpBox">
                 <h2>Need Help?</h2>
