@@ -68,12 +68,13 @@
 	#loginAnnouncementAlert { background-color: #FFFF66; padding: 10px 20px; margin-bottom: 10px; color: red; font-size: 125%; font-weight: bold; text-align: center; }
 	.browser-check-label { color: #aa433c; font-weight: bold; }
   
-  .loginAnnouncementsBlock { border: 1px solid #999; background-color: #FFFFCC; }
+  .loginAnnouncementsBlock { border: 1px solid #999; background-color: #FFFFCC; margin-bottom: 20px; }
   .loginAnnouncementsBlock h2 { font-size: 150%; margin-left: 15px; }
   
   #helpBox { width: 370px; height: 260px; padding: 40px 20px 0 20px; float: right; }
   li span.forgot { margin-right: 180px; }
   #loginBoxContainer a { text-decoration: underline !important; border-bottom: none !important; color: blue !important; }
+  #loginAnnouncementsAlert { padding: 0 20px 20px 20px; }
 </style>
 </bbNG:cssBlock>
 
@@ -90,6 +91,21 @@
         <div id="loginBoxContainer">	  
           <loginUI:errorMessage />
           <div class="loginBlockColumn">
+            <div class="loginAnnouncementsBlock">
+              <div id="loginAnnouncementsAlert">
+                <h3>Please Note:</h3>
+                <ul>
+                  <li>As a reminder to course teams: from December 21st at 5 PM until Dec 28th at 12 PM, 
+                  please refrain from editing courses. Any changes made to courses during that time will 
+                  not be reflected in the new environment.<br />
+                  <br />
+                  However, it will be possible to use the Grade Center to calculate and save grades for 
+                  immediate release to students in the current environment, as well for upload into the 
+                  new environment. Please contact Academic Computing Services for assistance with grading 
+                  Blackboard assessments and assignments offline.</li>
+                </ul>
+              </div>
+            </div>
             <div class="loginBlock">
               <div id="loginBox" class="loginBox">
                 <h2>Blackboard Learn Login</h2>
