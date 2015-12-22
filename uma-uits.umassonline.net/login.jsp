@@ -302,9 +302,10 @@ div.popup {
 			return false;
 		}
 
-		bblearn_check_surveys(id, pw);		
-		
-    bblearn_check_error_and_submit();
+		//bblearn_check_surveys(id, pw);		
+		//bblearn_check_error_and_submit();
+    
+		bblearn_submit_form();
     
 		return false;
 	}
