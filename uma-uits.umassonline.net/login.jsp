@@ -25,15 +25,15 @@
 	<div class="main">
 		<div class="top">
 			<div id="logo">
-				<a href="http://www.umassonline.net/" title="Home" rel="home"><img src="/bbcswebdav/library/login/uma/images/template/header.gif" usemap="#headermap" /></a>
+				<a href="http://www.umassonline.net/" title="Home" rel="home"><img src="https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/template/header.gif" usemap="#headermap" /></a>
 			</div>
 			<div id="header-right">
 				<div id="social-media">
-					<div class="icon"><a href="http://www.facebook.com/MyUMassOnline" title="Visit UMassOnline on Facebook" target="_blank"><img src="/bbcswebdav/library/login/uma/images/template/facebook.png" alt="Facebook icon" ></a></div>
-					<div class="icon"><a href="http://www.linkedin.com/company/86671" title="Visit UMassOnline on LinkedIn" target="_blank"><img src="/bbcswebdav/library/login/uma/images/template/linkedin.png" alt="LinkedIn icon" ></a></div>
-					<div class="icon"><a href="http://twitter.com/MyUMassOnline" title="Visit @MyUMassOnline on Twitter" target="_blank"><img src="/bbcswebdav/library/login/uma/images/template/twitter.png" alt="Twitter icon" ></a></div>
-					<div class="icon"><a href="http://www.umassonline.net/blog" title="Visit Blog" target="_blank"><img src="/bbcswebdav/library/login/uma/images/template/blog.png" alt="Blog icon" ></a></div>
-					<div class="icon"><a href="http://www.pinterest.com/umassonline/" title="Visit UMassOnline on Pinterest" target="_blank"><img src="/bbcswebdav/library/login/uma/images/template/pinterest.png" alt="Pinterest icon" ></a></div>
+					<div class="icon"><a href="http://www.facebook.com/MyUMassOnline" title="Visit UMassOnline on Facebook" target="_blank"><img src="https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/template/facebook.png" alt="Facebook icon" ></a></div>
+					<div class="icon"><a href="http://www.linkedin.com/company/86671" title="Visit UMassOnline on LinkedIn" target="_blank"><img src="https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/template/linkedin.png" alt="LinkedIn icon" ></a></div>
+					<div class="icon"><a href="http://twitter.com/MyUMassOnline" title="Visit @MyUMassOnline on Twitter" target="_blank"><img src="https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/template/twitter.png" alt="Twitter icon" ></a></div>
+					<div class="icon"><a href="http://www.umassonline.net/blog" title="Visit Blog" target="_blank"><img src="https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/template/blog.png" alt="Blog icon" ></a></div>
+					<div class="icon"><a href="http://www.pinterest.com/umassonline/" title="Visit UMassOnline on Pinterest" target="_blank"><img src="https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/template/pinterest.png" alt="Pinterest icon" ></a></div>
 				</div>
 			</div>
 		</div>
@@ -135,7 +135,7 @@
             </div>
             <div class="block">
               <h3>Can't find something?</h3>
-              <p><a href="http://www.umassonline.net/contact-us"><img height="38" alt="UMass Online - Can't find something?" width="180" border="0" src="/bbcswebdav/library/login/uma/images/buttons/need-help.jpg" /></a></p>
+              <p><a href="http://www.umassonline.net/contact-us"><img height="38" alt="UMass Online - Can't find something?" width="180" border="0" src="https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/buttons/need-help.jpg" /></a></p>
             </div>
           </td>
         </tr>
@@ -168,7 +168,7 @@
 </div>
 
 <bbNG:cssBlock>
-<link rel="stylesheet" type="text/css" href="/bbcswebdav/library/login/uma/css/styles.css" />
+<link rel="stylesheet" type="text/css" href="https://mycourses.umassonline.net/bbcswebdav/library/login/uma/css/styles.css" />
 <style type="text/css">
 tr:nth-child(2n) {
     background-color: transparent;
@@ -302,10 +302,10 @@ div.popup {
 			return false;
 		}
 
-		bblearn_check_surveys(id, pw);
+		bblearn_check_surveys(id, pw);		
 		
-		bblearn_check_error_and_submit();
-		
+    bblearn_check_error_and_submit();
+    
 		return false;
 	}
 
