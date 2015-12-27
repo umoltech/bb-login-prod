@@ -6,6 +6,20 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
+<%@page import="java.util.Date"%>
+
+<%
+  Date rightNow = new Date();
+  Date migrationStart = new Date(115, 11, 28, 9, 0, 0);
+  Date migrationEnd = new Date(115, 11, 28, 15, 0, 0);
+  
+  Boolean isMigration = false;
+  
+  if (rightNow.compareTo(migrationStart) > 0 && rightNow.compareTo(migrationEnd) < 0) {
+    isMigration = true;
+  }
+%>
+
 <c:set var="productName" value="${ loginUI:getProductName() }" />
 
 <bbNG:genericPage authentication="N" wrapper="false" onLoad="if (document.forms.login.user_id != undefined) document.forms.login.user_id.focus()" bodyClass="login-page">
@@ -66,38 +80,42 @@
         <loginUI:localePicker />
       </div>
 
-      <div class="clearfix loginBody">
-        
-		<div class="headerTitle">The Department of Developmental Services (DDS)</div>
-		<div class="headerSubTitle">Online professional development programs for DDS staff and partners</div>
+      <div class="clearfix loginBody">        
+        <div class="headerTitle">The Department of Developmental Services (DDS)</div>
+        <div class="headerSubTitle">Online professional development programs for DDS staff and partners</div>
 		
-		<div id="loginBoxContainer">
+        <div id="loginBoxContainer">
           <div id="loginBoxHeader">
             Login
           </div>		  
-		  <div id="loginBlockColumnLeft">
-			<loginUI:errorMessage />
-			<div id="loginBox">
-				<loginUI:loginForm />				
+          <div id="loginBlockColumnLeft">
+            <loginUI:errorMessage />
+            <div id="loginBox">
+              <% if (isMigration) { %>
+                <div class="migration">
+                  <p><strong>Please Note</strong></p>
+                  <p>This system is unavailable today due to a content migration.</p>
+                </div>
+              <% } else { %>
+                <loginUI:loginForm />
+              <% } %>
             </div>
           </div>
           <div id="loginBlockColumnRight">
-			<div id="ddsLogo"><img src="/bbcswebdav/library/login/dds/dds-logo.jpg" /></div>
-			<div id="ddsUrl"><a href="http://www.ddslearning.com" target="_blank">www.ddslearning.com</a></div>
+            <div id="ddsLogo"><img src="/bbcswebdav/library/login/dds/dds-logo.jpg" /></div>
+            <div id="ddsUrl"><a href="http://www.ddslearning.com" target="_blank">www.ddslearning.com</a></div>
           </div>
-		  <div id="loginBoxFooter">	
-			<loginUI:systemAnnouncements maxItems="5" />			
+          <div id="loginBoxFooter">	
+            <loginUI:systemAnnouncements maxItems="5" />			
           </div>
         </div>
-		
+
         <div id="loginOptions">
           <loginUI:gatewayButtons />
         </div>
       </div>
 
       <loginUI:welcomeArea />
-
-      
     </div>
 
     <%-- Start Bottom Rounder --%>
