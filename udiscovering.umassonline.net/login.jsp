@@ -6,19 +6,49 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
+<%@page import="java.util.Date"%>
+
+<%
+  Date rightNow = new Date();
+  Date migrationStart = new Date(115, 11, 28, 9, 0, 0);
+  Date migrationEnd = new Date(115, 11, 28, 15, 0, 0);
+  
+  Boolean isMigration = false;
+  
+  if (rightNow.compareTo(migrationStart) > 0 && rightNow.compareTo(migrationEnd) < 0) {
+    isMigration = true;
+  }
+%>
+
 <c:set var="productName" value="${ loginUI:getProductName() }" />
 
 <bbNG:genericPage authentication="N" wrapper="false" onLoad="loadLoginPage()" bodyClass="login-page">
    
 <%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
-   
-<%--
+
 <bbNG:cssBlock>
-<style type="text/css">
-/* Custom styles go here */
-</style>
+  <style type="text/css">
+    div.loginBody {
+      background: url("http://www.umassmedcwm.org/ud/ud-logo-w.png") no-repeat scroll 94px 94px transparent;
+    }
+
+    #loginBox li label, .portlet #loginBoxFull li label {
+      color: #ECECEC;
+    }
+
+    a, .portlet .subCategories li a, .blockGroups .itemHead, .blockGroups .itemHeadOpen {
+      color: #C2989D;
+    }
+
+    .forgot a {
+      border-bottom: 1px dotted #C2989D;
+    }
+
+    #loginAnnouncements a {
+    border-bottom: 1px dotted #C2989D;
+    }
+  </style>
 </bbNG:cssBlock>
---%>
 
 <div id="loginPageContainer">
   <div id="loginPane">
@@ -26,7 +56,7 @@
     <div id="loginContainer">
       <div id="loginHeader" class="clearfix">
         <h1 class="hideoff">${productName}</h1>
-        <img src="/images/ci/logos/Bb_newLogo_060.png" alt="${productName}" class="productLogo" />
+        <img src="http://www.umassmedcwm.org/ud/ud-logo-w.png" alt="${productName}" class="productLogo" />
         <loginUI:accessibility />
       </div>
 
@@ -38,7 +68,14 @@
         <loginUI:errorMessage />
 
         <div id="loginBox">
-          <loginUI:loginForm />          
+          <% if (isMigration) { %>
+            <div class="migration">
+              <p><strong>Please Note</strong></p>
+              <p>This system is unavailable today due to a content migration.</p>
+            </div>
+          <% } else { %>
+            <loginUI:loginForm />
+          <% } %>
         </div>
 
         <div id="loginOptions">
@@ -46,10 +83,8 @@
         </div>
       </div>
 
-      <loginUI:welcomeArea />
-	    
+      <loginUI:welcomeArea />      
     </div>
-
   </div>
   
   <loginUI:systemAnnouncements maxItems="5" />
