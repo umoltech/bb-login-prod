@@ -1,7 +1,7 @@
 /*@import url('/css/tabs.css');*/
 
 body {
-	/* background: rgb(217,217,209) url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/template/shadow_bg.gif') repeat-y center; */
+	/* background: rgb(217,217,209) url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/template/shadow_bg.gif') repeat-y center; */
 	background-color: rgb(217,217,209);
 	background-image: none;
 	font-family: Verdana, Arial, Helvetica, sans-serif; 
@@ -28,7 +28,7 @@ div.top #header-right { float: right; width: 250px; }
 div.top #header-right #social-media { float: right; }
 div.top #header-right #social-media .icon { float: left; margin-left: 4px; }
 
-div.top td.imageback { background-color: #ffffff; width: 675px; height: 68px; background-image: url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/template/UMassOnline-Background.jpg');}
+div.top td.imageback { background-color: #ffffff; width: 675px; height: 68px; background-image: url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/template/UMassOnline-Background.jpg');}
 
 div.nav { width: 100%; height: 20px; background-color: #9ca800; text-align: left; }
 div.nav table { }
@@ -99,7 +99,7 @@ div.block {
 	padding: 4px 10px 10px 10px; 
 	margin-bottom: 16px; 
 	font-size: 10px;
-	background: #FFFFFF url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_silver_fade.jpg') repeat-x top left; }
+	background: #FFFFFF url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_silver_fade.jpg') repeat-x top left; }
 	
 
 div.block h2 { margin-bottom: 20px; }	
@@ -158,10 +158,10 @@ ul {
 
 li { margin-left: 8px; }
 
-ul.programlist { list-style-image:url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/arrows/paper.gif'); position: relative; left: -20px; }
+ul.programlist { list-style-image:url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/arrows/paper.gif'); position: relative; left: -20px; }
 ul.programlist li { margin-bottom: 8px; }
 
-ul.arrowlist { list-style-image:url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/arrows/paper.gif'); position: relative; left: -20px; }
+ul.arrowlist { list-style-image:url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/arrows/paper.gif'); position: relative; left: -20px; }
 ul.arrowlist li { margin-bottom: 8px; }
 
 
@@ -174,7 +174,7 @@ div.rssdisplayfeed {
 	overflow: auto;
 	margin-bottom: 10px;
 }
-div.rssfeed li { margin-bottom: 10px; list-style-image: url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/buttons/link_external.gif'); }
+div.rssfeed li { margin-bottom: 10px; list-style-image: url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/buttons/link_external.gif'); }
 
 button {
 	border: 1px solid #000000;
@@ -211,21 +211,21 @@ div.defaulttable table { border: 1px solid rgb(194,194,194); padding: 1px; }
 div.defaulttable table tr th { padding: 5px; background-color: #FFFFFF; text-align: right; font-weight: bold; }
 div.defaulttable table tr td { padding: 5px; background-color: #efefe7; text-align: left; }
 div.defaulttable table tr:hover th, div.defaulttable table tr:hover td { background-color: #FFFF99; }
-div.defaulttable table tr th.grey { background: #FFFFFF url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_silver_fade.jpg') repeat-x top left; }
+div.defaulttable table tr th.grey { background: #FFFFFF url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_silver_fade.jpg') repeat-x top left; }
 
 div.degreedetailtable { margin-bottom: 10px; }
 div.degreedetailtable table { border: 1px solid rgb(194,194,194); padding: 1px; }
 div.degreedetailtable table tr th { padding: 5px; background-color: #FFFFFF; text-align: right; font-weight: bold; }
 div.degreedetailtable table tr td { padding: 5px; background-color: #efefe7; text-align: left; }
-div.degreedetailtable table tr th.grey { background: #FFFFFF url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_silver_fade.jpg') repeat-x top left; }
+div.degreedetailtable table tr th.grey { background: #FFFFFF url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_silver_fade.jpg') repeat-x top left; }
 div.rfimodtable { margin-bottom: 10px; }
 div.rfimodtable table { border: 1px solid rgb(194,194,194); padding: 1px; }
 div.rfimodtable table tr th { padding: 5px; background-color: #eeeee6; font-weight: bold; }
 div.rfimodtable table tr td { padding: 5px; background-color: #efefe7; text-align: left; }
 /*div.rfimodtable table tr:hover th, div.rfimodtable table tr:hover td { background-color: #FFFF99; }*/
-div.rfimodtable table tr th.grey { background: #FFFFFF url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_silver_fade.jpg') repeat-x top left; }
+div.rfimodtable table tr th.grey { background: #FFFFFF url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_silver_fade.jpg') repeat-x top left; }
 
-div.block div.inthenews ul { list-style-image:url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/btn_arrow_off.gif'); }
+div.block div.inthenews ul { list-style-image:url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/btn_arrow_off.gif'); }
 div.block div.inthenews a { font-size: 12px; }
 div.block div.whatsnew th { padding: 3px; }
 div.block div.whatsnew td { padding: 3px; }
@@ -250,7 +250,7 @@ div.rishortform {
 	margin-bottom: 16px; 
 	overflow: hidden;
 	font-size: 10px;
-	background: #FFFFFF url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_silver_fade.jpg') repeat-x top left; }
+	background: #FFFFFF url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_silver_fade.jpg') repeat-x top left; }
 	
 div.rishortform h3 { margin-bottom: 20px; }
 div.rishortform table { margin: 10px 0px 20px 0px; border: 1px solid #999999; }
@@ -262,11 +262,11 @@ div.rishortform input.sm { width: 20px; border: none; padding: 0px; }
 div.rishortform th.forceleft { text-align: left; vertical-align: top; font-weight: bold; padding: 3px;}
 div.rishortform td.forceright { background-color: #eeeee6; text-align: right; vertical-align: top; padding: 10px;}
 div.rishortform td.extrapad { padding: 10px; }
-div.rishortform div.nest { margin: 10px 0px 0px 0px; padding: 0px 0px 0px 28px; background: url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/bg/nest.gif') no-repeat top left; }
+div.rishortform div.nest { margin: 10px 0px 0px 0px; padding: 0px 0px 0px 28px; background: url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/bg/nest.gif') no-repeat top left; }
 div.rishortform select.long { width: 300px; border: 1px solid rgb(70,70,70); padding: 2px; }
 
 .tablehead {
-	background-image:url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/table_header.gif');
+	background-image:url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/table_header.gif');
 }
 .maintext {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -462,7 +462,7 @@ div.announcementlink span {
 		cursor:pointer;
 	}
 	div.degrees div.stage {
-		background: url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/stage_fade_dn.jpg') repeat-x top left;
+		background: url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/stage_fade_dn.jpg') repeat-x top left;
 		/*background-color: #E4ECF7;*/
 		/*height: 250px;*/
 		padding: 10px 10px 10px 10px;
@@ -537,7 +537,7 @@ div.rss h3 {
 
 div.rss li {
 	margin-left: 20px;
-	list-style-image: url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/buttons/rss.gif');
+	list-style-image: url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/buttons/rss.gif');
 }
 
 div.hideDelicious {
@@ -562,7 +562,7 @@ div.video {
 div.video div.title {
 	width: 100%;
 	height: 24px;
-	background: #FFFFFF url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/headers/video/video_header.jpg') no-repeat top left;
+	background: #FFFFFF url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/headers/video/video_header.jpg') no-repeat top left;
 	padding: 0px;
 	margin: 0px;
 	vertical-align: top;
@@ -586,7 +586,7 @@ div.video div.player {
 	Blogs
 ************************************/
 div.blog  div.stage {
-	background: url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/stage_fade_dn.jpg') repeat-x top left;
+	background: url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/stage_fade_dn.jpg') repeat-x top left;
 	padding: 5px 10px 10px 10px;
 }
 
@@ -672,7 +672,7 @@ div.entries td {
 
 div.entries div.nav {
 	width: 200px;
-	background: #eeeee6 url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/bg/blog_nav_bg.gif') repeat-x bottom left;
+	background: #eeeee6 url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/bg/blog_nav_bg.gif') repeat-x bottom left;
 	padding: 15px 15px 20px 15px;
 	font-size: 10px;
 	line-height: 14px;
@@ -724,7 +724,7 @@ div.entries div.entry div.entrybody {
 	padding: 10px;
 	color: #7f1642;
 	text-align: left;
-	background: url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/stage_fade_dn.jpg') repeat-x top left;
+	background: url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/stage_fade_dn.jpg') repeat-x top left;
 }
 
 div.entries div.entry div.entrycomment {
@@ -764,9 +764,9 @@ div.popup a:hover {
 
 div.formauth { border: 1px solid #9F9F95; margin: 5px 0px 20px 0px; width: 300px; }
 div.formauth div.authhead { 
-	background: #FFFFFF url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_silver_fade.jpg') repeat-x top left;
+	background: #FFFFFF url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_silver_fade.jpg') repeat-x top left;
 	color: #7f1642; font-size: 12px; font-weight: bold; padding: 8px 5px 5px 5px; margin-top: 2px; }
-div.formauth div.authbody { padding: 10px; background: #FFFFFF url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/bg/auth_fade.jpg') repeat-x top left; }
+div.formauth div.authbody { padding: 10px; background: #FFFFFF url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/bg/auth_fade.jpg') repeat-x top left; }
 div.formauth div.authbody span.authcode { border: 1px solid #7f1642; background-color: #FFFFFF; padding: 4px; white-space: nowrap; margin: 0px 12px 0px 0px; }
 div.formauth div.authbody input { width: 60px; border: 1px solid #7f1642; padding: 2px; }
 div.formauth div.authbody input:focus { border: 1px solid #c25800; background-color: #ffff99; }
@@ -795,12 +795,12 @@ div.defaultform td select { width: 300px; border: 1px solid #003366; padding: 2p
 div.defaultform td select:focus, div.defaultform td input:focus, div.defaultform td textarea:focus { 
 	border: 1px solid #c25800; background-color: #ffff99; }
 div.defaultform td.extrapad { padding: 10px; }
-div.defaultform tr.black td { background: #000000 url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_black_fade.jpg') repeat-x top left; color: #eeeee6; font-weight: bold; padding: 8px 5px 5px 5px; }
+div.defaultform tr.black td { background: #000000 url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_black_fade.jpg') repeat-x top left; color: #eeeee6; font-weight: bold; padding: 8px 5px 5px 5px; }
 div.defaultform tr.dark td { background-color: #d9d9d1; color: #000000; font-weight: bold; }
 div.defaultform div.navbuttons { margin: 10px 0px 10px 0px; }
 div.defaultform div.navbuttons a { border: 1px solid #000000; background-color: #7f1642; color: #FFFFFF; font-weight:bold; cursor:pointer; padding: 3px 10px 3px 10px; }
 div.defaultform div.navbuttons a:hover { border: 1px solid #7f1642; background-color: #c25800; color: #FFFFFF; font-weight:bold; padding: 3px 10px 3px 10px; }
-div.defaultform div.nest { margin: 10px 0px 0px 0px; padding: 0px 0px 0px 28px; background: url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/bg/nest.gif') no-repeat top left; }
+div.defaultform div.nest { margin: 10px 0px 0px 0px; padding: 0px 0px 0px 28px; background: url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/bg/nest.gif') no-repeat top left; }
 
 
 div.sitemap { 
@@ -810,7 +810,7 @@ div.sitemap {
 	padding: 4px 10px 10px 10px; 
 	margin-bottom: 16px; 
 	font-size: 10px;
-	background: #FFFFFF url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_silver_fade.jpg') repeat-x top left; }
+	background: #FFFFFF url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_silver_fade.jpg') repeat-x top left; }
 	
 div.sitemap h3 { margin-bottom: 20px; }
 
@@ -821,7 +821,7 @@ div.riform {
 	margin-bottom: 16px; 
 	overflow: hidden;
 	font-size: 10px;
-	background: #FFFFFF url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_silver_fade.jpg') repeat-x top left; }
+	background: #FFFFFF url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/bg/head_silver_fade.jpg') repeat-x top left; }
 	
 div.riform h3 { margin-bottom: 20px; }
 div.riform table { margin: 10px 0px 20px 0px; border: 1px solid #999999; }
@@ -839,6 +839,6 @@ div.riform input.tiny { width: 10px; border: none; padding: 0px; }
 div.riform th.forceleft { text-align: left; vertical-align: top; font-weight: bold; padding: 3px;}
 div.riform td.forceright { background-color: #eeeee6; text-align: right; vertical-align: top; padding: 10px;}
 div.riform td.extrapad { padding: 10px; }
-div.riform div.nest { margin: 10px 0px 0px 0px; padding: 0px 0px 0px 28px; background: url('https://mycourses.umassonline.net/bbcswebdav/library/login/uma/images/bg/nest.gif') no-repeat top left; }
+div.riform div.nest { margin: 10px 0px 0px 0px; padding: 0px 0px 0px 28px; background: url('https://uma.umassonline.net/bbcswebdav/library/login/uma/images/bg/nest.gif') no-repeat top left; }
 div.riform select.long { width: 500px; border: 1px solid rgb(70,70,70); padding: 2px; }
 div.riform td textarea { width: 300px; height: 100px; border: 1px solid #003366; padding: 2px; }
