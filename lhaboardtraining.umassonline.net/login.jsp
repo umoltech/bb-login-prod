@@ -6,6 +6,20 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
+<%@page import="java.util.Date"%>
+
+<%
+  Date rightNow = new Date();
+  Date migrationStart = new Date(115, 11, 28, 9, 0, 0);
+  Date migrationEnd = new Date(115, 11, 28, 15, 0, 0);
+  
+  Boolean isMigration = false;
+  
+  if (rightNow.compareTo(migrationStart) > 0 && rightNow.compareTo(migrationEnd) < 0) {
+    isMigration = true;
+  }
+%>
+
 <bbNG:genericPage authentication="N" wrapper="false" onLoad="loadLoginPage()" bodyClass="login-page-body">
    
 	<%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
@@ -200,7 +214,14 @@
 					
 					<div id="loginBodyContainer">
 						<div id="loginBox">
-							<loginUI:loginForm />          
+							<% if (isMigration) { %>
+                <div class="migration">
+                  <p><strong>Please Note</strong></p>
+                  <p>This system is unavailable today due to a content migration.</p>
+                </div>
+              <% } else { %>
+                <loginUI:loginForm />
+              <% } %>       
 						</div>
 						<div id="loginDescription">
 							<p>Welcome to the Massachusetts Department of Housing and Community Development's</p>
