@@ -10,8 +10,8 @@
 
 <%
   Date rightNow = new Date();
-  Date migrationStart = new Date(115, 11, 28, 9, 0);
-  Date migrationEnd = new Date(115, 11, 28, 23, 0);
+  Date migrationStart = new Date(115, 11, 28, 9, 0, 0);
+  Date migrationEnd = new Date(115, 11, 28, 15, 0, 0);
   
   Boolean isMigration = false;
   
