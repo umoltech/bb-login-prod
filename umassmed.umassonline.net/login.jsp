@@ -10,7 +10,7 @@
 
 <%
   Date rightNow = new Date();
-  Date migrationStart = new Date(115, 11, 28, 11, 0);
+  Date migrationStart = new Date(115, 11, 28, 9, 0);
   Date migrationEnd = new Date(115, 11, 28, 23, 0);
   
   Boolean isMigration = false;
@@ -112,7 +112,7 @@
                 <% if (isMigration) { %>
                   <div class="migration">
                     <p><strong>Please Note</strong></p>
-                    <p>This system is unavailable due to a content migration until Dec 28 at Noon EST.</p>
+                    <p>This system is unavailable today due to a content migration.</p>
                   </div>
                 <% } else { %>
                   <loginUI:loginForm />
