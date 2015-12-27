@@ -8,9 +8,6 @@
 
 <c:set var="productName" value="${ loginUI:getProductName() }" />
 
-<%--
-  This is a standard wrapper for all AS pages.  It is recommended that you keep this tag.
-  --%>
 <bbNG:genericPage authentication="N" wrapper="false" onLoad="loadLoginPage()" bodyClass="login-page">
    
 <%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
@@ -19,64 +16,64 @@
     <script type="text/javascript">
       function loadLoginPage() {
         if (top != self) {
-    		top.location.replace(self.location.href);
-    	  }
+          top.location.replace(self.location.href);
+        }
       }
     </script>
   </bbNG:jsBlock>
   
-	<bbNG:cssBlock>
-		<style type="text/css">
-			body, body.login-page-body { 
-				background-color: #ffffff;
-				background-image: none;
-				margin: 0;
-			}
-			
-			#loginContainer #loginTitle {
-				text-align: center;
-				margin-bottom: 20px;
-			}
-			
-			#loginContainer #loginTitle h1 {
-				background-color: #eeeeee;
-				padding: 10px 0;
-				margin-top: 0;
-				font-size: 180%;
-			}
-			
-			#loginContainer div.loginBody {
-				background-color: #ffffff;
-				background-image: none;
-				background-repeat: no-repeat;
-				background-position: center top;
-				padding: 0;
-			}
-			
-			#loginAnnouncements ul {
-				width: 500px;
-			}
-			
-			#loginAnnouncements li {
-				background-color: #FFFF99;
-			}
-			
-			#jumpBox { 
-				width: 400px; 
-				margin: 0 auto 40px auto; 
-				text-align: center; 
-			}
-			
-			#jumpBox form { 
-				margin-bottom: 20px; 
-			}    
-			
-			#jumpBox form button { 
-				width: 350px; 
-				cursor: pointer;
-			}
-		</style>
-	</bbNG:cssBlock>
+  <bbNG:cssBlock>
+    <style type="text/css">
+      body, body.login-page-body { 
+        background-color: #ffffff;
+        background-image: none;
+        margin: 0;
+      }
+      
+      #loginContainer #loginTitle {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      #loginContainer #loginTitle h1 {
+        background-color: #eeeeee;
+        padding: 10px 0;
+        margin-top: 0;
+        font-size: 180%;
+      }
+      
+      #loginContainer div.loginBody {
+        background-color: #ffffff;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position: center top;
+        padding: 0;
+      }
+      
+      #loginAnnouncements ul {
+        width: 500px;
+      }
+      
+      #loginAnnouncements li {
+        background-color: #FFFF99;
+      }
+      
+      #jumpBox { 
+        width: 400px; 
+        margin: 0 auto 40px auto; 
+        text-align: center; 
+      }
+      
+      #jumpBox form { 
+        margin-bottom: 20px; 
+      }    
+      
+      #jumpBox form button { 
+        width: 350px; 
+        cursor: pointer;
+      }
+    </style>
+  </bbNG:cssBlock>
 
 
 
@@ -105,11 +102,7 @@
           </form>
         </div>
 
-        <div id="loginBox">
-          <!--
-          <loginUI:loginForm />          
-          -->
-        </div>
+        <div id="loginBox"></div>
 
         <div id="loginOptions">
           <loginUI:gatewayButtons />
@@ -117,7 +110,7 @@
       </div>
 
       <loginUI:welcomeArea />
-	    
+      
     </div>
 
   </div>
