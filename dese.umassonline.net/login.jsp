@@ -6,6 +6,19 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
+<%@page import="java.util.Date"%>
+
+<%
+  Date rightNow = new Date();
+  Date migrationStart = new Date(115, 11, 28, 9, 0, 0);
+  Date migrationEnd = new Date(115, 11, 28, 15, 0, 0);
+  
+  Boolean isMigration = false;
+  
+  if (rightNow.compareTo(migrationStart) > 0 && rightNow.compareTo(migrationEnd) < 0) {
+    isMigration = true;
+  }
+%>
 
 <%@ page import="java.util.Random" %>
 
@@ -108,7 +121,14 @@
           
           <div id="loginBox">         
             <h3>Log in to your course</h3>
-              <loginUI:loginForm />	
+              <% if (isMigration) { %>
+                <div class="migration">
+                  <p><strong>Please Note</strong></p>
+                  <p>This system is unavailable today due to a content migration.</p>
+                </div>
+              <% } else { %>
+                <loginUI:loginForm />
+              <% } %>
               <div id="loginLogoSmall"><img src="/bbcswebdav/library/login/dese/bb-learn.jpg" /></div>			
             </div>
           </div>
