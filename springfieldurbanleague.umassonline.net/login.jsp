@@ -11,7 +11,7 @@
 <%
   Date rightNow = new Date();
   Date migrationStart = new Date(115, 11, 28, 9, 0, 0);
-  Date migrationEnd = new Date(115, 11, 28, 15, 0, 0);
+  Date migrationEnd = new Date(115, 11, 28, 23, 0, 0);
   
   Boolean isMigration = false;
   
@@ -45,7 +45,7 @@
       
       #loginContainer div.loginBody {
         background-color: #ffffff;
-        background-image: url('https://mycourses.umassonline.net/bbcswebdav/library/login/uls/header.gif');
+        background-image: url('/bbcswebdav/library/login/uls/header.gif');
         background-repeat: no-repeat;
         background-position: center top;
         padding: 150px 0 0 0;
@@ -161,7 +161,7 @@
               <% } %>     
             </div>
             <div id="loginLogo">
-              <img src="https://mycourses.umassonline.net/bbcswebdav/library/login/uls/be-the-stem-program.gif" alt="Be the S.T.E.M. Program" />
+              <img src="/bbcswebdav/library/login/uls/be-the-stem-program.gif" alt="Be the S.T.E.M. Program" />
             </div>
           </div>
           

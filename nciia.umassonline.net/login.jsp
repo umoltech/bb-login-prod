@@ -11,7 +11,7 @@
 <%
   Date rightNow = new Date();
   Date migrationStart = new Date(115, 11, 28, 9, 0, 0);
-  Date migrationEnd = new Date(115, 11, 28, 15, 0, 0);
+  Date migrationEnd = new Date(115, 11, 28, 23, 0, 0);
   
   Boolean isMigration = false;
   
@@ -54,7 +54,7 @@
   
   #loginAnnouncements { padding-top: 5px; margin: 20px 0 30px 0; }
   #loginAnnouncements ul { width: 830px; }
-  #loginAnnouncements li { background-color: #FFFFCC; background-image: url('https://mycourses.umassonline.net/bbcswebdav/library/login/nciia/announcements-bot.jpg'); background-position: center bottom; background-repeat: no-repeat;  }
+  #loginAnnouncements li { background-color: #FFFFCC; background-image: url('/bbcswebdav/library/login/nciia/announcements-bot.jpg'); background-position: center bottom; background-repeat: no-repeat;  }
   
   .login-page #copyright { margin-top: 0; position: relative; }
 </style>
@@ -76,8 +76,8 @@
     
         <div id="loginBoxContainer">
           <div id="loginBlockColumnLeft">
-            <div class="loginBodyLogo"><img src="https://mycourses.umassonline.net/bbcswebdav/library/login/nciia/header.jpg" /></div>
-            <div class="loginBodySponsors"><img src="https://mycourses.umassonline.net/bbcswebdav/library/login/nciia/sponsors.jpg" /></div>
+            <div class="loginBodyLogo"><img src="/bbcswebdav/library/login/nciia/header.jpg" /></div>
+            <div class="loginBodySponsors"><img src="/bbcswebdav/library/login/nciia/sponsors.jpg" /></div>
           </div>
         
           <div id="loginBox">         

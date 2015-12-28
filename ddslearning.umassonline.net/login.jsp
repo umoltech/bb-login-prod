@@ -11,7 +11,7 @@
 <%
   Date rightNow = new Date();
   Date migrationStart = new Date(115, 11, 28, 9, 0, 0);
-  Date migrationEnd = new Date(115, 11, 28, 15, 0, 0);
+  Date migrationEnd = new Date(115, 11, 28, 23, 0, 0);
   
   Boolean isMigration = false;
   
@@ -28,8 +28,8 @@
 
 <bbNG:cssBlock>
 <style type="text/css">
-	body.login-page { background: #E5E5E5 url('https://mycourses.umassonline.net/bbcswebdav/library/login/dds/page-bg.gif') repeat scroll 0 0; margin-top: 0; }
-	div.loginBody { width: 900px; padding: 0; background: #E5E5E5 url('https://mycourses.umassonline.net/bbcswebdav/library/login/dds/header-bg.gif') repeat-x scroll 0 0; }
+	body.login-page { background: #E5E5E5 url('/bbcswebdav/library/login/dds/page-bg.gif') repeat scroll 0 0; margin-top: 0; }
+	div.loginBody { width: 900px; padding: 0; background: #E5E5E5 url('/bbcswebdav/library/login/dds/header-bg.gif') repeat-x scroll 0 0; }
 	div.loginBody div.headerTitle { font-size: 24px; font-weight: bold; line-height: 36px; padding-top: 10px; text-align: center; }
 	div.loginBody div.headerSubTitle { font-size: 16px; line-height: 24px; text-align: center; margin-bottom: 50px; font-style: italic; }
 	div.loginBody .receipt { width: 380px; }
@@ -58,7 +58,7 @@
 	#vistaFormFields .button-1 { font-size: 130%; margin: 15px 0 0 230px; padding: 7px 22px 7px 22px; width: auto; }
 	#loginAnnouncements { padding-top: 5px; }
 	#loginAnnouncements ul { width: 830px; }
-	#loginAnnouncements li { background: #FFFFCC url("https://mycourses.umassonline.net/bbcswebdav/library/login/dds/announcements-bot.jpg") no-repeat center bottom; }
+	#loginAnnouncements li { background: #FFFFCC url("/bbcswebdav/library/login/dds/announcements-bot.jpg") no-repeat center bottom; }
 	.login-page #copyright { background-color: #E5E5E5; bottom: 0; margin-top: 0; position: relative; padding-bottom: 30px; }
 </style>
 </bbNG:cssBlock>
@@ -72,7 +72,7 @@
     <div id="loginContainer">
       <div id="loginHeader" class="clearfix">
         <h1 class="hideoff">${productName}</h1>
-        <img src="https://mycourses.umassonline.net/bbcswebdav/library/login/dds/header-bg.gif" alt="${productName}" class="productLogo" />
+        <img src="/bbcswebdav/library/login/dds/header-bg.gif" alt="${productName}" class="productLogo" />
         <loginUI:accessibility />
       </div>
 
@@ -102,7 +102,7 @@
             </div>
           </div>
           <div id="loginBlockColumnRight">
-            <div id="ddsLogo"><img src="https://mycourses.umassonline.net/bbcswebdav/library/login/dds/dds-logo.jpg" /></div>
+            <div id="ddsLogo"><img src="/bbcswebdav/library/login/dds/dds-logo.jpg" /></div>
             <div id="ddsUrl"><a href="http://www.ddslearning.com" target="_blank">www.ddslearning.com</a></div>
           </div>
           <div id="loginBoxFooter">	

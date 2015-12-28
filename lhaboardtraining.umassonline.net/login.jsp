@@ -11,7 +11,7 @@
 <%
   Date rightNow = new Date();
   Date migrationStart = new Date(115, 11, 28, 9, 0, 0);
-  Date migrationEnd = new Date(115, 11, 28, 15, 0, 0);
+  Date migrationEnd = new Date(115, 11, 28, 23, 0, 0);
   
   Boolean isMigration = false;
   
@@ -97,7 +97,7 @@
       #loginContainer div.loginBody div.loginBodyBackground {
         width: 1000px;
         height: 295px;
-        background: transparent url('https://mycourses.umassonline.net/bbcswebdav/library/login/dhcd/bg-campus.png') no-repeat top center;
+        background: transparent url('/bbcswebdav/library/login/dhcd/bg-campus.png') no-repeat top center;
       }
 			
 			#loginBodyContainer {
@@ -226,7 +226,7 @@
 						<div id="loginDescription">
 							<p>Welcome to the Massachusetts Department of Housing and Community Development's</p>
               <p class="bold">Local Housing Authority<br />Board Member Training Program</p>
-              <div><img src="https://mycourses.umassonline.net/bbcswebdav/library/login/dhcd/seal.png" /></div>
+              <div><img src="/bbcswebdav/library/login/dhcd/seal.png" /></div>
 						</div>
 					</div>
 					
