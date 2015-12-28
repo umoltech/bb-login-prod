@@ -6,20 +6,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
-<%@page import="java.util.Date"%>
-
-<%
-  Date rightNow = new Date();
-  Date migrationStart = new Date(115, 11, 28, 9, 0, 0);
-  Date migrationEnd = new Date(115, 11, 28, 23, 0, 0);
-  
-  Boolean isMigration = false;
-  
-  if (rightNow.compareTo(migrationStart) > 0 && rightNow.compareTo(migrationEnd) < 0) {
-    isMigration = true;
-  }
-%>
-
 <c:set var="productName" value="${ loginUI:getProductName() }" />
 
 <bbNG:genericPage authentication="N" wrapper="false" onLoad="if (document.forms.login.user_id != undefined) document.forms.login.user_id.focus()" bodyClass="login-page">
@@ -91,32 +77,10 @@
         <div id="loginBoxContainer">	  
           <loginUI:errorMessage />
           <div class="loginBlockColumn">
-            <div class="loginAnnouncementsBlock">
-              <div id="loginAnnouncementsAlert">
-                <h3>Please Note:</h3>
-                <ul>
-                  <li>As a reminder to course teams: from December 21st at 5 PM until Dec 28th at 12 PM, 
-                  please refrain from editing courses. Any changes made to courses during that time will 
-                  not be reflected in the new environment.<br />
-                  <br />
-                  However, it will be possible to use the Grade Center to calculate and save grades for 
-                  immediate release to students in the current environment, as well for upload into the 
-                  new environment. Please contact Academic Computing Services for assistance with grading 
-                  Blackboard assessments and assignments offline.</li>
-                </ul>
-              </div>
-            </div>
             <div class="loginBlock">
               <div id="loginBox" class="loginBox">
                 <h2>Blackboard Learn Login</h2>
-                <% if (isMigration) { %>
-                  <div class="migration">
-                    <p><strong>Please Note</strong></p>
-                    <p>This system is unavailable today due to a content migration.</p>
-                  </div>
-                <% } else { %>
-                  <loginUI:loginForm />
-                <% } %>				
+                <loginUI:loginForm />
               </div>
               <div id="helpBox">
                 <h2>Need Help?</h2>
