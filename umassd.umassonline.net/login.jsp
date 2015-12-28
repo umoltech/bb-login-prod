@@ -8,10 +8,10 @@
 
 <c:set var="productName" value="${ loginUI:getProductName() }" />
 
-<bbNG:genericPage authentication="N" wrapper="false" onLoad="loadLoginPage()" bodyClass="login-page">
+<bbNG:genericPage authentication="N" wrapper="false" onLoad="loadLoginPage()" bodyClass="login-page" globalNavigation="false">
    
 <%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
-   
+
 <% 
 	String targetElement = "bb-session-key";
 	String targetHeader = "referer";
@@ -43,33 +43,13 @@
 		}
 	}	
 %>
-   
-<bbNG:cssBlock>
-<style type="text/css">
-  #loginFormList li label {
-    font-weight: bold;
-  }
-</style>
-</bbNG:cssBlock>
-   
-<bbNG:jsBlock>	
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script type="text/javascript">		
-		jQuery.noConflict();
-		jQuery().ready( function() {			
-			jQuery('label[for="user_id"]').text('UmassD E-mail Address:');
-			jQuery('.forgot').remove();
-		});
-	</script>
-</bbNG:jsBlock>
 
 <div id="loginPageContainer">
   <div id="loginPane">
-
     <div id="loginContainer">
       <div id="loginHeader" class="clearfix">
         <h1 class="hideoff">${productName}</h1>
-        <img src="/images/ci/logos/Bb_newLogo_060.png" alt="${productName}" class="productLogo" />
+        <bbNG:image src="/images/ci/logos/Bb_newLogo_060.png" alt="${productName}" class="productLogo" />
         <loginUI:accessibility />
       </div>
 
@@ -99,18 +79,5 @@
 
   <bbNG:copyright />
 </div>
-
-<bbNG:jsBlock>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-793538-16', 'umassonline.net');
-  ga('send', 'pageview');
-
-</script>
-</bbNG:jsBlock>
 
 </bbNG:genericPage>
