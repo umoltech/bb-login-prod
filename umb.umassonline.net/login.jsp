@@ -346,15 +346,6 @@ div.loginBody { padding-top: 0px; margin-top: 20px; width: 300px; background: #F
 				<div id="ccbb2">
 					<div id="bbAlerts">
 						<h3 class="orBB" id="normal">Alerts</h3>
-						<div class="loginAnnouncements">
-							<ul>
-								<li><strong>Dear Faculty, please don't forget to request your courses 
-                before the start of the semester:</strong>
-									<div><a href="http://www.umb.edu/iwantbblearn" 
-									target="_blank">Request your Blackboard Learn Course</a></div>
-								</li>
-							</ul>
-						</div>
 						<loginUI:systemAnnouncements maxItems="5" />
 					</div>
 					<div id="bbNews">
