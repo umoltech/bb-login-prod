@@ -6,20 +6,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
-<%@page import="java.util.Date"%>
-
-<%
-  Date rightNow = new Date();
-  Date migrationStart = new Date(115, 11, 28, 9, 0, 0);
-  Date migrationEnd = new Date(115, 11, 28, 23, 0, 0);
-  
-  Boolean isMigration = false;
-  
-  if (rightNow.compareTo(migrationStart) > 0 && rightNow.compareTo(migrationEnd) < 0) {
-    isMigration = true;
-  }
-%>
-
 <%@ page import="java.util.Random" %>
 
 <c:set var="productName" value="${ loginUI:getProductName() }" />
@@ -96,12 +82,6 @@
 
       <div class="clearfix loginBody">
       
-        <div class="loginAlertTop">
-          <p>Due to an internal migration in the Blackboard Learning Management System, Blackboard will be unavailable to RETELL instructors and participants from 9 AM Monday, 12/28/2015 through 5 PM Friday, 12/31/2015.</p>
-          <p>The Department asks that instructors grade accordingly given this blackout window, and will grant you an additional 5 days to complete your gradebook at the end of your course.</p>
-          <p>Regards,<br />Blackboard Administrators</p>
-        </div>
-        
         <loginUI:errorMessage />
 		
         <div id="loginBoxContainer">
@@ -121,21 +101,14 @@
           
           <div id="loginBox">         
             <h3>Log in to your course</h3>
-              <% if (isMigration) { %>
-                <div class="migration">
-                  <p><strong>Please Note</strong></p>
-                  <p>This system is unavailable today due to a content migration.</p>
-                </div>
-              <% } else { %>
-                <loginUI:loginForm />
-              <% } %>
+              <loginUI:loginForm />
               <div id="loginLogoSmall"><img src="/bbcswebdav/library/login/dese/bb-learn.jpg" /></div>			
-            </div>
           </div>
+        </div>
 		
-          <loginUI:systemAnnouncements maxItems="5" />
-		
-          <bbNG:copyright />
+        <loginUI:systemAnnouncements maxItems="5" />
+  
+        <bbNG:copyright />
 		
         <div id="loginOptions">
           <loginUI:gatewayButtons />
