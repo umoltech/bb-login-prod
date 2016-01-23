@@ -6,20 +6,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
-<%@page import="java.util.Date"%>
-
-<%
-  Date rightNow = new Date();
-  Date migrationStart = new Date(115, 11, 28, 9, 0, 0);
-  Date migrationEnd = new Date(115, 11, 28, 23, 0, 0);
-  
-  Boolean isMigration = false;
-  
-  if (rightNow.compareTo(migrationStart) > 0 && rightNow.compareTo(migrationEnd) < 0) {
-    isMigration = true;
-  }
-%>
-
 <c:set var="productName" value="${ loginUI:getProductName() }" />
 
 <bbNG:genericPage authentication="N" wrapper="false" onLoad="loadLoginPage()" bodyClass="login-page">
@@ -28,6 +14,10 @@
 
 <bbNG:cssBlock>
   <style type="text/css">
+    body.login-page {
+      background-color: #999 !important;
+    }
+    
     div.loginBody {
       background: url("http://www.umassmedcwm.org/ud/ud-logo-w.png") no-repeat scroll 94px 94px transparent;
     }
@@ -37,15 +27,25 @@
     }
 
     a, .portlet .subCategories li a, .blockGroups .itemHead, .blockGroups .itemHeadOpen {
-      color: #C2989D;
+      color: #fff;
     }
 
     .forgot a {
-      border-bottom: 1px dotted #C2989D;
+      border-bottom: 1px dotted #fff;
     }
 
     #loginAnnouncements a {
     border-bottom: 1px dotted #C2989D;
+    }
+    
+    .login-page #copyright {
+      position: relative !important;
+      margin: 20px auto !important;
+      display: block !important;
+      bottom: auto;
+      left: auto;
+      right: auto;
+      top: auto;
     }
   </style>
 </bbNG:cssBlock>
@@ -68,14 +68,7 @@
         <loginUI:errorMessage />
 
         <div id="loginBox">
-          <% if (isMigration) { %>
-            <div class="migration">
-              <p><strong>Please Note</strong></p>
-              <p>This system is unavailable today due to a content migration.</p>
-            </div>
-          <% } else { %>
-            <loginUI:loginForm />
-          <% } %>
+          <loginUI:loginForm />
         </div>
 
         <div id="loginOptions">
