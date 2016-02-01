@@ -208,7 +208,7 @@ div.popup {
 		prefix: 'uma_'
 	};
     
-        var courseevalavailable = false;
+  var courseevalavailable = false;
 	
 	function openCourseEvalPopUp(jsonpData) {
 		if(!jsonpData) {
@@ -276,27 +276,31 @@ div.popup {
 	}
   
 	function bblearn_submit_form() {
-		var bblearnUsername = jQuery(bblearn.elements.username).val();
+    /* (login username prefixing -- suspended Feb 1, 2016)
+      var bblearnUsername = jQuery(bblearn.elements.username).val();
 
-		if (bblearnUsername.substring(0, bblearn.prefix.length) != bblearn.prefix) {
-			bblearnUsername = bblearn.prefix + bblearnUsername;
-		}
+      if (bblearnUsername.substring(0, bblearn.prefix.length) != bblearn.prefix) {
+        bblearnUsername = bblearn.prefix + bblearnUsername;
+      }
 
-		jQuery(bblearn.elements.username).val(bblearnUsername);
-
+      jQuery(bblearn.elements.username).val(bblearnUsername);
+    */
+    
 		jQuery(bblearn.elements.form).submit();
 
 		return true;
 	}
   
-	function bblearn_check_login_form() {  
+	function bblearn_check_login_form() {
 		var id = jQuery(bblearn.elements.username).val();
+    
 		if (jQuery.trim(id) == '') {
 			alert('Please supply a valid login ID.');
 			return false;
 		}
 
 		var pw = jQuery(bblearn.elements.password).val();
+    
 		if (jQuery.trim(pw) == '') {
 			alert('Please supply a valid password.');
 			return false;
