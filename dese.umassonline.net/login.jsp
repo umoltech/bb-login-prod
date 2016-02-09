@@ -10,7 +10,7 @@
 
 <c:set var="productName" value="${ loginUI:getProductName() }" />
 
-<bbNG:genericPage authentication="N" wrapper="false" onLoad="if (document.forms.login.user_id != undefined) document.forms.login.user_id.focus()" bodyClass="login-page">
+<bbNG:genericPage authentication="N" wrapper="false" onLoad="loadLoginPage()" bodyClass="login-page" globalNavigation="false">
 
 <%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
 
@@ -47,6 +47,7 @@
 	.loginBlock a, #loginBox a { text-decoration: none; color: #06466A;  }
 	.loginBlock a:hover, #loginBox a:hover { text-decoration: underline; }
 	#loginAnnouncements li { background-color: #FFFFCC; }
+  .login-page #copyright { bottom: 0; position: relative; }
 	.login-page #copyright .logo { display: none; }
 	a.pdf { background: url('/images/cs/fileicons/filetype_pdf_ia.png') 0 0 no-repeat; padding-left: 25px; padding-top: 5px; }
   .loginAlertTop { margin-bottom: 20px; background-color: #FFFFCC; padding: 18px 24px; }
@@ -55,6 +56,24 @@
 </bbNG:cssBlock>
 
 <bbNG:jsBlock>
+<script type="text/javascript">
+  function loadLoginPage() {
+    if (top != self) {
+      top.location.replace(self.location.href);
+    }
+    if(document.forms.login.user_id != undefined) {
+      document.forms.login.user_id.focus();
+    }
+    setTimeout("triggerScreenreaderAlert()", 500);
+  }
+  
+  function triggerScreenreaderAlert() {
+    if (document.getElementById('loginErrorMessage')) {
+      $('loginErrorMessage').update( $('loginErrorMessage').innerHTML );
+    }
+  }
+</script>
+<!--
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">	
 	jQuery.noConflict();
@@ -63,6 +82,7 @@
 		jQuery('.forgot').append('<br /><br />By logging in, you agree that you have read and accepted the <a href="/bbcswebdav/library/login/dese/BBL-CVENT-aup-072714.pdf" target="_blank">Acceptable Use Policy</a>.');
 	});
 </script>
+-->
 </bbNG:jsBlock>
 
 <div id="loginPageContainer">
@@ -80,10 +100,9 @@
         <loginUI:localePicker />
       </div>
 
-      <div class="clearfix loginBody">
-      
+      <div class="clearfix loginBody">      
         <loginUI:errorMessage />
-		
+        
         <div id="loginBoxContainer">
           <div id="loginBlockColumnLeft">
             <p><img src="/bbcswebdav/library/login/dese/logo.jpg" /></p>
@@ -99,10 +118,10 @@
             <p>Still need help? Click here: <a href="http://ese.echelp.org" target="_blank">http://ese.echelp.org</a></p> 
           </div>
           
-          <div id="loginBox">         
+          <div id="loginBox">
             <h3>Log in to your course</h3>
-              <loginUI:loginForm />
-              <div id="loginLogoSmall"><img src="/bbcswebdav/library/login/dese/bb-learn.jpg" /></div>			
+            <loginUI:loginForm forgotPasswordText="First time logging in? Click here to set your password. Returning user? Click here if you need to retrieve your password." />
+            <div id="loginLogoSmall"><img src="/bbcswebdav/library/login/dese/bb-learn.jpg" /></div>			
           </div>
         </div>
 		
