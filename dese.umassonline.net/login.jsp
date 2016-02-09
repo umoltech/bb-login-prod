@@ -73,16 +73,6 @@
     }
   }
 </script>
-<!--
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript">	
-	jQuery.noConflict();
-	jQuery(document).ready( function() {				
-		jQuery('.forgot').children('a').html('First time logging in? Click here to set your password.<br /><br />Returning user? Click here if you need to retrieve your password.');
-		jQuery('.forgot').append('<br /><br />By logging in, you agree that you have read and accepted the <a href="/bbcswebdav/library/login/dese/BBL-CVENT-aup-072714.pdf" target="_blank">Acceptable Use Policy</a>.');
-	});
-</script>
--->
 </bbNG:jsBlock>
 
 <div id="loginPageContainer">
@@ -120,7 +110,11 @@
           
           <div id="loginBox">
             <h3>Log in to your course</h3>
+            
             <loginUI:loginForm forgotPasswordText="First time logging in? Click here to set your password. Returning user? Click here if you need to retrieve your password." />
+            
+            <div style="margin-top:20px">By logging in, you agree that you have read and accepted the <a href="/bbcswebdav/library/login/dese/BBL-CVENT-aup-072714.pdf" target="_blank">Acceptable Use Policy</a>.</div>
+            
             <div id="loginLogoSmall"><img src="/bbcswebdav/library/login/dese/bb-learn.jpg" /></div>			
           </div>
         </div>
