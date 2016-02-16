@@ -65,14 +65,14 @@
 			
 			#loginBodyContainer {
 				width: 950px;
-				height: 280px;
+				height: 330px;
 				padding: 0;
 				overflow: hidden;
 			}
 			
 			#loginBodyContainer #loginBox {
 				width: 397px;
-				height: 234px;
+				height: 284px;
 				padding: 20px 0 0 0;				
 				border-top: 3px solid #dfe5ec;
 				border-bottom: 3px solid #dfe5ec;
@@ -97,7 +97,7 @@
 			
 			#loginBodyContainer #loginBox li .forgot {
 				display: block;
-				width: 220px;
+				width: 350px;
 				float: left;
 			}
 			
@@ -111,7 +111,7 @@
 			
 			#loginBodyContainer #loginLogo {
 				width: 550px;
-				height: 210px;
+				height: 260px;
 				padding: 50px 0 0 0;
 				background-color: #254061;
 				float: right;
@@ -137,7 +137,7 @@
 			
 			#copyright {
 				margin-top: 20px;
-				display: inline;
+				display: block;
 				position: relative;
 				text-align: center;
 			}
@@ -165,7 +165,7 @@
 						</div>
 						<div id="loginLogo">
 							<img src="/bbcswebdav/library/login/ci/civic-initiative.gif" alt="Civic Initiative" />
-							<p><a href="http://www.civicinitiative.com" target="_blank">www.civicinitiative.com</a></p>
+							<p><a href="http://www.donahue.umassp.edu/business-groups/civic-initiative" target="_blank">www.donahue.umassp.edu/business-groups/civic-initiative</a></p>
 						</div>
 					</div>
 					
