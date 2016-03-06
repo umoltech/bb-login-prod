@@ -185,11 +185,6 @@ div.loginbox {
 .center-txt {
   text-align: center;
 }
-
-#loginAnnouncements ul li:first-child strong {
-  background-color: #FF0;
-  padding: 3px 5px;
-}
 </style>
 </bbNG:cssBlock>
 
