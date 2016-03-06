@@ -185,10 +185,20 @@ div.loginbox {
 .center-txt {
   text-align: center;
 }
+
+#loginAnnouncements ul li:first-child strong {
+  background-color: #FF0;
+  padding: 3px 5px;
+}
 </style>
 </bbNG:cssBlock>
 
 <bbNG:jsBlock>
+<script type="text/javascript">
+  function getPreview() {
+    window.open("/bbcswebdav/xid-789898_1", "preview", "width=650, height=560");
+  }
+</script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
