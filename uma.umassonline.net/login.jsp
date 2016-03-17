@@ -49,7 +49,7 @@
   <! -- Begin top banner -->
   <div class="top">
     <div id="logo">
-      <a href="http://www.umass.edu/" title="Home" rel="home"><img src="/bbcswebdav/library/login/uma/images/template/UMwordmark.png" width="204" height="26" alt="UMass Amherst"/></a>
+      <a href="http://www.umass.edu/" title="Home" rel="home" target="_blank"><img src="/bbcswebdav/library/login/uma/images/template/UMwordmark.png" width="204" height="26" alt="UMass Amherst"/></a>
       <div class="uma-search">
         <form action="http://googlebox.oit.umass.edu/search" method="get">
           <h2 class="element-invisible">Search Google Appliance</h2> 
@@ -70,8 +70,8 @@
         <li><a title="" href="http://go.umass.edu" target="_blank">Go.UMass</a></li>
         <li><a title="" href="http://apps.umass.edu" target="_blank">Email</a></li>
         <li><a title="" href="http://www.spire.umass.edu" target="_blank">SPIRE</a></li>
-        <li><a title="" href="https://moodle.umass.edu/" target="_blank">Moodle</a></li>
-        <li><a title="" href="https://udrive.oit.umass.edu/" target="_blank">UDrive</a></td>
+        <li><a title="" href="https://moodle.umass.edu" target="_blank">Moodle</a></li>
+        <li><a title="" href="http://www.it.umass.edu/online-storage-collaboration" target="_blank">Online Storage</a></td>
         <li class="last"><a title="" href="http://umass.edu/peoplefinder/" target="_blank">People Finder</a></li>        
     </ul>
   </div>
@@ -123,23 +123,23 @@
     <div class="uma-helpitem">
       <h3>New Enrollment Process</h3>
       <p>All students, including Non-Degree (ND), now enroll in CPE classes directly 
-      in <a href="https://www.spire.umass.edu/">SPIRE</a>, the UMass Amherst Student 
+      in <a href="https://www.spire.umass.edu/" target="_blank">SPIRE</a>, the UMass Amherst Student 
       Information System. 
-      <a href="http://www.umassulearn.net/registration-info">Read more...</a></p>
+      <a href="http://www.umassulearn.net/registration-info" target="_blank">Read more...</a></p>
     </div>
   </aside>
   <!-- End 3 columns -->  
   <!-- Begin footer -->    
   <footer>
     <div class="footlinks">
-      <p><a href="http://www.umassonline.net/copyright">Copyright Compliance</a> |
-      <a href="http://www.umassonline.net/privacy-policy">Privacy Policy</a> |
-      <a href="https://en-us.help.blackboard.com/Learn/9.1_2014_04/Student/015_Browser_Support/Browser_Checker">Site Requirements</a> |
-      <a href="http://www.umassulearn.net/about">Contact Us</a></p>
+      <p><a href="http://www.umassonline.net/copyright" target="_blank">Copyright Compliance</a> |
+      <a href="http://www.umassonline.net/privacy-policy" target="_blank">Privacy Policy</a> |
+      <a href="https://en-us.help.blackboard.com/Learn/9.1_2014_04/Student/015_Browser_Support/Browser_Checker" target="_blank">Site Requirements</a> |
+      <a href="http://www.umassulearn.net/about" target="_blank">Contact Us</a></p>
     </div>
         
     <div class="footdisclaimer">        
-      <p>©2016 University of Massachusetts&nbsp;•&nbsp;<a href="http://umass.edu/site-policies">Site&nbsp;Policies</a>&nbsp;
+      <p>©2016 University of Massachusetts&nbsp;•&nbsp;<a href="http://umass.edu/site-policies" target="_blank">Site&nbsp;Policies</a>&nbsp;
       <a href="mailto:info@cpe.umass.edu">Site&nbsp;Contact</a></p>
     </div>
   </footer>
