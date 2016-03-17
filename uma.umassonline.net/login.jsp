@@ -68,7 +68,7 @@
   <div>
     <ul id="metanav">
         <li><a title="" href="http://go.umass.edu" target="_blank">Go.UMass</a></li>
-        <li><a title="" href="http://apps.umass.edu" target="_blank">Email</a></li>
+        <li><a title="" href="http://www.it.umass.edu/email" target="_blank">Email</a></li>
         <li><a title="" href="http://www.spire.umass.edu" target="_blank">SPIRE</a></li>
         <li><a title="" href="https://moodle.umass.edu" target="_blank">Moodle</a></li>
         <li><a title="" href="http://www.it.umass.edu/online-storage-collaboration" target="_blank">Online Storage</a></td>
