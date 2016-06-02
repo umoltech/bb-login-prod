@@ -175,7 +175,7 @@
         <div class="loginNav">
           <a href="https://umassmed.edu" target="_blank">UMass Medical School</a>
           <a href="https://umassmed.edu/it/services/academic-computing/blackboard-learn/" target="_blank">Bb Learn Resources</a>
-          <a href="https://i.umassmed.edu/events/istraining_events.aspx?pid=80" target="_blank">Training (Login Required)</a>
+          <a href="https://umassmed.edu/it/training/" target="_blank">Training</a>
           <a href="https://umassmed.edu/it/services/academic-computing/" target="_blank">Academic Technology</a>
           <a href="https://umassmed.edu/it/security/" target="_blank">IT Security</a>
         </div>
@@ -188,7 +188,7 @@
           <div class="col_4 white">
             <div class="loginFormBubble">
               <h3>Blackboard Learn Login</h3>
-              <loginUI:loginForm loginText="Submit" forgotPasswordText="Password Reset" />
+              <loginUI:loginForm loginText="Submit" forgotPasswordText="Need Your Password?" />
             </div>
             <div class="mission">
               <p>The mission of the University of Massachusetts Medical School is to advance the 
