@@ -23,7 +23,7 @@
     java.util.Enumeration enuH = request.getHeaderNames();
     
     while(enuR.hasMoreElements()) {
-          String elementName = (String)enuR.nextElement();	
+      String elementName = (String)enuR.nextElement();	
       if (elementName == targetElement) {		
         Object elementValue = request.getAttribute(targetElement);
         
@@ -49,7 +49,9 @@
     <script type="text/javascript">	
       jQuery.noConflict();
       
-      jQuery('.forgot').remove();
+      jQuery('#loginBox').children('form').remove();
+      
+      jQuery('#loginRedirectProviders').children('h3').remove();
     </script>
   </bbNG:jsBlock>
   
@@ -68,6 +70,19 @@
         text-align: center;
         width: 400px;
       }
+      
+      #loginBox ul {
+        background-color: #FFFF66;
+        padding: 0;
+      }
+      
+      #loginBox ul li {
+        padding: 15px 0;
+      }
+      
+      #loginRedirectProviderList a {
+        font-size: 150%;
+      }
     </style>
   </bbNG:cssBlock>  
 
@@ -84,9 +99,7 @@
           <loginUI:localePicker />
         </div>
 
-        <div class="clearfix loginBody">
-          <div class="alert">Blackboard Mobile is currently not available.</div>
-          
+        <div class="clearfix loginBody">          
           <loginUI:errorMessage />
 
           <div id="loginBox">
