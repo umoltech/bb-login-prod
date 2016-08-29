@@ -6,125 +6,214 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
-<%@page import="java.util.Date"%>
-
-<%
-  Date rightNow = new Date();
-  Date migrationStart = new Date(115, 11, 28, 9, 0, 0);
-  Date migrationEnd = new Date(115, 11, 28, 23, 0, 0);
-  
-  Boolean isMigration = false;
-  
-  if (rightNow.compareTo(migrationStart) > 0 && rightNow.compareTo(migrationEnd) < 0) {
-    isMigration = true;
-  }
-%>
-
 <c:set var="productName" value="${ loginUI:getProductName() }" />
 
-<%--
-  This is a standard wrapper for all AS pages.  It is recommended that you keep this tag.
-  --%>
-<bbNG:genericPage authentication="N" wrapper="false" onLoad="loadLoginPage()" bodyClass="login-page" globalNavigation="false">
+<bbNG:genericPage authentication="N" wrapper="false" onLoad="loadLoginPage()" bodyClass="login-page">
    
-<%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
-   
-  <bbNG:jsBlock>
-    <script type="text/javascript">
-      function loadLoginPage()
-      {
-    	  if ( top != self )
-    	  {
-    		  top.location.replace( self.location.href );
-    		}
-    	  if(document.forms.login.user_id != undefined)
-    		{
-    		  document.forms.login.user_id.focus();
-    		}
-    	  setTimeout("triggerScreenreaderAlert()", 500);
+  <%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
+
+  <bbNG:jsBlock>	
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">	
+      jQuery.noConflict();
+      
+      var loginpages = {
+        'dev90.umassonline.net': {				
+          'uma-dev.umassonline.net': 'UMass Amherst',
+          'umb-dev.umassonline.net': 'UMass Boston',
+          'umd-dev.umassonline.net': 'UMass Dartmouth',
+          'uml-dev.umassonline.net': 'UMass Lowell',
+          'umassmed-dev.umassonline.net': 'UMass Medical School',				
+          'ddslearning-dev.umassonline.net': 'Massachusetts Department of Developmental Services',
+          'dese-dev.umassonline.net': 'Massachusetts Department of Elementary and Secondary Education (DESE)',
+          'nciia-dev.umassonline.net': 'National Collegiate Inventors and Innovators Association (NCIIA)',				
+          'springfieldurbanleague-dev.umassonline.net': 'Springfield Urban League',
+          'umdi-learningsolutions-dev.umassonline.net': 'UMass Donahue Institute',
+          'civicinitiative-dev.umassonline.net': 'UMDI Civic Initiative'				
+        },
+        'tst90.umassonline.net': {
+          'uma-tst.umassonline.net': 'UMass Amherst',
+          'umb-tst.umassonline.net': 'UMass Boston',
+          'umd-tst.umassonline.net': 'UMass Dartmouth',
+          'uml-tst.umassonline.net': 'UMass Lowell',
+          'umassmed-tst.umassonline.net': 'UMass Medical School',				
+          'ddslearning-tst.umassonline.net': 'Massachusetts Department of Developmental Services',
+          'dese-tst.umassonline.net': 'Massachusetts Department of Elementary and Secondary Education (DESE)',
+          'nciia-tst.umassonline.net': 'National Collegiate Inventors and Innovators Association (NCIIA)',				
+          'springfieldurbanleague-tst.umassonline.net': 'Springfield Urban League',
+          'umdi-learningsolutions-tst.umassonline.net': 'UMass Donahue Institute',
+          'civicinitiative-tst.umassonline.net': 'UMDI Civic Initiative'				
+        },
+        'mycourses.umassonline.net': {
+          'uma.umassonline.net': 'UMass Amherst',
+          'umb.umassonline.net': 'UMass Boston',
+          'umassd.umassonline.net': 'UMass Dartmouth',
+          'uml.umassonline.net': 'UMass Lowell',
+          'umassmed.umassonline.net': 'UMass Medical School',				
+          'ddslearning.umassonline.net': 'Massachusetts Department of Developmental Services',
+          'dese.umassonline.net': 'Massachusetts Department of Elementary and Secondary Education (DESE)',
+          'nciia.umassonline.net': 'National Collegiate Inventors and Innovators Association (NCIIA)',				
+          'springfieldurbanleague.umassonline.net': 'Springfield Urban League',
+          'umdi-learningsolutions.umassonline.net': 'UMass Donahue Institute',
+          'civicinitiative.umassonline.net': 'UMDI Civic Initiative'				
+        },
+        'umol.umassonline.net': {
+          'uma.umassonline.net': 'UMass Amherst',
+          'umb.umassonline.net': 'UMass Boston',
+          'umassd.umassonline.net': 'UMass Dartmouth',
+          'uml.umassonline.net': 'UMass Lowell',
+          'umassmed.umassonline.net': 'UMass Medical School',				
+          'ddslearning.umassonline.net': 'Massachusetts Department of Developmental Services',
+          'dese.umassonline.net': 'Massachusetts Department of Elementary and Secondary Education (DESE)',
+          'nciia.umassonline.net': 'National Collegiate Inventors and Innovators Association (NCIIA)',				
+          'springfieldurbanleague.umassonline.net': 'Springfield Urban League',
+          'umdi-learningsolutions.umassonline.net': 'UMass Donahue Institute',
+          'civicinitiative.umassonline.net': 'UMDI Civic Initiative'				
+        }
+      };
+      
+      function loadLoginPage() {
+        if (top != self) {
+          top.location.replace(self.location.href);
+        }
       }
       
-      function triggerScreenreaderAlert()
-      {
-    	if ( document.getElementById( 'loginErrorMessage' ) )
-  	    {
-    	  $( 'loginErrorMessage' ).update( $('loginErrorMessage').innerHTML );
-  	    }
+      function getJumpBox() {
+        var current_host = window.location.hostname;
+        var host_name = window.location.hostname.toLowerCase();
+        var path_name = window.location.pathname.toLowerCase();
+        var query_string = window.location.search;
+        var jump_box = '';
+        
+        if (loginpages[host_name] != 'undefined') {
+          jump_box += '<div class="head">Choose Your Campus:</div>';
+          
+          for (var domain in loginpages[host_name]) {
+            jump_box += '<div class="brand">';
+            jump_box += '<a href="https://' + domain + path_name + query_string + '">';
+            jump_box += loginpages[host_name][domain]
+            jump_box += '</a>';
+            jump_box += '</div>';
+          }
+          
+          jQuery('#jumpBox').html(jump_box);
+        }
       }
+      
+      jQuery(document).ready( function() {
+        getJumpBox();
+      });
     </script>
   </bbNG:jsBlock>
+    
+  <bbNG:cssBlock>
+    <style type="text/css">
+      body, body.login-page-body { 
+        background-color: #ffffff;
+        background-image: none;
+        margin: 0;
+      }
+      
+      #loginContainer #loginTitle {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      #loginContainer #loginTitle h1 {
+        background-color: #eeeeee;
+        padding: 10px 0;
+        margin-top: 0;
+        font-size: 180%;
+      }
+      
+      #loginContainer div.loginBody {
+        background-color: #ffffff;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position: center top;
+        padding: 0;
+      }
+      
+      #loginAnnouncements ul {
+        width: 500px;
+      }
+      
+      #loginAnnouncements li {
+        background-color: #FFFF99;
+      }
+      
+      #jumpBox { 
+        width: 420px; 
+        margin: 0 auto 40px auto; 
+        text-align: center; 
+        border: 1px solid #999;
+      }
+      
+      #jumpBox .head {
+        padding: 10px;
+        text-align: center;
+        background-color: #ccc;
+        font-weight: bold;			
+      }
+      
+      #jumpBox .brand {
+        padding: 7px 10px;
+        text-align: center;
+        border-bottom: 1px solid #999;
+      }
+      
+      #jumpBox .brand:hover {
+        background-color: #eeeeee;
+      }
+      
+      #jumpBox .brand a {
+        text-decoration: none;
+      }
+      
+      #jumpBox .brand:last-child {
+        border-bottom: none;
+      }
+      
+      .login-page #copyright {
+        position: relative !important;
+      }
+    </style>
+  </bbNG:cssBlock>
 
-<%-- 
-  If you need to customize styles defined in login.css, you can place your changes
-  within the following <style> block.  The JSP comment markers surrounding the <bbNG:cssBlock> element
-  must be removed before the changes will take effect.
---%>
+  <div id="loginPageContainer">
+    <div id="loginPane">
 
-<%--
-<bbNG:cssBlock>
-<style type="text/css">
-/* Custom styles go here */
-</style>
-</bbNG:cssBlock>
---%>
-
-<%--
-  It is recommended that any text passed to the loginUI tags be localized.  The following
-  is an example of loading a localized phrase from the security.properties resource bundle:
-     
-    <fmt:message var="strMyLoginText" key="my.login.text.key" bundle="${bundles.security}" />
-  
-  Once loaded, this phrase can be referenced as a JSTL variable:
-  
-    <loginUI:loginForm loginText="${strMyLoginText}" />
---%>
-
-<%--
-  Each of the <loginUI:*> elements used below can safely be rearranged to suit your needs.
-  If you change the structure significantly, you may need to update the inline styles above.
-  --%>
-<div id="loginPageContainer">
-  <div id="loginPane">
-
-    <div id="loginContainer">
-      <div id="loginHeader" class="clearfix">
-        <h1 class="hideoff">${productName}</h1>
-        <bbNG:image src="/images/ci/logos/Bb_newLogo_060.png" alt="${productName}" class="productLogo" />
-        <loginUI:accessibility />
-      </div>
-
-      <div id="loginLang" class="clearfix">
-        <loginUI:localePicker />
-      </div>
-
-      <div class="clearfix loginBody">
-        <loginUI:errorMessage />
-
-        <div id="loginBox">
-          <% if (isMigration) { %>
-            <div class="migration">
-              <p><strong>Please Note</strong></p>
-              <p>This system is unavailable today due to a content migration.</p>
-            </div>
-          <% } else { %>
-            <loginUI:loginForm />
-          <% } %>
+      <div id="loginContainer">
+        <div id="loginTitle" class="clearfix">
+          <h1>UMassOnline Blackboard Learn Login</h1>
         </div>
 
-        <div id="loginOptions">
-          <loginUI:gatewayButtons />
+        <div id="loginLang" class="clearfix">
+          <loginUI:localePicker />
         </div>
+
+        <div class="clearfix loginBody">
+          <loginUI:errorMessage />
+          <div id="jumpBox"></div>
+
+          <div id="loginBox">
+        <loginUI:loginForm />          
+          </div>
+
+          <div id="loginOptions">
+            <loginUI:gatewayButtons />
+          </div>
+        </div>
+
+        <loginUI:welcomeArea />
+        
       </div>
 
-      <loginUI:welcomeArea />
-	    
     </div>
+    
+    <loginUI:systemAnnouncements maxItems="5" />
 
+    <bbNG:copyright />
   </div>
-  
-  <loginUI:systemAnnouncements maxItems="5" />
-
-  <bbNG:copyright />
-</div>
 
 </bbNG:genericPage>
