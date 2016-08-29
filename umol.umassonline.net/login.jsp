@@ -62,12 +62,16 @@
           'umb.umassonline.net': 'UMass Boston',
           'umassd.umassonline.net': 'UMass Dartmouth',
           'uml.umassonline.net': 'UMass Lowell',
+          'lowell.umassonline.net': 'UMass Lowell Day',
           'umassmed.umassonline.net': 'UMass Medical School',				
+          'lei.umassonline.net': 'Lean Enterprise Institute',
+          'lhaboardtraining.umassonline.net': 'Local Housing Authority Board Member Training Program',
           'ddslearning.umassonline.net': 'Massachusetts Department of Developmental Services',
           'dese.umassonline.net': 'Massachusetts Department of Elementary and Secondary Education (DESE)',
           'nciia.umassonline.net': 'National Collegiate Inventors and Innovators Association (NCIIA)',				
           'springfieldurbanleague.umassonline.net': 'Springfield Urban League',
           'umdi-learningsolutions.umassonline.net': 'UMass Donahue Institute',
+          'udiscovering.umassonline.net': 'U Discovering',
           'civicinitiative.umassonline.net': 'UMDI Civic Initiative'				
         }
       };
