@@ -155,7 +155,7 @@
                
                  <div class="col-sm-7">
                      
-                       Copyright 2016, University of Massachusetts Lowell, Division of Online and Continuing Eduaction
+                       Copyright 2016, University of Massachusetts Lowell, Division of Online and Continuing Education
                   
                   </div>
                   <div class="col-sm-5">
@@ -327,7 +327,7 @@ h4 {color: #333; text-transform: uppercase; margin: 20px 0 0; font-size: 14px;}
   .oce-small {margin: 6px 0 0 34px;  } 
   a.oce-small img {width: 90%;}
   .mobile-full {width: 100%;}
-  a.login {width: 100%; text-align: left;}
+  a.login {width: 100%; text-align: center;}
   .hero{background-size:110% auto;background-image:url(/bbcswebdav/library/login/uml/images/hero.jpg);background-position:center 40px;margin:-1px 0 0;}
   body{font-size:14px;}
   .hero-text{position:static;margin:0;}
