@@ -105,7 +105,7 @@
             <p>If you are using Blackboard for the FIRST TIME, you need to set your password. 
             Please click the link to the right and follow the instructions.</p>
             <p><a class="pdf" href="/bbcswebdav/library/login/dese/ese-blackboard-instructions.pdf" target="_blank">Click here for detailed instructions and screenshots</a>.</p>
-            <p>Still need help? Click here: <a href="http://ese.echelp.org" target="_blank">http://ese.echelp.org</a></p> 
+            <p>Still need help? <a href="http://www.doe.mass.edu/contact/qanda.aspx?orgcode=retell" target="_blank">Click here for support</a></p> 
           </div>
           
           <div id="loginBox">
