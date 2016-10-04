@@ -41,6 +41,17 @@
         width: 400px;
       }
       
+      #loginBox {
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+      }
+      
+      #loginBox p {
+        font-size: 125%;
+        margin-top: 40px;
+      }
+      
       #loginBox ul li {
         padding: 15px 0;
       }
@@ -79,7 +90,10 @@
           <loginUI:errorMessage />
 
           <div id="loginBox" style="display:none">
-            <loginUI:loginForm />          
+            <loginUI:loginForm />     
+            
+            <p><strong>Important!:</strong> If you have both an @uml and @student email account 
+            in SIS you will log in with your @uml email credentials.</p>            
           </div>
 
           <div id="loginOptions">
