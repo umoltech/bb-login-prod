@@ -90,7 +90,7 @@
       <div class="uma-logintitle">
         <h2>Login to Blackboard Learn</h2>  
       </div>
-      <form method="get" action="https://umol.umass.edu">
+      <form method="get" action="/webapps/bb-auth-provider-shibboleth-BBLEARN/execute/shibbolethLogin?returnUrl=https%3A%2F%2Fuma.umassonline.net%2Fwebapps%2Fportal%2Fexecute%2FdefaultTab&authProviderId=_9311_1">
         <p><button type="submit" title="Log in with NetID" name="Login" value="Login">Log in with NetID</button></p>
       </form>                    
       <p>You must have an active UMass Amherst <a href="https://www.it.umass.edu/support/accounts/understand-your-netid-password#Your%20NetID" target="_blank">NetID</a> to log in.</p>
