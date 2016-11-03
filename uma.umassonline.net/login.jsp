@@ -90,13 +90,9 @@
       <div class="uma-logintitle">
         <h2>Login to Blackboard Learn</h2>  
       </div>
-	  <p><a href="https://uma.umassonline.net/webapps/bb-auth-provider-shibboleth-BBLEARN/execute/shibbolethLogin?returnUrl=https%3A%2F%2Fuma.umassonline.net%2Fwebapps%2Fportal%2Fexecute%2FdefaultTab&authProviderId=_9311_1" >LOGIN HERE</a></p> 
-      <!--<form method="get" action="https://uma-stage.umassonline.net/webapps/bb-auth-provider-shibboleth-BBLEARN/execute/shibbolethLogin?returnUrl=https%3A%2F%2Fuma-stage.umassonline.net%2Fwebapps%2Fportal%2Fexecute%2FdefaultTab&authProviderId=_9311_1">
-        <p><button type="submit" title="Log in with NetID" name="Login" value="Login">Log in with NetID</button></p>
-      </form>    -->                
+      <p><a id="login-submit" href="#">Log in with NetID</a></p> 
       <p>You must have an active UMass Amherst <a href="https://www.it.umass.edu/support/accounts/understand-your-netid-password#Your%20NetID" target="_blank">NetID</a> to log in.</p>
       <p><a href="https://www.it.umass.edu/support/accounts/understand-your-netid-password#Forgot%20your%20password?" target="_blank">Forgot Your Password?</a></p> 
-	  
     </div>
     <p><a href="http://www.umassulearn.net/" target="_blank">UMass Amherst Continuing &amp; Professional Education</a> presents online courses on the Blackboard Learn learning management system through <a href="http://www.umassonline.net" target="_blank">UMassOnline</a>.</p>     
   </section>
@@ -145,6 +141,10 @@
       <a href="mailto:info@cpe.umass.edu">Site&nbsp;Contact</a></p>
     </div>
   </footer>
+</div>
+
+<div id="hiddenLoginContainer" style="display:none">
+  <loginUI:loginForm />
 </div>
 
 <bbNG:cssBlock>
@@ -289,9 +289,9 @@ div.uma-logintitle {
 	font-size: .9em;
 	margin: 15px;
 }
-.uma-loginbox form button[type="submit"]{
+.uma-loginbox form button[type="submit"] {
 	color: #FFFFFF;
-  cursor: pointer;
+	cursor: pointer;
 	height: 2em;
 	font-family: inherit; 
 	font-size: 1.075em;
@@ -299,6 +299,29 @@ div.uma-logintitle {
 	background-color: #913000; 
 	padding: 0 10px;
 	margin: 10px 0;
+	border: none;
+	/* border-radius: 4px;*/
+	box-shadow: -2px -2px 8px rgba(0, 0, 0, 0.025);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-image: -moz-linear-gradient(top, #cd1502, #950e02); /* FF 3.6+ */
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cd1502), to(#950e02)); /* Safari 4+, Chrome 2+ */
+	background-image: -webkit-linear-gradient(top, #cd1502, #950e02); /* Safari 5.1+, Chrome 10+ */
+	background-image: -o-linear-gradient(top, #cd1502, #950e02); /* Opera 11.10 */
+	background-image: linear-gradient(to bottom, #cd1502, #950e02); /* Standard, IE10 */
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cd1502',endColorstr='#950e02' , GradientType=0); /* IE9 and down*/
+}
+a#login-submit {
+	color: #FFFFFF !important;
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+	height: 2em;
+	font-family: inherit; 
+	font-size: 1.075em;
+	font-weight: normal;
+	background-color: #913000; 
+	padding: 10px 10px 0 10px;
+	margin: 15px 0;
 	border: none;
 	/* border-radius: 4px;*/
 	box-shadow: -2px -2px 8px rgba(0, 0, 0, 0.025);
@@ -508,7 +531,21 @@ footer {
 </bbNG:cssBlock>
 
 <bbNG:jsBlock>
-<script type="text/javascript">
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">  
+  jQuery.noConflict();
+  
+  jQuery(document).ready( function() {
+  
+    var ssoLoginUrl = jQuery('#loginRedirectProviderList').children('li:first-child').children('a:first-child').attr('href');
+    
+    jQuery('#login-submit').attr('href', ssoLoginUrl);
+    
+    jQuery('#hiddenLoginContainer').remove();
+    
+  });
+</script>
+<script type="text/javascript">  
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-793538-14']);
   _gaq.push(['_trackPageview']);
