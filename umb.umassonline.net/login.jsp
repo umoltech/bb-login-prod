@@ -341,24 +341,24 @@ div.loginBody { padding-top: 0px; margin-top: 20px; width: 300px; background: #F
 						<li><a href="http://www.umb.edu/registrar/academic_calendar">Regular/On Campus</a></li>
 						<li>Your course may not be available before the official listed course start date.</li>						
 					</ul>
+          
+          <h2 class="orBB">Bb Student App</h2>
+          <ul class="unstyled">
+            <li><b>Blackboard Mobile Learn</b></li>
+            <li><img src="/bbcswebdav/library/login/umb/BbStudent-sm.png" /></li>
+            <li>Students, access your online course through your mobile device!</li>
+            <li><a href="http://www.blackboard.com/mobile-learning/bbstudent.aspx" target="_blank">Learn more &gt;</a></li>
+          </ul>
 				</div>
 
 				<div id="ccbb2">
 					<div id="bbAlerts">
 						<h3 class="orBB" id="normal">Alerts</h3>
 						<loginUI:systemAnnouncements maxItems="5" />
-					</div>
-					<div id="bbNews">
-						<h3 class="orBB" id="normal">News</h3>
-						<ul id="ulccbb2" class="unstyled">
-							<li><b>Blackboard Mobile Learn</b></li>
-							<li>Access your online course through your mobile device!</li>
-							<li><a href="https://www.blackboard.com/Platforms/Mobile/Products/Mobile-Learn/Features.aspx">Learn more &gt;</a></li>
-						</ul>
 					</div>					
 				</div>
-                
-                <div id="ccbb3">
+                
+        <div id="ccbb3">
 					<h2 class="orBB" id="normal">Getting Technical Help</h2>
 					<ul class="unstyled">
 						<li>24/7 technical assistance is available to students and faculty via:</li>
