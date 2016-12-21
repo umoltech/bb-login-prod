@@ -356,16 +356,18 @@ div.loginBody { padding-top: 0px; margin-top: 20px; width: 300px; background: #F
 						<h3 class="orBB" id="normal">Alerts</h3>
 						<loginUI:systemAnnouncements maxItems="5" />
 					</div>					
-				</div>
-                
+				</div>                
         <div id="ccbb3">
-					<h2 class="orBB" id="normal">Getting Technical Help</h2>
+					<h2 class="orBB" id="normal">Getting Password Help</h2>
 					<ul class="unstyled">
-						<li>24/7 technical assistance is available to students and faculty via:</li>
-						<li><a href="http://supportcenter.embanet.com/umb" target="_blank" class="button-1"><strong>Online Support Center</strong></a></li>
-						<li>&nbsp;</li>
-						<li>For problems resetting your password:</li>
-						<li>Call the IT Service Desk at 617.287.5220.</li>
+						<li>To reset your password, go to: <a href="https://mypassword.umb.edu" target="_blank">https://mypassword.umb.edu</a></li>
+            <li>For further assistance with passwords:</li>
+            <li>Contact the IT Service Desk located on the 3rd floor of Healey Library<br />
+            <a href="mailto:ITServiceDesk@umb.edu">ITServiceDesk@umb.edu</a><br />
+            617-287-5220</li>
+            <li>Open Monday through Friday 8:00 to 6:00<br />
+            Summer 8:00 to 5:00<br />
+            Closed holidays and when library is closed</li>
 					</ul>
 				</div>	
 				<div class="clear"></div>
