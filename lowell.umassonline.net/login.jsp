@@ -90,10 +90,7 @@
           <loginUI:errorMessage />
 
           <div id="loginBox" style="display:none">
-            <loginUI:loginForm />     
-            
-            <p><strong>Important!:</strong> If you have both an @uml and @student email account 
-            in SIS you will log in with your @uml email credentials.</p>            
+            <loginUI:loginForm />         
           </div>
 
           <div id="loginOptions">
