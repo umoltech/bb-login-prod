@@ -60,7 +60,7 @@
 .col2bb img{float: left; margin: 20px 20px 0px 20px;} 
 ul.fBB{float: left; width: 300px; color: #fff; font-weight: bold; font-size: 14px; margin-top: 20px;}
 ul.fBB li{line-height: 150%;}
-.fBB h2 {color: #9FC9D1; font-size: 18px;}
+.fBB h2 {color: #9FC9D1; font-size: 18px; margin-bottom: 20px;}
 .fBB h2 a {color: #9FC9D1;}
 .BBLogo span{float: left; color: #9FC9D1; font-size: 11px;}
 .BBLogo li.bbDots{border-bottom: 1px dashed #9FC9D1; margin: 7px 0; }
@@ -314,10 +314,8 @@ div.loginBody { padding-top: 0px; margin-top: 20px; width: 300px; background: #F
 						<img class="bbBioImage" src="/bbcswebdav/library/login/umb/student-1114.png" title="UMB Student">
 						<ul class="fBB">
 							<li><h2><a href="http://www.umb.edu/it/students">IT Services for Students</a></h2></li>
-							<li>Virtual Computer Lab</li>
-							<li>Special pricing on hardware and software</li>
-							<li>$9.99 a year for McAfee AntiVirus Plus</li>
-							<li>Securing your laptop, training and more</li>
+							<li>Download Microsoft Windows 10 Education Edition and Microsoft Office - Word, Excel, and PowerPoint FREE!</li>
+              <li>Learn about special pricing on hardware and software, safe computing tips and more.</li>
 						</ul>
 					</div>
 					<div class="clear"></div>
