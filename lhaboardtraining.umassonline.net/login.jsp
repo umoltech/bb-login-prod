@@ -16,7 +16,10 @@
       jQuery().ready( function() {  
         jQuery.noConflict();
         
-        jQuery('.forgot').html('Need Help?  Contact <a href="mailto:techsupport@donahue.umassp.edu">techsupport@donahue.umassp.edu</a>');
+        var dhcd_help = 'Need Help?  Contact <a href="mailto:techsupport@donahue.umassp.edu">techsupport@donahue.umassp.edu</a>';
+        dhcd_help += '<br />&nbsp;<br />';
+        dhcd_help += '<a href="https://confluence.umassonline.net/display/MDHCD/Massachusetts+Department+of+Housing+and+Community+Development" target="_blank">Self Help</a>';
+        
       });
     </script>
     <script>
@@ -122,6 +125,7 @@
         font-size: 110%;
         padding: 8px 15px;
         cursor: pointer;
+        color: #ffffff;
       }
       
       #loginBox li .forgot {
