@@ -20,6 +20,7 @@
         dhcd_help += '<br />&nbsp;<br />';
         dhcd_help += '<a href="https://confluence.umassonline.net/display/MDHCD/Massachusetts+Department+of+Housing+and+Community+Development" target="_blank">Self Help</a>';
         
+        jQuery('.forgot').html(dhcd_help);
       });
     </script>
     <script>
