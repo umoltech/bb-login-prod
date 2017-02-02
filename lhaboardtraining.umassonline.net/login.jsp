@@ -16,9 +16,7 @@
       jQuery().ready( function() {  
         jQuery.noConflict();
         
-        var dhcd_help = 'Need Help?  Contact <a href="mailto:techsupport@donahue.umassp.edu">techsupport@donahue.umassp.edu</a>';
-        dhcd_help += '<br />&nbsp;<br />';
-        dhcd_help += '<a href="https://confluence.umassonline.net/display/MDHCD/Massachusetts+Department+of+Housing+and+Community+Development" target="_blank">Self Help</a>';
+        var dhcd_help = jQuery('#dhcd-help').html();
         
         jQuery('.forgot').html(dhcd_help);
       });
@@ -140,6 +138,7 @@
       #loginBox .forgot a {
         color: #1f497d;
         border: 0;
+        text-decoration: underline;
       }
       
       #loginBodyContainer #loginDescription {
@@ -247,4 +246,8 @@
     <bbNG:copyright />
   </div>
 
+  <div id="dhcd-help" style="display:none">Need Help? Please 
+    <a href="https://confluence.umassonline.net/display/MDHCD/Contact+Support" target="_blank">Contact Us</a>!<br />&nbsp;<br />
+    <a href="https://confluence.umassonline.net/download/attachments/130973804/DHCD%20Step%20By%20Step%20Guide.pdf?api=v2" target="_blank">Get Step-by-Step Instructions</a>
+  </div>
 </bbNG:genericPage>
