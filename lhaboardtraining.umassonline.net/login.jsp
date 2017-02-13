@@ -248,6 +248,6 @@
 
   <div id="dhcd-help" style="display:none">Need Help? Please 
     <a href="https://confluence.umassonline.net/display/MDHCD/Contact+Support" target="_blank">Contact Us</a>!<br />&nbsp;<br />
-    <a href="https://confluence.umassonline.net/download/attachments/130973802/mdchdIns.pdf?api=v2" target="_blank">Get Step-by-Step Instructions</a>
+    <a href="https://confluence.umassonline.net/download/attachments/130973802/SbSGuide.pdf?api=v2" target="_blank">Get Step-by-Step Instructions</a>
   </div>
 </bbNG:genericPage>
