@@ -204,11 +204,10 @@
           </div>
           <div class="col_4 last blue">
             <h3>Need Help?</h3>
-            <p>Monday through Friday 7:00 AM - 6:00 PM (EST)</p>
-            <p>Call 508-856-8643 or email the UMMS Help Desk. Expect to receive a response within 24 hours.</p>
-            <p>Weekends, Holidays and After Hours</p>
-            <p>Call 1-855-789-7056 or click the Online Support button below to submit a ticket or initiate a real-time chat.</p>
-            <p><a class="btn" href="http://umw.echelp.org" target="_blank">Online Support</a></p>
+            <p>Monday through Friday 7:30 AM - 5:30 PM (EST)</p>
+            <p>Call 508-856-8643 or email the <a href="mailto:helpdesk@umassmed.edu">UMMS Help Desk</a>. Expect to receive a response within 24 hours.</p>
+            <p>Weekends, Holidays and After Hours:</p>
+            <p>Call 1-855-789-7056 or visit <a href="http://umw.echelp.org" target="_blank">http://umw.echelp.org</a></p>
           </div>
         </div>	  
         <div class="loginFooter">
