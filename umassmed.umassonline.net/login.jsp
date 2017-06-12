@@ -109,6 +109,8 @@
   .login-page div#copyright { display: block; position: relative; width: auto; top: auto; bottom: auto; left: auto; right: auto; margin: 40px auto; }
   
   a { cursor: pointer; }
+  .blue a { color: #ff9b22 !important; text-decoration: none; }
+  .blue a:hover { text-decoration: underline; }
   
   .tan { background-color: #FF9B22; }
   .float-left { float: left; }
