@@ -136,39 +136,6 @@ div.loginBody { padding-top: 0px; margin-top: 20px; width: 300px; background: #F
 			}
 		};
 		
-		function openCourseEvalPopUp(jsonpData) {
-			if(jsonpData[0].length < 3) {
-				bblearn_submit_form();
-			}
-		
-			var numToComplete = jsonpData[0].numsurveys;
-			var url = jsonpData[0].surveyurl;
-		
-			if(isNaN(numToComplete) || url.length < 1) {
-				return bblearn_submit_form();
-			}
-		
-			if(numToComplete < 1) {
-				return bblearn_submit_form();
-			}
-		
-			$(bblearn.elements.surveyurl).attr('href', url);
-			$(bblearn.elements.popup).show();	
-		
-			return false;	
-		}
-
-		function bblearn_close_survey_popup() {
-			$(bblearn.elements.popup).hide();
-			return bblearn_submit_form();
-		}
-		
-		function bblearn_submit_form() {			
-			$(bblearn.elements.form).submit();
-			
-			return true;
-		}
-		
 		function bblearn_check_login_form() {	
 			var id = $(bblearn.elements.username).val();
 			if ($.trim(id) == '') {
@@ -181,36 +148,11 @@ div.loginBody { padding-top: 0px; margin-top: 20px; width: 300px; background: #F
 				alert('Please supply a valid password.');
 				return false;
 			}
-	  
-			bblearn_check_surveys(id, pw);
+      
+			$(bblearn.elements.form).submit();
+      
 			return false;
-		}
-		
-		function bblearn_check_surveys(id, pw) {
-			if(bblearn.elements.surveychecked) {
-				bblearn_submit_form();
-			}
-			
-			$.ajax({
-				type: "GET",
-				url: bblearn.elements.owlUrl,
-				data: {
-					Server: bblearn.elements.server,
-					datasrc: bblearn.elements.datasrc,
-					fxn: bblearn.elements.fxn,
-					Login: id,
-					Password: pw,
-					formatjsonp: 1
-				},
-				dataType: "jsonp",
-				timeout: 5000,
-				jsonp: false,
-				jsonpCallback: "openCourseEvalPopUp",
-				error: function() {
-					bblearn_submit_form();
-				}			
-			});
-		}		
+		}	
 		
 		jQuery().ready( function() {			
 			$(bblearn.elements.submit).click( function() {
@@ -296,19 +238,10 @@ div.loginBody { padding-top: 0px; margin-top: 20px; width: 300px; background: #F
 
 						<div class="clearfix loginBody">
 							<div id="loginBox">
-								<div id="bblearn-popup" class="popup" style="display:none">
-									<div id="bblearn-popup-msg">
-										The University of Massachusetts requests that you evaluate your online courses. 
-										Your feedback is of the utmost importance, and is used to improve the quality of our courses. 
-										All answers remain confidential and anonymous.
-									</div>
-									<p><a id="bblearn-survey-url" target="_blank" onclick="javascript:bblearn_close_survey_popup()" href=""> &gt; Start Now </a></p>
-									<p><a href="javascript:bblearn_close_survey_popup()"> &gt; Remind me later </a></p>
-								</div>
 								<loginUI:loginForm />
 							</div>
 						</div>
-               		</div>
+          </div>
                  
 					<div class="col2bb">
 						<img class="bbBioImage" src="/bbcswebdav/library/login/umb/student-1114.png" title="UMB Student">
