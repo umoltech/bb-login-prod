@@ -76,9 +76,8 @@
             <div class="container">
                <div class="row">
                   <div class="col-xs-8 mobile-full">
-                     <p>
-                        Use your UMass Lowell <b>email address</b> and <b>password</b> to log into your online course(s) in Blackboard. Student Login is made available on the first day of classes each semester.
-                     </p>
+                     <p>Use your UMass Lowell <b>email address</b> and <b>password</b> to log into your online course(s) in Blackboard.</p>
+                     <p class="announce">Login is made available on the first day of class.</p> 
                   </div>
                   <div class="col-xs-4 mobile-full">
                      <a href="#" class="login" id="ssoLoginLinkMobile">Log into Blackboard </a>
