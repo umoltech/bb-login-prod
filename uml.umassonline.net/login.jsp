@@ -61,9 +61,8 @@
                    Online Learning<br/>with Blackboard
                 </h1>
                 <div class="hero-text-one">
-                   <p>
-                      Use your UMass Lowell <b>email address</b> and <b>password</b> to log into your online course(s) in Blackboard. Student Login is made available on the first day of classes each semester.
-                   </p>
+                   <p>Use your UMass Lowell <b>email address</b> and <b>password</b> to log into your online course(s) in Blackboard.</p>
+                   <p class="announce">Login is made available on the first day of class.</p> 
                    <a href="#" class="login" id="ssoLoginLink">Log into Blackboard </a>
                    <p>Forgot your password? <a href="https://mypassword.uml.edu/">Click Here</a></p>
                 </div>
@@ -254,6 +253,7 @@ h4 {color: #333; text-transform: uppercase; margin: 20px 0 0; font-size: 14px;}
 .margin-b {margin-bottom: 30px;}
 .main-content {font-size: 14px;}
 .margintop {margin-top: 25px;}
+.announce {font-weight: bold; color: #cf202f;} 
 
 @media (max-width: 1650px) {
   .hero-text{margin:135px 0 86px;} 
