@@ -51,7 +51,7 @@
     <div id="logo">
       <a href="http://www.umass.edu/" title="Home" rel="home" target="_blank"><img src="/bbcswebdav/library/login/uma/images/template/UMwordmark.png" width="204" height="26" alt="UMass Amherst"/></a>
       <div class="uma-search">
-        <form action="http://googlebox.oit.umass.edu/search" method="get">
+        <form action="//googlebox.oit.umass.edu/search" method="get">
           <h2 class="element-invisible">Search Google Appliance</h2> 
           <label class="element-invisible" for="edit-search-keys">Enter the terms you wish to search for. </label> 
           <input placeholder="Search UMass" id="edit-search-keys" type="text" name="q" size="15" maxlength="256" value=""> 
