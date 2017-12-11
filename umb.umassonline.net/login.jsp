@@ -168,7 +168,10 @@
 			<div class="unit-50  callout">
 				<div class=" blue-caption" >
 					<h2>IT Services for Students</h2>
-					<p><a href="https://www.umb.edu/it/students" target="_blank">www.umb.edu/it/students</a></p>
+					<p><a href="https://www.umb.edu/it/students" target="_blank">Download Microsoft Windows 
+          10 Education Edition and Microsoft Office - Word, Excel, and PowerPoint FREE! 
+          Learn about special pricing on hardware and software, safe computing tips 
+          and more.</a></p>
 				</div>
 			</div>
 
