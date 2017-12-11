@@ -21,6 +21,8 @@
       
       jQuery('#loginRedirectProviders').children('h3').remove();
       
+      jQuery('#redirectProvidersDropdownButton').remove();
+      
       jQuery('#loginBox').show();
     </script>
   </bbNG:jsBlock>
@@ -53,10 +55,15 @@
       }
       
       #loginBox ul li {
-        padding: 15px 0;
+        padding: 0;
       }
       
-      #loginRedirectProviderList a {
+      #loginRedirectProviderList {
+        display: block; 
+        position: relative;
+      }
+      
+      #loginRedirectProviderList li a {
         display: block;
         font-size: 125%;
         font-weight: bold;
@@ -67,8 +74,9 @@
         border-radius: 5px;
       }
       
-      #loginRedirectProviderList a:hover {
+      #loginRedirectProviderList li a:hover, #loginRedirectProviderList li a:focus {
         background-color: #000;
+        text-decoration: none;
       }
     </style>
   </bbNG:cssBlock>  
