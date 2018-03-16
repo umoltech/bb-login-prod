@@ -72,113 +72,113 @@
        </div>
     </div>
   </div>
-         <div class="hero-text-double">
-            <div class="container">
-               <div class="row">
-                  <div class="col-xs-8 mobile-full">
-                     <p>Use your UMass Lowell <b>email address</b> and <b>password</b> to log into your online course(s) in Blackboard.</p>
-                     <p class="announce">Login is made available on the first day of class.</p> 
-                  </div>
-                  <div class="col-xs-4 mobile-full">
-                     <a href="#" class="login" id="ssoLoginLinkMobile">Log into Blackboard </a>
-                     <p class="fpassword">Forgot your password? <a href="https://mypassword.uml.edu/">Click Here</a></p>
-                  </div>
-               </div>
-               <!-- /.row -->
-            </div>
-         </div>
-         <div class="stripe">
-             <div class="container ">
-               <div class="row">
-                  <div class="col-md-4">
-                       <div class="icon new-login">
-                       <h2>New Login Process</h2>
-                        Faculty and students will now use their UMass Lowell email address and password to log into their online courses.
-                        </div>
-                   </div>
-                   <div class="col-md-4">
-                       <div class="icon tech-req">
-                       <h2>Technical Requirements</h2>
-                        Technical requirements for online courses can be reviewed on the <a href="http://continuinged.uml.edu/online/techrequire.cfm">OCE Technical Requirements Page</a>
-                        </div>
-                   </div>
-                   <div class="col-md-4">
-                       <div class="icon quick">
-                      <h2> Quick Start Guide</h2>
-                        Visit our <a href="https://continuinged.uml.edu/online/123.cfm">Getting Started</a> page for helpful info about accessing your online course.
-                        </div>
-                   </div>
-               </div>
-            </div>  
-         </div>
-         <div class="main-content">
-
-            <!-- Page Content -->
-            <div class="container ">
-               <div class="row margin-b">
-                  <div class="col-md-5">
-                      <h3 class="margintop">Technical Support</h3>
-                        <ul>
-                           <li>
-                              For technical support visit <a href="http://uml.echelp.org/ ">http://uml.echelp.org/ </a>
-                           </li>
-                           <li>
-                              For help with your UML email account login credentials visit <a href="http://mypassword.uml.edu">http://mypassword.uml.edu</a>
-                           </li>
-                        </ul>
-                        <p>
-                        <h4>Phone</h4>
-                        Call Online and Continuing Education Technical Support at <b>(978) 934-2467</b> or <b>(800) 480-3190</b> during business hours Monday – Friday 8:30 am – 5:00 pm EST or <b>(800) 480-3190</b> during non-business hours, Monday – Friday 5:00 pm – 8:30 am EST, Sundays & Holidays
-                        </p>
-                        <p>
-                        <h4>Email</h4>
-                        <a href="mailto:onlinelearning@uml.edu">onlinelearning@uml.edu</a>
-                        </p>
-
-
-                  </div>
-                  <div class="col-md-7" >                     
-                      <div class="display-box">
-                        <loginUI:systemAnnouncements maxItems="5" />
-                     </div>
-                  </div>
-               </div>
-               <!-- /.row -->
-            </div>
-            <div class="container ">
-               <div class="row top-b">
-                 <div class="col-sm-12 "> </div>
-               </div>
-               <div class="row footer">
-               
-                 <div class="col-sm-7">
-                     
-                       Copyright 2016, University of Massachusetts Lowell, Division of Online and Continuing Education
-                  
-                  </div>
-                  <div class="col-sm-5">
-                     <ul>
-                       <li><a href="https://continuinged.uml.edu/">OCE Website</a></li>
-                       <li><a href="https://continuinged.uml.edu/general/advising.cfm">Advising</a></li>
-                       <li><a href="https://continuinged.uml.edu/general/calendar.cfm">Academic Calendar</a></li>
-                     </ul>
-                  </div>
-               </div>
-               <!-- /.row -->
-            </div>
-         </div>
-         <!-- /.container -->
+  
+  <div class="hero-text-double">
+    <div class="container">
+       <div class="row">
+          <div class="col-xs-8 mobile-full">
+             <p>Use your UMass Lowell <b>email address</b> and <b>password</b> to log into your online course(s) in Blackboard.</p>
+             <p class="announce">Login is made available on the first day of class.</p> 
+          </div>
+          <div class="col-xs-4 mobile-full">
+             <a href="#" class="login" id="ssoLoginLinkMobile">Log into Blackboard </a>
+             <p class="fpassword">Forgot your password? <a href="https://mypassword.uml.edu/">Click Here</a></p>
+          </div>
+       </div>
+       <!-- /.row -->
+    </div>
+  </div>
+  <div class="stripe">
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <a class="banner-wide" href="https://continuinged.uml.edu/21-giveaway/"><img src="https://continuinged.uml.edu/21-giveaway/21-banner-wide.jpg"></a> 
+            <a class="banner-tall" href="https://continuinged.uml.edu/21-giveaway/"><img src="https://continuinged.uml.edu/21-giveaway/21-banner-tall.jpg"></a>
+          </div>
+        </div>
       </div>
+    </div>    
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="icon new-login">
+            <h2>New Login Process</h2>
+            Faculty and students will now use their UMass Lowell email address and password to log into their online courses.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="icon tech-req">
+            <h2>Technical Requirements</h2>
+            Technical requirements for online courses can be reviewed on the <a href="http://continuinged.uml.edu/online/techrequire.cfm">OCE Technical Requirements Page</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="icon quick">
+            <h2> Quick Start Guide</h2>
+            Visit our <a href="https://continuinged.uml.edu/online/123.cfm">Getting Started</a> page for helpful info about accessing your online course.
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+  <div class="main-content">
+    <!-- Page Content -->
+    <div class="container ">
+      <div class="row margin-b">
+        <div class="col-md-5">
+          <h3 class="margintop">Technical Support</h3>
+          <ul>
+            <li>
+              For technical support visit <a href="http://uml.echelp.org/ ">http://uml.echelp.org/ </a>
+            </li>
+            <li>
+              For help with your UML email account login credentials visit <a href="http://mypassword.uml.edu">http://mypassword.uml.edu</a>
+            </li>
+          </ul>
+          <p>
+            <h4>Phone</h4>
+            Call Online and Continuing Education Technical Support at <b>(978) 934-2467</b> or <b>(800) 480-3190</b> during business hours Monday – Friday 8:30 am – 5:00 pm EST or <b>(800) 480-3190</b> during non-business hours, Monday – Friday 5:00 pm – 8:30 am EST, Sundays & Holidays
+          </p>
+          <p>
+            <h4>Email</h4>
+            <a href="mailto:onlinelearning@uml.edu">onlinelearning@uml.edu</a>
+          </p>
+        </div>
+        <div class="col-md-7" >                     
+          <div class="display-box">
+            <loginUI:systemAnnouncements maxItems="5" />
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <div class="container ">
+      <div class="row top-b">
+        <div class="col-sm-12 "> </div>
+      </div>
+      <div class="row footer">
+        <div class="col-sm-7">
+          Copyright 2018, University of Massachusetts Lowell, Division of Online and Continuing Education
+        </div>
+        <div class="col-sm-5">
+          <ul>
+            <li><a href="https://continuinged.uml.edu/">OCE Website</a></li>
+            <li><a href="https://continuinged.uml.edu/general/advising.cfm">Advising</a></li>
+            <li><a href="https://continuinged.uml.edu/general/calendar.cfm">Academic Calendar</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+  </div>
+  <!-- /.container -->
+</div>
 
 <div id="hiddenLoginContainer" style="display:none">
   <loginUI:loginForm />
 </div>
-
-
-
-
-
-
 
 <bbNG:cssBlock>
 <meta charset="utf-8">
@@ -253,7 +253,10 @@ h4 {color: #333; text-transform: uppercase; margin: 20px 0 0; font-size: 14px;}
 .main-content {font-size: 14px;}
 .margintop {margin-top: 25px;}
 .announce {font-weight: bold; color: #cf202f;} 
-
+.banner {padding: 35px 0;}
+.banner-tall img, .banner-wide img {width: 100%; height: auto;}
+.banner-tall {display:none;}
+                
 @media (max-width: 1650px) {
   .hero-text{margin:135px 0 86px;} 
 }
@@ -320,6 +323,8 @@ h4 {color: #333; text-transform: uppercase; margin: 20px 0 0; font-size: 14px;}
   .hero-text ul,.hero-text-double h1,.mblhide{display:none;}
   .navbar-inverse .navbar-nav > li > a{background: none;}
   .announcementDate{margin: 0 0 36px; width: 30%; white-space: normal;} 
+  .banner-wide {display:none;}
+  .banner-tall {display:block;}
 }
 
 @media (max-width: 480px) {
