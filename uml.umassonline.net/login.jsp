@@ -93,8 +93,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <a class="banner-wide" href="https://continuinged.uml.edu/21-giveaway/"><img src="https://continuinged.uml.edu/21-giveaway/21-banner-wide.jpg"></a> 
-            <a class="banner-tall" href="https://continuinged.uml.edu/21-giveaway/"><img src="https://continuinged.uml.edu/21-giveaway/21-banner-tall.jpg"></a>
+            <a class="banner-wide" href="https://continuinged.uml.edu/21-giveaway/"><img src="/bbcswebdav/library/login/uml/images/21-banner-wide.jpg"></a> 
+            <a class="banner-tall" href="https://continuinged.uml.edu/21-giveaway/"><img src="/bbcswebdav/library/login/uml/images/21-banner-tall.jpg"></a>
           </div>
         </div>
       </div>
