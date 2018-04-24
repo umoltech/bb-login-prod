@@ -89,6 +89,15 @@
     </div>
   </div>
   <div class="stripe">   
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <a class="banner-wide" href="https://continuinged.uml.edu/catalog/search/?sem=0&yr=2018&sm=Summer"><img src="https://continuinged.uml.edu/images/2018/summer-banner-2018.jpg"></a> <a class="banner-tall" href=" https://continuinged.uml.edu/catalog/search/?sem=0&yr=2018&sm=Summer"><img src="https://continuinged.uml.edu/images/2018/summer-banner-tall-2018.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </div> 
     <div class="container ">
       <div class="row">
         <div class="col-md-4">
