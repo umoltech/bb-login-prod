@@ -6,42 +6,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
-<% 
-  String targetElement = "bb-session-key";
-  String targetHeader = "referer";
-  String targetUserAttribute = "UserId: {unset id}";
-  String targetLocation = "https://umol.umass.edu/Shibboleth.sso/Logout?return=https://webauth.umass.edu/Logout";
-  String targetReferer = "https://uma.umassonline.net";
-  
-  java.util.Enumeration enuR = request.getAttributeNames();
-  java.util.Enumeration enuH = request.getHeaderNames();
-  
-  while(enuR.hasMoreElements()) {
-    String elementName = (String)enuR.nextElement();  
-    
-    if (elementName == targetElement) {    
-      Object elementValue = request.getAttribute(targetElement);
-      
-      while(enuH.hasMoreElements()) {
-        String headerName = (String)enuH.nextElement();
-        String headerValue = request.getHeader(headerName);
-        
-        if (headerName.toLowerCase().equals(targetHeader)) {
-          if (headerValue.length() > 7) {
-            if (elementValue.toString().contains(targetUserAttribute) && headerValue.contains(targetReferer)) {
-              response.setStatus(response.SC_MOVED_TEMPORARILY);
-              response.setHeader("Location", targetLocation);
-            }
-          }
-        }
-      }
-    }
-  }  
-%>
-
 <bbNG:genericPage authentication="N" wrapper="false">
-
-<%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
 
 <loginUI:errorMessage />
  
