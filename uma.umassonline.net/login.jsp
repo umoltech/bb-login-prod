@@ -85,7 +85,7 @@
   </div>
   <!-- End page header -->
   <!-- Responsive 3 columns -->  
-  <section id="content">
+  <section id="contentLeft">
     <div class="uma-loginbox">
       <div class="uma-logintitle">
         <h2>Login to Blackboard Learn</h2>  
@@ -101,9 +101,7 @@
     <!-- placeholder content -->
     <h3>News & Announcements</h3>
     
-    <div id="loginAnnouncements">
-      <h3>System Announcements</h3>
-      <loginUI:systemAnnouncements maxItems="5" />
+    <loginUI:systemAnnouncements maxItems="5" />
     <!-- End placeholder content -->
   </section>
 
@@ -254,15 +252,15 @@ div.header-title {
 	font-size: 1.25em; 
 	padding: 8px 0px 20px 20px;
 }
-#content {
+#contentLeft {
 	width: 290px;
 	float: left;
 	padding: 5px 15px;
 }
-#content img {
+#contentLeft img {
 	padding: 12px 0;
 }
-#content p {
+#contentLeft p {
 	font-size: .9em;
 }
 div.uma-loginbox {
@@ -462,7 +460,7 @@ MEDIA QUERIES
 	#pagewrap {
 		width: 94%;
 	}
-	#content {
+	#contentLeft {
 		width: 41%;
 		padding: 1% 4%;
 	}
@@ -488,7 +486,7 @@ MEDIA QUERIES
 /* for 700px or less */
 @media screen and (max-width: 600px) {
 
-	#content {
+	#contentLeft {
 		width: auto;
 		float: none;
 	}
@@ -520,7 +518,7 @@ MEDIA QUERIES
 }
 
 
-#content, #middle, #sidebar {
+#contentLeft, #middle, #sidebar {
 	margin-bottom: 0px;
 }
 footer {
@@ -533,15 +531,15 @@ footer {
 <bbNG:jsBlock>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">  
-  jQuery.noConflict();
+  var umolJQ = jQuery.noConflict();
   
-  jQuery(document).ready( function() {
+  umolJQ(document).ready( function() {
   
-    var ssoLoginUrl = jQuery('#loginRedirectProviderList').children('li:first-child').children('a:first-child').attr('href');
+    var ssoLoginUrl = umolJQ('#loginRedirectProviderList').children('li:first-child').children('a:first-child').attr('href');
     
-    jQuery('#login-submit').attr('href', ssoLoginUrl);
+    umolJQ('#login-submit').attr('href', ssoLoginUrl);
     
-    jQuery('#hiddenLoginContainer').remove();
+    umolJQ('#hiddenLoginContainer').remove();
     
   });
 </script>
