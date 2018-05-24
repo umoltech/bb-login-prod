@@ -111,7 +111,7 @@
 <bbNG:jsBlock>
 	<script src="https://use.fontawesome.com/72fbe63326.js"></script>
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="https://www.umb.edu/assets/kube/js/kube.js?t=1503588416"></script>
+	<!--script src="https://www.umb.edu/assets/kube/js/kube.js?t=1503588416"></script-->
 </bbNG:jsBlock>
 
 <div class="global-nav blue">
@@ -218,7 +218,7 @@
 		<div class="footer-base">
 			<div class="units-row footer-base-inner">
 				<div class="unit-100">
-					<p>&copy; 2017  University of Massachusetts Boston</p>
+					<p>&copy; 2018  University of Massachusetts Boston</p>
 					<p>100 William T. Morrissey Blvd., Boston, MA 02125 |  <a href="tel:6172875000">Tel: 617.287.5000</a></p>
 				</div>
 			</div>
@@ -238,8 +238,10 @@ ga('send', 'pageview');
 </script>
 
 <script>
-  $().ready( function() {
-    $('.forgot a').removeAttr('onclick').attr('href', 'https://mypassword.umb.edu').attr('target', '_blank');
+  var umolJQ = jQuery.noConflict();
+  
+  umolJQ(document).ready( function() {
+    umolJQ('.forgot a').removeAttr('onclick').attr('href', 'https://mypassword.umb.edu').attr('target', '_blank');
   });
 </script>
 </bbNG:jsBlock>
