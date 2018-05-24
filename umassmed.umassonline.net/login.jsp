@@ -14,9 +14,9 @@
 <style type="text/css">
   body { background-color: #FFF; background-image: none; font-size: 10pt; }
   #loginContainer { width: 940px; margin: 0 auto; }
-  div.loginBody { width: auto; margin: 0; padding: 0; background-image: none; }
-  div.loginBody div.loginTop { background-color: #003399; height: 65px; overflow: hidden; }
-  div.loginBody div.loginTop .search {
+  div.loginBodyNew { width: auto; margin: 0; padding: 0; background-image: none; }
+  div.loginBodyNew div.loginTop { background-color: #003399; height: 65px; overflow: hidden; }
+  div.loginBodyNew div.loginTop .search {
     display: block;
     float: right;
     margin-left: 0;
@@ -25,14 +25,14 @@
     text-align: center;
     width: 20%;
 }
-  div.loginBody div.loginTop .search input.search-query {
+  div.loginBodyNew div.loginTop .search input.search-query {
     border-radius: 5px;
     font-size: 1.1em;
     height: 24px;
     margin-top: 0;
     width: 100%;
   }
-  div.loginBody div.loginTop .search input.searchButton {
+  div.loginBodyNew div.loginTop .search input.searchButton {
     background: #6ad086 url("/bbcswebdav/library/login/umw/style-img.png") no-repeat scroll 7px -258px;
     border: 1px solid #6ad086;
     border-bottom-right-radius: 5px;
@@ -46,7 +46,7 @@
     top: 2px;
     width: 22px;
   }
-  div.loginBody div.loginTop .search input[type="text"] {
+  div.loginBodyNew div.loginTop .search input[type="text"] {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
@@ -58,28 +58,28 @@
     color: #333;
     padding: 2px;
   }
-  div.loginBody div.loginTop .search .search-all { margin-top: 5px; }
-  div.loginBody div.loginTop .search .search-all a { color: #fff; }
+  div.loginBodyNew div.loginTop .search .search-all { margin-top: 5px; }
+  div.loginBodyNew div.loginTop .search .search-all a { color: #fff; }
   
-  div.loginBody div.loginNav { background-color: #000; color: #FFF; text-align: center; padding: 8px 0; }
-  div.loginBody div.loginNav a { color: #FFF; font-size: 125%; text-decoration: underline; padding: 0 10px; border-right: 1px solid #FFF; }
-  div.loginBody div.loginNav a:last-child { border-right: none; }
-  div.loginBody div.loginSplash { margin-bottom: 20px; }
+  div.loginBodyNew div.loginNav { background-color: #000; color: #FFF; text-align: center; padding: 8px 0; }
+  div.loginBodyNew div.loginNav a { color: #FFF; font-size: 125%; text-decoration: underline; padding: 0 10px; border-right: 1px solid #FFF; }
+  div.loginBodyNew div.loginNav a:last-child { border-right: none; }
+  div.loginBodyNew div.loginSplash { margin-bottom: 20px; }
   
-  div.loginBody .receipt { text-align: center; width: 100%; padding: 15px 0; }
+  div.loginBodyNew .receipt { text-align: center; width: 100%; padding: 15px 0; }
   
-  div.loginBody div.loginCols { font-size: 125%; }
-  div.loginBody div.loginCols .white { background-color: #FFF; color: #000; }
-  div.loginBody div.loginCols .orange { background-color: #FF9B22; color: #000; border: 1px solid #000; padding: 15px; }
-  div.loginBody div.loginCols .blue { background-color: #003399; color: #FFF; border: 1px solid #FF9B22; padding: 15px; }
-  div.loginBody div.loginCols h3 { font-size: 120%; text-align: center; margin-top: 0; }
-  div.loginBody div.loginCols p { line-height: 125%; margin-bottom: 20px; }
+  div.loginBodyNew div.loginCols { font-size: 125%; }
+  div.loginBodyNew div.loginCols .white { background-color: #FFF; color: #000; }
+  div.loginBodyNew div.loginCols .orange { background-color: #FF9B22; color: #000; border: 1px solid #000; padding: 15px; }
+  div.loginBodyNew div.loginCols .blue { background-color: #003399; color: #FFF; border: 1px solid #FF9B22; padding: 15px; }
+  div.loginBodyNew div.loginCols h3 { font-size: 120%; text-align: center; margin-top: 0; }
+  div.loginBodyNew div.loginCols p { line-height: 125%; margin-bottom: 20px; }
   
-  div.loginBody div.loginCols .loginFormBubble { padding: 20px; background-color: #003399; color: #FFF; border: 3px solid #FF9B22; border-radius: 30px; margin-bottom: 20px;  }
-  div.loginBody div.loginCols .loginFormBubble label { display: block; color: #FFF; font-weight: bold; }  
-  div.loginBody div.loginCols .loginFormBubble input[type="text"], 
-  div.loginBody div.loginCols .loginFormBubble input[type="password"], 
-  div.loginBody div.loginCols .loginFormBubble select {
+  div.loginBodyNew div.loginCols .loginFormBubble { padding: 20px; background-color: #003399; color: #FFF; border: 3px solid #FF9B22; border-radius: 30px; margin-bottom: 20px;  }
+  div.loginBodyNew div.loginCols .loginFormBubble label { display: block; color: #FFF; font-weight: bold; }  
+  div.loginBodyNew div.loginCols .loginFormBubble input[type="text"], 
+  div.loginBodyNew div.loginCols .loginFormBubble input[type="password"], 
+  div.loginBodyNew div.loginCols .loginFormBubble select {
     background-color: #4F81BD;
     color: #FFF;
     border: 4px solid #385D8A;
@@ -87,13 +87,13 @@
     font-size: 150%;
     width: 95%;
   }
-  div.loginBody div.loginCols .loginFormBubble ul li { margin-bottom: 15px; }
-  /* div.loginBody div.loginCols .loginFormBubble #entry-login { background-color: #ff9b22; color: #fff; display: block; margin: 0 auto; border: 4px solid #17375E; } */
-  div.loginBody div.loginCols .loginFormBubble span.forgot { display: block; margin: 0 auto; text-align: center; }
-  div.loginBody div.loginCols .loginFormBubble span.forgot a { border-bottom: none; color: #FFF; font-weight: bold; }
+  div.loginBodyNew div.loginCols .loginFormBubble ul li { margin-bottom: 15px; }
+  /* div.loginBodyNew div.loginCols .loginFormBubble #entry-login { background-color: #ff9b22; color: #fff; display: block; margin: 0 auto; border: 4px solid #17375E; } */
+  div.loginBodyNew div.loginCols .loginFormBubble span.forgot { display: block; margin: 0 auto; text-align: center; }
+  div.loginBodyNew div.loginCols .loginFormBubble span.forgot a { border-bottom: none; color: #FFF; font-weight: bold; }
   
-  div.loginBody div.loginCols .loginFormBubble #entry-login, div.loginBody div.loginCols a.btn { cursor: pointer; border: 1px solid #000; border-radius: 5px; background-color: #FF9B22; color: #003399; font-weight: bold; display: block; text-align: center; padding: 10px; margin: 0 auto; }
-  div.loginBody div.loginCols .mission { padding: 0 20px; font-size: 85%; }
+  div.loginBodyNew div.loginCols .loginFormBubble #entry-login, div.loginBodyNew div.loginCols a.btn { cursor: pointer; border: 1px solid #000; border-radius: 5px; background-color: #FF9B22; color: #003399; font-weight: bold; display: block; text-align: center; padding: 10px; margin: 0 auto; }
+  div.loginBodyNew div.loginCols .mission { padding: 0 20px; font-size: 85%; }
   
   div#loginAnnouncements { margin: 0; padding: 0; }
   div#loginAnnouncements ul { width: auto; }
@@ -101,10 +101,10 @@
   div#loginAnnouncements ul li::before, div#loginAnnouncements ul li::after { box-shadow: none; }
   div#loginAnnouncements ul li strong:first-child { font-size: 100%; font-family: inherit; }
 
-  div.loginBody div.loginFooter { padding: 10px; margin-top: 20px; text-align: center; }
-  div.loginBody div.loginFooter .disclaimer { margin-bottom: 10px; }
-  div.loginBody div.loginFooter .social { margin: 0; padding: 0; }
-  div.loginBody div.loginFooter .social span { margin: 0; padding: 0; }
+  div.loginBodyNew div.loginFooter { padding: 10px; margin-top: 20px; text-align: center; }
+  div.loginBodyNew div.loginFooter .disclaimer { margin-bottom: 10px; }
+  div.loginBodyNew div.loginFooter .social { margin: 0; padding: 0; }
+  div.loginBodyNew div.loginFooter .social span { margin: 0; padding: 0; }
   
   .login-page div#copyright { display: block; position: relative; width: auto; top: auto; bottom: auto; left: auto; right: auto; margin: 40px auto; }
   
@@ -121,7 +121,7 @@
     body { margin: 0; min-width: 400px;  }    
     #loginContainer { width: 100%; margin: 0; overflow: hidden; }
     #loginContainer .loginSplash img { width: 100%; }
-    div.loginBody div.loginTop .search { width: 40%; }
+    div.loginBodyNew div.loginTop .search { width: 40%; }
     .login-page div#copyright { width: 80%; }
   }
 </style>
@@ -158,7 +158,7 @@
         <h1 class="hideoff">University of Massachusetts Medical School | Blackboard Learn</h1>
       </div>
 
-      <div class="clearfix loginBody">
+      <div class="clearfix loginBodyNew" style="width:940px">
         <div class="loginTop">
           <div class="float-left"><img src="/bbcswebdav/library/login/umw/umms-formal-logo.png" /></div>     
           <div class="search">
