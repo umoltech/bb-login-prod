@@ -6,7 +6,41 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
-<bbNG:genericPage authentication="N" wrapper="false">
+<% 
+  String targetElement = "bb-session-key";
+  String targetHeader = "referer";
+  String targetUserAttribute = "UserId: {unset id}";
+  String targetLocation = "https://umol.umass.edu/Shibboleth.sso/Logout?return=https://webauth.umass.edu/Logout";
+  String targetReferer = "https://uma.umassonline.net";
+  
+  java.util.Enumeration enuR = request.getAttributeNames();
+  java.util.Enumeration enuH = request.getHeaderNames();
+  
+  while(enuR.hasMoreElements()) {
+    String elementName = (String)enuR.nextElement();  
+    
+    if (elementName == targetElement) {    
+      Object elementValue = request.getAttribute(targetElement);
+      
+      while(enuH.hasMoreElements()) {
+        String headerName = (String)enuH.nextElement();
+        String headerValue = request.getHeader(headerName);
+        
+        if (headerName.toLowerCase().equals(targetHeader)) {
+          if (headerValue.length() > 7) {
+            if (elementValue.toString().contains(targetUserAttribute) && headerValue.contains(targetReferer)) {
+              response.setStatus(response.SC_MOVED_TEMPORARILY);
+              response.setHeader("Location", targetLocation);
+            }
+          }
+        }
+      }
+    }
+  }  
+%>
+<bbNG:genericPage authentication="N" wrapper="false" globalNavigation="false">
+
+ <%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
 
 <loginUI:errorMessage />
  
@@ -94,13 +128,13 @@
   <footer>
     <div class="footlinks">
       <p><a href="http://www.umassonline.net/copyright" target="_blank">Copyright Compliance</a> |
-      <a href="http://www.umassonline.net/privacy-policy" target="_blank">Privacy Policy</a> |
+      <a href="https://www.umassp.edu/privacy-policy" target="_blank">Privacy Policy</a> |
       <a href="https://en-us.help.blackboard.com/Learn/9.1_2014_04/Student/015_Browser_Support/Browser_Checker" target="_blank">Site Requirements</a> |
       <a href="http://www.umassulearn.net/about" target="_blank">Contact Us</a></p>
     </div>
         
     <div class="footdisclaimer">        
-      <p>©2016 University of Massachusetts&nbsp;•&nbsp;<a href="http://umass.edu/site-policies" target="_blank">Site&nbsp;Policies</a>&nbsp;
+      <p>©2018 University of Massachusetts&nbsp;•&nbsp;<a href="http://umass.edu/site-policies" target="_blank">Site&nbsp;Policies</a>&nbsp;
       <a href="mailto:info@cpe.umass.edu">Site&nbsp;Contact</a></p>
     </div>
   </footer>
