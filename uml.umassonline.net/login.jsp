@@ -6,7 +6,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
-<bbNG:genericPage bodyClass="responsive-login-page" authentication="N" wrapper="false" globalNavigation="false">
+<bbNG:genericPage bodyClass="responsive-login-page" skipCoreCss="true" authentication="N" wrapper="false" globalNavigation="false">
 
 <%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
 
@@ -356,6 +356,12 @@ ul { padding-left: 40px; }
 #loginAnnouncements ul li:first-child {border-top: 1px solid #0066b2;}
 #loginAnnouncements ul li strong, #loginAnnouncements ul li strong:first-child { color: #0066b2; font-family: inherit; font-size: 16px; }
 #loginAnnouncements ul li::before, #loginAnnouncements ul li::after { box-shadow: none; }
+
+/* Cookie Disclosure Overrides */
+.lb-wrapper { max-width: 600px !important; }
+.lb-wrapper h1.consent-title { margin: 0 0 10px 0; }
+.lb-wrapper #containerdiv { width: 560px; max-width: 100%; }
+
 </style>
 </bbNG:cssBlock>
 
