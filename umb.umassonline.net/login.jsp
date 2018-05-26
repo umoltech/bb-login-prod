@@ -101,6 +101,10 @@
 		.academic_calendar {border-bottom: 1px solid #ccc;}
 	}
 
+	/* cookie disclosure overrides */
+	div.lb-wrapper { width: 560px; max-width: 560px; background-color: #fff; -moz-box-shadow: 0; -webkit-box-shadow: 0; box-shadow: 0; }
+	h1.consent-title { margin: 0 0 20px 0; }
+	
 </style>
 </bbNG:cssBlock>
 
@@ -133,7 +137,7 @@
 	<div class="heading-wrapper">
 		<div class="container units-row units-split  end">
 			<div class="unit-100 masthead-inner">
-				<h1><a href="#">Blackboard Learn Login</a></h1>
+				<h1 class="umbTitle"><a href="#">Blackboard Learn Login</a></h1>
 			</div>
 		</div>
 	</div>
@@ -237,16 +241,13 @@ ga('send', 'pageview');
 <script>
   var umolJQ = jQuery.noConflict();
   
-  umolJQ(document).ready( function() {
+    umolJQ(document).ready( function() {
     umolJQ('.forgot a').removeAttr('onclick').attr('href', 'https://mypassword.umb.edu').attr('target', '_blank');
+	
+	// resize window to trigger popup resize
+    window.dispatchEvent(new Event('resize'));
   });
 </script>
 </bbNG:jsBlock>
-
-<div style="display:none">
-	<div id="loginBoxTwo">
-		<loginUI:loginForm loginText="Log In" />
-	</div>
-</div>
 
 </bbNG:genericPage>
