@@ -22,7 +22,7 @@
 
 <c:set var="productName" value="${ loginUI:getProductName() }" />
 
-<bbNG:genericPage authentication="N" wrapper="false" onLoad="if (document.forms.login.user_id != undefined) document.forms.login.user_id.focus()" bodyClass="login-page">
+<bbNG:genericPage authentication="N" wrapper="N" onLoad="if (document.forms.login.user_id != undefined) document.forms.login.user_id.focus()" bodyClass="login-page" globalNavigation="N">
 
 <%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
 
