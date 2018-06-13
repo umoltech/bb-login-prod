@@ -191,9 +191,9 @@
 						<li>Your course may not be available before the official listed course start date.</li>						
 					</ul>
 					<hr>
-					<h3 >Blackboard App</h3>
+					<h3 >Getting Blackboard Help</h3>
 					<ul class="unstyled">
-						<li><a href="https://www.blackboard.com/mobile-learning/bbstudent.aspx" target="_blank">Access your online course through your mobile device!</a></li>
+						<li><a href="http://umb.echelp.org" target="_blank">Contact 24/7 Blackboard Help</a></li>
 					</ul>
 				</div>
 			</div>
