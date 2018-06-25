@@ -10,7 +10,7 @@
 
 <c:set var="productName" value="${ loginUI:getProductName() }" />
 
-<bbNG:genericPage authentication="N" wrapper="false" onLoad="loadLoginPage()" bodyClass="login-page" globalNavigation="false">
+<bbNG:genericPage authentication="N" wrapper="N" globalNavigation="N" onLoad="loadLoginPage()" bodyClass="login-page">
 
 <%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
 

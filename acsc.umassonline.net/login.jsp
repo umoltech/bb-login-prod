@@ -11,7 +11,7 @@
 <%--
   This is a standard wrapper for all AS pages.  It is recommended that you keep this tag.
   --%>
-<bbNG:genericPage authentication="N" wrapper="false" onLoad="loadLoginPage()" bodyClass="login-page" globalNavigation="false">
+<bbNG:genericPage authentication="N" wrapper="N" globalNavigation="N" onLoad="loadLoginPage()" bodyClass="login-page">
    
 <%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
    

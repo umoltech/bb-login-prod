@@ -20,7 +20,7 @@
   }
 %>
 
-<bbNG:genericPage authentication="N" wrapper="false" onLoad="loadLoginPage()" bodyClass="login-page">
+<bbNG:genericPage authentication="N" wrapper="N" globalNavigation="N" onLoad="loadLoginPage()" bodyClass="login-page">
    
 <%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
    
