@@ -176,9 +176,9 @@
         </div>
         <div class="loginNav">
           <a href="https://umassmed.edu" target="_blank">UMass Medical School</a>
-          <a href="https://umassmed.edu/it/services/academic-computing/blackboard-learn/" target="_blank">Bb Learn Resources</a>
+          <a href="https://umassmed.service-now.com/sp/?id=kb_article&sys_id=79b765374f6893c08b1d58211310c7b1" target="_blank">Bb Learn Resources</a>
           <a href="https://umassmed.edu/it/training/" target="_blank">Training</a>
-          <a href="https://umassmed.edu/it/services/academic-computing/" target="_blank">Academic Technology</a>
+          <a href="https://umassmed.edu/it/services/Academic-Technology/" target="_blank">Academic Technology</a>
           <a href="https://umassmed.edu/it/security/" target="_blank">IT Security</a>
         </div>
         
