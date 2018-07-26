@@ -89,16 +89,6 @@
     </div>
   </div>
   <div class="stripe">   
-    <div class="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <a class="banner-wide" href="https://continuinged.uml.edu/catalog/search/?sem=0&yr=2018&sm=Summer"><img src="/bbcswebdav/library/login/uml/images/summer-banner-2018.jpg"></a> 
-            <a class="banner-tall" href="https://continuinged.uml.edu/catalog/search/?sem=0&yr=2018&sm=Summer"><img src="/bbcswebdav/library/login/uml/images/summer-banner-tall-2018.jpg"></a>
-          </div>
-        </div>
-      </div>
-    </div> 
     <div class="container ">
       <div class="row">
         <div class="col-md-4">
@@ -253,9 +243,6 @@ h4 {color: #333; text-transform: uppercase; margin: 20px 0 0; font-size: 14px;}
 .main-content {font-size: 14px;}
 .margintop {margin-top: 25px;}
 .announce {font-weight: bold; color: #cf202f;} 
-.banner {padding: 35px 0;}
-.banner-tall img, .banner-wide img {width: 100%; height: auto;}
-.banner-tall {display:none;}
                 
 @media (max-width: 1650px) {
   .hero-text{margin:135px 0 86px;} 
@@ -323,8 +310,6 @@ h4 {color: #333; text-transform: uppercase; margin: 20px 0 0; font-size: 14px;}
   .hero-text ul,.hero-text-double h1,.mblhide{display:none;}
   .navbar-inverse .navbar-nav > li > a{background: none;}
   .announcementDate{margin: 0 0 36px; width: 30%; white-space: normal;} 
-  .banner-wide {display:none;}
-  .banner-tall {display:block;}
 }
 
 @media (max-width: 480px) {
