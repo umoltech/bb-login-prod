@@ -360,6 +360,8 @@ div#loginAnnouncements ul li {
   padding: 0;
   position: relative;
   vertical-align: top;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
 }
 div#loginAnnouncements ul li::before {
   left: 8px;
