@@ -66,7 +66,7 @@
   <!-- Begin top nav bar -->
   <div>
     <ul id="metanav">
-        <li><a title="" href="http://go.umass.edu" target="_blank">Go.UMass</a></li>
+        <li><a title="" href="https://www.umass.edu/it/portal/myumassappreplacesgoumassportaljune2018" target="_blank">My UMass</a></li>
         <li><a title="" href="http://www.it.umass.edu/email" target="_blank">Email</a></li>
         <li><a title="" href="http://www.spire.umass.edu" target="_blank">SPIRE</a></li>
         <li><a title="" href="https://moodle.umass.edu" target="_blank">Moodle</a></li>
@@ -113,14 +113,14 @@
       <h3>New CPE Students</h3>
       <p><a href="https://www.it.umass.edu/accounts/activate-your-account" target="_blank">Activate your UMass Amherst IT Account</a></p>
       <p>If you have questions about registration in UMass Amherst Continuing & Professional Education classes, email:<br>
-      <a href="mailto:regoff@cpe.umass.edu">regoff@cpe.umass.edu</a></p>
+      <a href="mailto:regoff@oe.umass.edu">regoff@oe.umass.edu</a></p>
     </div>
     <div class="uma-helpitem">
       <h3>New Enrollment Process</h3>
       <p>All students, including Non-Degree (ND), now enroll in CPE classes directly 
       in <a href="https://www.spire.umass.edu/" target="_blank">SPIRE</a>, the UMass Amherst Student 
       Information System. 
-      <a href="http://www.umassulearn.net/registration-info" target="_blank">Read more...</a></p>
+      <a href="https://www.umass.edu/cpe/enroll" target="_blank">Read more...</a></p>
     </div>
   </aside>
   <!-- End 3 columns -->  
@@ -129,13 +129,13 @@
     <div class="footlinks">
       <p><a href="http://www.umassonline.net/copyright" target="_blank">Copyright Compliance</a> |
       <a href="https://www.umassp.edu/privacy-policy" target="_blank">Privacy Policy</a> |
-      <a href="https://en-us.help.blackboard.com/Learn/9.1_2014_04/Student/015_Browser_Support/Browser_Checker" target="_blank">Site Requirements</a> |
-      <a href="http://www.umassulearn.net/about" target="_blank">Contact Us</a></p>
+      <a href="https://help.blackboard.com/Learn/Student/Getting_Started/Browser_Support/Browser_Checker" target="_blank">Site Requirements</a> |
+      <a href="https://www.umass.edu/cpe/contact-us" target="_blank">Contact Us</a></p>
     </div>
         
     <div class="footdisclaimer">        
-      <p>©2018 University of Massachusetts&nbsp;•&nbsp;<a href="http://umass.edu/site-policies" target="_blank">Site&nbsp;Policies</a>&nbsp;
-      <a href="mailto:info@cpe.umass.edu">Site&nbsp;Contact</a></p>
+      <p>©2018 University of Massachusetts&nbsp;•&nbsp;<a href="http://umass.edu/site-policies" target="_blank">Site Policies</a>
+      <a href="mailto:info@oe.umass.edu">Site Contact</a></p>
     </div>
   </footer>
 </div>
