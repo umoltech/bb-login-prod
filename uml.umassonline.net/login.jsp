@@ -61,10 +61,9 @@
                    Online Learning<br/>with Blackboard
                 </h1>
                 <div class="hero-text-one">
-                   <p>Use your UMass Lowell <b>email address</b> and <b>password</b> to log into your online course(s) in Blackboard.</p>
-                   <p class="announce">Login is made available on the first day of class.</p> 
-                   <a href="#" class="login" id="ssoLoginLink">Log into Blackboard </a>
-                   <p>Forgot your password? <a href="https://mypassword.uml.edu/">Click Here</a></p>
+                  <p>Use your UMass Lowell <b>email address</b> and <b>password</b> to log into your online course(s) in Blackboard.</p>
+                  <a href="#" class="login" id="ssoLoginLink">Log into Blackboard</a>
+                  <p><b>Password Help:</b> <a href="https://mypassword.uml.edu/">MyPassword.uml.edu</a> can only be accessed while on-campus to change your password, until further notice. If you need to change your password while off-campus, please contact the IT Service Desk at <b>978-934-4357</b> for assistance.</p> 
                 </div>
              </div>
           </div>
@@ -82,10 +81,9 @@
           </div>
           <div class="col-xs-4 mobile-full">
              <a href="#" class="login" id="ssoLoginLinkMobile">Log into Blackboard </a>
-             <p class="fpassword">Forgot your password? <a href="https://mypassword.uml.edu/">Click Here</a></p>
+             <p><b>Password Help:</b> <a href="https://mypassword.uml.edu/">MyPassword.uml.edu</a> can only be accessed while on-campus to change your password, until further notice. If you need to change your password while off-campus, please contact the IT Service Desk at <b>978-934-4357</b> for assistance.</p>
           </div>
        </div>
-       <!-- /.row -->
     </div>
   </div>
   <div class="stripe">   
