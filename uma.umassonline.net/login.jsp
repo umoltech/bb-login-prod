@@ -93,7 +93,15 @@
       <p>You must have an active UMass Amherst <a href="https://www.it.umass.edu/support/accounts/understand-your-netid-password#Your%20NetID" target="_blank">NetID</a> to log in.</p>
       <p><a href="https://www.it.umass.edu/support/accounts/understand-your-netid-password#Forgot%20your%20password?" target="_blank">Forgot Your Password?</a></p> 
     </div>
-    <p><a href="http://www.umassulearn.net/" target="_blank">UMass Amherst Continuing &amp; Professional Education</a> presents online courses on the Blackboard Learn learning management system through <a href="http://www.umassonline.net" target="_blank">UMassOnline</a>.</p>     
+    <p><a href="http://www.umassulearn.net/" target="_blank">UMass Amherst Continuing &amp; Professional Education</a> presents online courses on the Blackboard Learn learning management system through <a href="http://www.umassonline.net" target="_blank">UMassOnline</a>.</p>  
+    <h3>eCampus FAST Adoption Tool</h3>
+    <p>Instructors and departments should use the 
+    <a href="https://fast.ecampus.com/sign-in?action=samllogin&schoolid=6368" target="_blank">eCampus FAST Adoption Tool</a>
+    to enter textbooks and other course materials. See 
+    "<a href="http://simages.ecampus.com/images/vbs/pdf/UMass-how-to-submit-course-materials-fall-2018.pdf" target="_blank">eCampus @ UMass</a>"
+    for more information.  
+    Login to eCampus <a href="https://fast.ecampus.com/sign-in?action=samllogin&schoolid=6368" target="_blank">here</a>. 
+    Questions? Contact <a href="mailto:UMass@eCampus.com?subject=eCampus+University+of+Massachusetts+Amherst">UMass@eCampus.com</a></p>   
   </section>
   
   <section id="middle">
@@ -428,6 +436,13 @@ div.uma-helpitem {
 }
 .uma-helpitem p {
 	font-size: .9em;	
+}
+
+section h3 {
+	font-size: 1.125em;
+	font-weight: bold; 
+	color: #676767;
+	padding-bottom: 10px;
 }
 
 section a, aside a { 
