@@ -97,11 +97,11 @@
     <h3>eCampus FAST Adoption Tool</h3>
     <p>Instructors and departments should use the 
     <a href="https://fast.ecampus.com/sign-in?action=samllogin&schoolid=6368" target="_blank">eCampus FAST Adoption Tool</a>
-    to enter textbooks and other course materials. See 
-    "<a href="http://simages.ecampus.com/images/vbs/pdf/UMass-how-to-submit-course-materials-fall-2018.pdf" target="_blank">eCampus @ UMass</a>"
-    for more information.  
-    Login to eCampus <a href="https://fast.ecampus.com/sign-in?action=samllogin&schoolid=6368" target="_blank">here</a>. 
-    Questions? Contact <a href="mailto:UMass@eCampus.com?subject=eCampus+University+of+Massachusetts+Amherst">UMass@eCampus.com</a></p>   
+    to enter textbooks and other course materials.</p>
+    <p>See <a href="http://simages.ecampus.com/images/vbs/pdf/UMass-how-to-submit-course-materials-fall-2018.pdf" target="_blank">eCampus @ UMass</a>
+    for more information.</p>
+    <p>Questions? Contact 
+    <a href="mailto:UMass@eCampus.com?subject=eCampus+University+of+Massachusetts+Amherst">UMass@eCampus.com</a></p>   
   </section>
   
   <section id="middle">
@@ -269,6 +269,12 @@ div.header-title {
 }
 #contentLeft p {
 	font-size: .9em;
+}
+#contentLeft h3 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: #8b8b8b solid 1px;
+	margin-top: 20px;
 }
 div.uma-loginbox {
 	background-color: #E7E7E7;
