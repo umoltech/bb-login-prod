@@ -240,7 +240,10 @@ div.header {
 	position: relative;
 	min-height: 250px;
 	margin-bottom: 35px;
-	background-image: url("/bbcswebdav/library/login/uma/images/template/CMASS_Graduation-960x320.jpg");
+	background-image: url("/bbcswebdav/library/login/uma/images/template/2017-fall-campus-960.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 100% auto;
 }
 div.header-title {
 	background-color: rgba(0, 0, 0, 0.5);
