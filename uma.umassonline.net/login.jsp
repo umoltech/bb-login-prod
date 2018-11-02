@@ -532,7 +532,9 @@ MEDIA QUERIES
 /* for 480px or less */
 @media screen and (max-width: 480px) {
 
-
+	div.header {
+		background-size: auto 100%;
+	}
 	h1 {
 		font-size: 2em;
 	}
