@@ -124,11 +124,13 @@
       <a href="mailto:regoff@oe.umass.edu">regoff@oe.umass.edu</a></p>
     </div>
     <div class="uma-helpitem">
-      <h3>New Enrollment Process</h3>
-      <p>All students, including Non-Degree (ND), now enroll in CPE classes directly 
-      in <a href="https://www.spire.umass.edu/" target="_blank">SPIRE</a>, the UMass Amherst Student 
-      Information System. 
+      <h3>How Do I Enroll?</h3>
+      <p>All students, including Non-Degree (ND), enroll in CPE classes directly in
+      <a href="https://www.spire.umass.edu/" target="_blank">SPIRE</a>, the UMass Amherst Student Information System.
       <a href="https://www.umass.edu/cpe/enroll" target="_blank">Read more...</a></p>
+    </div>
+    <div class="uma-helpitem">
+      <p class="top10"><a href="https://www.umass.edu/diversity/building-community-dignity-and-respect" target="_blank"><img src="/bbcswebdav/library/login/uma/images/template/dignity-and-respect.jpg" /></a></p>
     </div>
   </aside>
   <!-- End 3 columns -->  
@@ -177,6 +179,9 @@ html, body, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 }
 p {
 	margin: 0 0 15px 0;
+}
+p.top10 {
+	margin-top: 10px;
 }
 a { 
 	text-decoration: underline;
