@@ -100,8 +100,6 @@
     to enter textbooks and other course materials.</p>
     <p>See <a href="http://simages.ecampus.com/images/vbs/pdf/UMass-how-to-submit-course-materials-fall-2018.pdf" target="_blank">eCampus @ UMass</a>
     for more information.</p>
-    <p>Questions? Contact 
-    <a href="mailto:UMass@eCampus.com?subject=eCampus+University+of+Massachusetts+Amherst">UMass@eCampus.com</a></p>   
   </section>
   
   <section id="middle">
@@ -243,15 +241,15 @@ div.uma-search {
 div.header {	
 	box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.65);
 	position: relative;
-	min-height: 250px;
-	margin-bottom: 35px;
-	background-image: url("/bbcswebdav/library/login/uma/images/template/2017-fall-campus-960.jpg");
+	min-height: 390px;
+	margin-bottom: 20px;
+	background-image: url("/bbcswebdav/library/login/uma/images/template/2018-winter-uma.jpg");
 	background-repeat: no-repeat;
-	background-position: bottom center;
+	background-position: center center;
 	background-size: 100% auto;
 }
 div.header-title {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.2);
 	margin-bottom: 50px; 
 }
 .header H1{
@@ -514,6 +512,15 @@ MEDIA QUERIES
 }
 
 /* for 700px or less */
+@media screen and (max-width: 700px) {
+
+	div.header {
+		background-size: auto 100%;
+	}
+
+}
+
+/* for 600px or less */
 @media screen and (max-width: 600px) {
 
 	#contentLeft {
@@ -537,9 +544,6 @@ MEDIA QUERIES
 /* for 480px or less */
 @media screen and (max-width: 480px) {
 
-	div.header {
-		background-size: auto 100%;
-	}
 	h1 {
 		font-size: 2em;
 	}
