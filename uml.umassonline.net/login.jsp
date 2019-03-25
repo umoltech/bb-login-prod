@@ -88,7 +88,7 @@
        <!-- /.row -->
     </div>
   </div>
-  <div class="banner-ad">
+  <div class="campaign-ba">
     <a href="https://continuinged.uml.edu/catalog/search/?sem=0&yr=2019&sm=Summer&utm_campaign=summer-2019&utm_medium=ad&utm_source=umol&utm_content=fast-track">
     <picture>
       <source type="image/webp" srcset="/bbcswebdav/library/login/uml/campaign/summer-wide2019.webp" media="(min-width: 768px)">
@@ -253,8 +253,8 @@ h4 {color: #333; text-transform: uppercase; margin: 20px 0 0; font-size: 14px;}
 .main-content {font-size: 14px;}
 .margintop {margin-top: 25px;}
 .announce {font-weight: bold; color: #cf202f;} 
-.banner-ad {text-align: center; padding: 30px 0; background: #fff;}
-.banner-ad a {margin: 0 auto; display: inline-block;}
+.campaign-ba {text-align: center; padding: 30px 0; background: #fff;}
+.campaign-ba a {margin: 0 auto; display: inline-block;}
 
 @media (max-width: 1650px) {
   .hero-text{margin:135px 0 86px;} 
