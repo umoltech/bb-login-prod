@@ -210,7 +210,7 @@ hr.blue {background: #0066b2; border: 0; height: 1px; clear:both;}
 .main-content{overflow:hidden; background: #ff;}
 .no-hero{padding-top:12%;}
 .mbl-more,.hero-text-double,.aspect-holder{display:none;}
-a.login {margin: 10px 0; display:inline-block; font-size: 24px; color: #fff; font-weight: 700; padding: 15px 60px; background: #ff9933; box-shadow:1px 1px 1px #888; text-shadow: 1px 1px 1px #dd852c;}
+a.login {margin: 10px 0; display:inline-block; font-size: 22px; color: #fff; font-weight: 700; padding: 15px 60px; background: #f06e35; box-shadow:1px 1px 1px #888; text-shadow: 1px 1px 1px #dd852c; text-transform: uppercase;} 
 a.login:hover {text-decoration: none; background: #fdb56d;}
 .oce {color: #fff; margin: 15px 0 0 104px; float:left;}
 .oce-small {display:none; margin: 10px 0 0 67px; float:left;}
