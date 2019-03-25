@@ -88,6 +88,16 @@
        <!-- /.row -->
     </div>
   </div>
+  <div class="banner-ad">
+    <a href="https://continuinged.uml.edu/catalog/search/?sem=0&yr=2019&sm=Summer&utm_campaign=summer-2019&utm_medium=ad&utm_source=umol&utm_content=fast-track">
+    <picture>
+      <source type="image/webp" srcset="/bbcswebdav/library/login/uml/campaign/summer-wide2019.webp" media="(min-width: 768px)">
+      <source srcset="/bbcswebdav/library/login/uml/campaign/summer-wide2019.jpg" media="(min-width: 768px)">
+      <source type="image/webp" srcset="/bbcswebdav/library/login/uml/campaign/summer-tall2019.webp">
+      <img src="/bbcswebdav/library/login/uml/campaign/summer-tall2019.jpg" class="img-responsive" alt="View Summer Courses">
+    </picture>
+    </a>
+  </div>
   <div class="stripe">   
     <div class="container ">
       <div class="row">
@@ -243,7 +253,9 @@ h4 {color: #333; text-transform: uppercase; margin: 20px 0 0; font-size: 14px;}
 .main-content {font-size: 14px;}
 .margintop {margin-top: 25px;}
 .announce {font-weight: bold; color: #cf202f;} 
-                
+.banner-ad {text-align: center; padding: 30px 0; background: #fff;}
+.banner-ad a {margin: 0 auto; display: inline-block;}
+
 @media (max-width: 1650px) {
   .hero-text{margin:135px 0 86px;} 
 }
