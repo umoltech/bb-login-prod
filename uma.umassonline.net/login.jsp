@@ -243,7 +243,7 @@ div.header {
 	position: relative;
 	min-height: 390px;
 	margin-bottom: 20px;
-	background-image: url("/bbcswebdav/library/login/uma/images/template/2018-winter-uma.jpg");
+	background-image: url("/bbcswebdav/library/login/uma/images/template/2019-spring-uma.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 100% auto;
