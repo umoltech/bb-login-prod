@@ -18,29 +18,28 @@
 <style type="text/css">
 	body.login-page { 
     background-color: #FFFFFF;
-    background-image: url('https://www.mass.gov/files/styles/action_banner_large/public/2019-04/statehouse-day.jpg');
+  }
+	div.loginBody { 
+		width: 1000px; 
+		padding: 325px 50px 25px 50px; 
+		background-color: #fff; 
+    background-image: url('/bbcswebdav/library/login/oig/statehouse-day.jpg');
     background-position: top right;
     background-repeat: no-repeat; 
     background-size: 100% auto;
-  }
-	div.loginBody { 
-		width: 800px; 
-		padding: 25px 50px; 
-		background-color: #fff; 
-    background-image: none; 
 		position: relative; 
-		top: 64px;
+		top: 0;
 		margin-left: auto;
 		margin-right: auto;
     border: 1px solid #388557;
 	}
 	#loginBoxContainer { }
-	#loginBlockColumnLeft { float: left; width: 350px; margin-right: 50px; }
+	#loginBlockColumnLeft { float: left; width: 530px; margin-right: 50px; }
 	#loginBlockColumnLeft p { margin-bottom: 20px; font-size: 11pt; line-height: 16pt; }
 	#loginBox { 
 		float: left; 
-		width: 300px; 
-		padding: 20px 40px 20px 40px; 
+		width: 350px; 
+		padding: 20px 30px 20px 30px; 
 		border: 1px solid #C4C4C4;		
 		-moz-box-shadow: 0 0 6px 0 #C4C4C4;
 		-webkit-box-shadow: 0 0 6px 0 #C4C4C4;
@@ -61,15 +60,45 @@
   .loginAlertTop { margin-bottom: 20px; background-color: #FFFFCC; padding: 18px 24px; }
   .loginAlertTop p { margin-bottom: 12px; }
 
-  @media only screen and (max-width: 799px) {
+  .org-overlay { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 90%; 
+    padding: 0 5%; 
+    color: #fff; 
+    font-weight: bold;  
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+
+  @media only screen and (min-width: 800px) and (max-width: 999px) {
     div.loginBody {
       width: 100%;
       border: none;
     }
 
     #loginBox {
+      width: 30%;
+    }
+
+    #loginBlockColumnLeft {
+      width: 50%;
+      margin-right: 5%;
+    }
+  }
+
+  @media only screen and (max-width: 799px) {
+    div.loginBody {
+      width: 90%;
+      border: none;
+      padding: 30% 5% 10% 5%;
+    }
+
+    #loginBox {
       float: none;
       width: 100%;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     #loginBlockColumnLeft {
@@ -108,20 +137,12 @@
     <%-- End top rounder --%>
 
     <div id="loginContainer">
-      <div id="loginHeader" class="clearfix">
-        <loginUI:accessibility />
-      </div>
-
-      <div id="loginLang" class="clearfix">
-        <loginUI:localePicker />
-      </div>
-
       <div class="clearfix loginBody">      
+        <div class="org-overlay"><h1>Office of the Inspector General</h1></div>
         <loginUI:errorMessage />
         
         <div id="loginBoxContainer">
           <div id="loginBlockColumnLeft">
-            <h1>Office of the Inspector General</h1>
             <p>Enter your username and password on the right to access your course materials
             and to interact with your instructor and other course participants.</p>
             <p>Helpful tips for first time users:</p>
@@ -129,6 +150,10 @@
             Please log in with the email address where you received your registration confirmation.</p>
             <p>If you are using Blackboard for the FIRST TIME, you need to set your password. 
             Please click the link to the right and follow the instructions.</p> 
+
+            <h3>Announcements</h3>
+    
+            <loginUI:systemAnnouncements maxItems="5" />
           </div>
           
           <div id="loginBox">
