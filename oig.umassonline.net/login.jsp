@@ -143,6 +143,8 @@
         
         <div id="loginBoxContainer">
           <div id="loginBlockColumnLeft">
+            <p><strong>The Office of the Inspector General is an independent agency that prevents and detects fraud, 
+            waste and abuse of public funds and public property and promotes transparency in government.</strong></p>
             <p>Enter your username and password on the right to access your course materials
             and to interact with your instructor and other course participants.</p>
             <p>Helpful tips for first time users:</p>
@@ -151,9 +153,6 @@
             <p>If you are using Blackboard for the FIRST TIME, you need to set your password. 
             Please click the link to the right and follow the instructions.</p> 
 
-            <h3>Announcements</h3>
-    
-            <loginUI:systemAnnouncements maxItems="5" />
           </div>
           
           <div id="loginBox">
