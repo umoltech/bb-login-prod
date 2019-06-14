@@ -71,6 +71,16 @@
     background-color: rgba(0, 0, 0, 0.25);
   }
 
+  .helpBlock {
+    margin: 40px 0 40px 0;
+    padding: 20px;
+    background-color: #ffffdd;
+  }
+
+  .helpBlock p {
+    margin: 0 0 20px 0;
+  }
+
   @media only screen and (min-width: 800px) and (max-width: 999px) {
     div.loginBody {
       width: 100%;
@@ -152,7 +162,13 @@
             Please log in with the email address where you received your registration confirmation.</p>
             <p>If you are using Blackboard for the FIRST TIME, you need to set your password. 
             Please click the link to the right and follow the instructions.</p> 
-
+            <div class="helpBlock">
+              <p><strong>Need Help?</strong></p>
+              <p>Monday through Friday 7:30 AM - 5:30 PM (EST):<br>
+              Call 508-856-8643 or email the Help Desk. Expect to receive a response within 24 hours.</p>
+              <p>Weekends, Holidays and After Hours:<br>
+              Call 1-855-789-7056 or visit http://helpdesk.org.</p>
+            </div>
           </div>
           
           <div id="loginBox">
