@@ -17,13 +17,14 @@
 <bbNG:cssBlock>
 <style type="text/css">
 	body.login-page { 
-    background-color: #FFFFFF;
+    background-color: #1F294C;
+    min-height: 1500px;
   }
 	div.loginBody { 
 		width: 1000px; 
-		padding: 325px 50px 25px 50px; 
+		padding: 370px 50px 25px 50px; 
 		background-color: #fff; 
-    background-image: url('/bbcswebdav/library/login/oig/statehouse-day.jpg');
+    background-image: url('/bbcswebdav/library/login/oig/statehouse-aerial.jpg');
     background-position: top right;
     background-repeat: no-repeat; 
     background-size: 100% auto;
@@ -31,7 +32,7 @@
 		top: 0;
 		margin-left: auto;
 		margin-right: auto;
-    border: 1px solid #388557;
+    border: none;
 	}
 	#loginBoxContainer { }
 	#loginBlockColumnLeft { float: left; width: 530px; margin-right: 50px; }
@@ -78,6 +79,12 @@
   }
 
   .helpBlock p {
+    margin: 0 0 20px 0;
+  }
+
+  h2 { 
+    text-align: center; 
+    font-size: 200%;
     margin: 0 0 20px 0;
   }
 
@@ -153,6 +160,7 @@
         
         <div id="loginBoxContainer">
           <div id="loginBlockColumnLeft">
+            <h2>MCPPO Online</h2>
             <p><strong>The Office of the Inspector General is an independent agency that prevents and detects fraud, 
             waste and abuse of public funds and public property and promotes transparency in government.</strong></p>
             <p>Enter your username and password on the right to access your course materials
