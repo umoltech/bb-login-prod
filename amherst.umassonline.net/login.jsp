@@ -20,6 +20,17 @@
 
   gtag('config', 'UA-793538-19');
 </script>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">  
+  var umolJQ = jQuery.noConflict();
+  
+  umolJQ(document).ready( function() {
+    
+    umolJQ('title').text('Online Professional Development | UMass Amherst');
+    
+  });
+</script>
 </bbNG:jsBlock>
 
 <bbNG:cssBlock>
@@ -28,7 +39,11 @@
 		background-image: url("/bbcswebdav/library/login/uma/images/bg/old-chapel.jpg");
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size: 100% auto;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: center bottom;
 		background-attachment: fixed;
 		background-color: #fff;
 		margin: 0;
@@ -50,6 +65,11 @@
 		padding: 20px 0;
 		border-top: 10px solid #86130e;
 		width: 500px;
+		max-width: 90%;
+	}
+
+	div.loginBody .receipt {
+		width: 90%;
 		max-width: 90%;
 	}
 
@@ -83,9 +103,12 @@
 	}
 
 	div#loginBox input[type="text"]:hover, 
-	div#loginBox input[type="password"]:hover {
+	div#loginBox input[type="password"]:hover,
+	div#loginBox input[type="text"]:focus, 
+	div#loginBox input[type="password"]:focus {
 		border: 2px solid red;
 		background-color: #2d2d2d;
+		color: #fff;
 	}
 
 	div#loginBox li input[type="submit"] {
@@ -138,13 +161,14 @@
 		text-decoration: none;
 	}
 
-	@media screen and (max-width: 1200px) {
-		body { 
-			-webkit-background-size:cover;
-			-moz-background-size:cover;
-			-o-background-size:cover;
-			background-size:cover;
-			background-position:center;
+	@media screen and (max-width: 600px) {
+		div#loginFooterContainer div#loginFooterContent span {
+			display: block;
+			padding: 0;
+		}
+
+		div#loginFooterContainer div#loginFooterContent span.sep {
+			display: none;
 		}
 	}
 
@@ -161,7 +185,7 @@
 </style>
 </bbNG:cssBlock>
 
-<div id="loginHeaderBanner"><img src="/bbcswebdav/library/login/uma/images/template/UMwordmark.png" /></div>
+<div id="loginHeaderBanner"><a href="https://umass.edu" target="_blank"><img src="/bbcswebdav/library/login/uma/images/template/UMwordmark.png" /></a></div>
 <div id="loginPageContainer">
   <div id="loginPane">
 
@@ -180,9 +204,9 @@
 <div id="loginFooterContainer">
 	<div id="loginFooterContent">
 		<span>&copy2019 University of Massachusetts Amherst</span>
-		<span>&bull;</span>
+		<span class="sep">&bull;</span>
 		<span><a href="https://www.umass.edu/site-policies" target="_blank">Site Policies</a></span>
-		<span>&bull;</span>
+		<span class="sep">&bull;</span>
 		<span><a href="mailto:elearning@oe.umass.edu">Site Contact</a></span>
 	</div>
 </div>
