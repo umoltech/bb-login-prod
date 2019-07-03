@@ -36,6 +36,21 @@
 <bbNG:cssBlock>
 <style type="text/css">
 	body { 
+		background-image: none;
+		background-color: #fff;
+		margin: 0;
+	}
+
+	div#loginHeaderBanner {
+		padding: 20px 30px;
+		background-color: #86130e;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+
+	div#loginPageContainer {
 		background-image: url("/bbcswebdav/library/login/uma/images/bg/old-chapel.jpg");
 		background-repeat: no-repeat;
 		background-position: center;
@@ -45,23 +60,13 @@
 		background-size: cover;
 		background-position: center bottom;
 		background-attachment: fixed;
-		background-color: #fff;
-		margin: 0;
-	}
-
-	div#loginHeaderBanner {
-		padding: 20px 30px;
-		background-color: #86130e;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
+		padding: 25vh 0;
 	}
 
 	div.loginBody {
 		background-color: #fff;
 		background-image: none;
-		margin: 25vh auto 0 auto;
+		margin: 0 auto;
 		padding: 20px 0;
 		border-top: 10px solid #86130e;
 		width: 500px;
@@ -180,6 +185,10 @@
 			bottom: auto;
 			left: auto;
 			right: auto;
+		}
+
+		div#loginPageContainer {
+			padding: 15vh 0;
 		}
 	}
 </style>
