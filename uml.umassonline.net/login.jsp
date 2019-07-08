@@ -89,12 +89,10 @@
     </div>
   </div>
   <div class="campaign-ba">
-    <a href="https://continuinged.uml.edu/catalog/search/?sem=0&yr=2019&sm=Summer&utm_campaign=summer-2019&utm_medium=ad&utm_source=umol&utm_content=fast-track">
+    <a href="https://continuinged.uml.edu/catalog/search/?sem=0&yr=2019&sm=Fall&utm_campaign=fall-2019-blackboard-login&utm_medium=online&utm_source=umol&utm_content=reboot-your-career">
     <picture>
-      <source type="image/webp" srcset="/bbcswebdav/library/login/uml/campaign/summer-wide2019.webp" media="(min-width: 768px)">
-      <source srcset="/bbcswebdav/library/login/uml/campaign/summer-wide2019.jpg" media="(min-width: 768px)">
-      <source type="image/webp" srcset="/bbcswebdav/library/login/uml/campaign/summer-tall2019.webp">
-      <img src="/bbcswebdav/library/login/uml/campaign/summer-tall2019.jpg" class="img-responsive" alt="View Summer Courses">
+      <source srcset="/bbcswebdav/library/login/uml/campaign/fall-wide2019.jpg" media="(min-width: 768px)">
+      <img src="/bbcswebdav/library/login/uml/campaign/fall-tall2019.jpg" class="img-responsive" alt="View Fall Courses">
     </picture>
     </a>
   </div>
