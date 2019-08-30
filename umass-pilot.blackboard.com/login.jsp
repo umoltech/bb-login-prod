@@ -48,7 +48,7 @@
   <! -- Begin top banner -->
   <div class="top">
     <div id="logo">
-      <a href="http://www.umass.edu/" title="Home" rel="home" target="_blank"><img src="https://uma.umassonline.net/bbcswebdav/library/login/uma/images/template/UMwordmark.png" width="204" height="26" alt="UMass Amherst"/></a>
+      <a href="http://www.umass.edu/" title="Home" rel="home" target="_blank"><img src="/bbcswebdav/library/login/uma/UMwordmark.png" width="204" height="26" alt="UMass Amherst"/></a>
       <div class="uma-search">
         <form action="//googlebox.oit.umass.edu/search" method="get">
           <h2 class="element-invisible">Search Google Appliance</h2> 
@@ -129,7 +129,7 @@
 </div>
 
 <bbNG:cssBlock>
-<link rel="icon" type="image/ico" href="https://uma.umassonline.net/bbcswebdav/library/login/uma/images/template/favicon.ico">
+<link rel="icon" type="image/ico" href="/bbcswebdav/library/login/uma/favicon.ico">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
 <style type="text/css">
 body { 
@@ -219,9 +219,9 @@ div.header {
 	position: relative;
 	min-height: 390px;
 	margin-bottom: 20px;
-	background-image: url("https://uma.umassonline.net/bbcswebdav/library/login/uma/images/template/2019-spring-uma.jpg");
+	background-image: url("/bbcswebdav/library/login/uma/2016-family-weekend.jpg");
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center bottom;
 	background-size: 100% auto;
 }
 div.header-title {
