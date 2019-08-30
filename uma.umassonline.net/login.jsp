@@ -93,7 +93,7 @@
       <p>You must have an active UMass Amherst <a href="https://www.it.umass.edu/support/accounts/understand-your-netid-password#Your%20NetID" target="_blank">NetID</a> to log in.</p>
       <p><a href="https://www.it.umass.edu/support/accounts/understand-your-netid-password#Forgot%20your%20password?" target="_blank">Forgot Your Password?</a></p> 
     </div>
-    <p><a href="http://www.umassulearn.net/" target="_blank">UMass Amherst Continuing &amp; Professional Education</a> presents online courses on the Blackboard Learn learning management system through <a href="http://www.umassonline.net" target="_blank">UMassOnline</a>.</p>  
+    <p><a href="https://umass.edu/online" target="_blank">UMass Amherst University Without Walls</a> presents online courses on the Blackboard Learn learning management system through <a href="http://www.umassonline.net" target="_blank">UMassOnline</a>.</p>  
     <h3>eCampus FAST Adoption Tool</h3>
     <p>Instructors and departments should use the 
     <a href="https://fast.ecampus.com/sign-in?action=samllogin&schoolid=6368" target="_blank">eCampus FAST Adoption Tool</a>
@@ -116,16 +116,16 @@
       <p>Contact the <a href="http://supportcenter.embanet.com/uma" target="_blank">24/7 Support Center</a></p>
     </div>
     <div class="uma-helpitem">
-      <h3>New CPE Students</h3>
+      <h3>New Students</h3>
       <p><a href="https://www.it.umass.edu/accounts/activate-your-account" target="_blank">Activate your UMass Amherst IT Account</a></p>
-      <p>If you have questions about registration in UMass Amherst Continuing & Professional Education classes, email:<br>
+      <p>If you have questions about registration, email:<br>
       <a href="mailto:regoff@oe.umass.edu">regoff@oe.umass.edu</a></p>
     </div>
     <div class="uma-helpitem">
       <h3>How Do I Enroll?</h3>
-      <p>All students, including Non-Degree (ND), enroll in CPE classes directly in
+      <p>All students, including Non-Degree (ND), enroll in classes directly in
       <a href="https://www.spire.umass.edu/" target="_blank">SPIRE</a>, the UMass Amherst Student Information System.
-      <a href="https://www.umass.edu/cpe/enroll" target="_blank">Read more...</a></p>
+      <a href="https://www.umass.edu/online/how-enroll" target="_blank">Read more...</a></p>
     </div>
     <div class="uma-helpitem">
       <p class="top10"><a href="https://www.umass.edu/diversity/building-community-dignity-and-respect" target="_blank"><img src="/bbcswebdav/library/login/uma/images/template/dignity-and-respect.jpg" /></a></p>
