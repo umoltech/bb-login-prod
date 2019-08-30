@@ -101,9 +101,9 @@
       <p>Contact the <a href="http://supportcenter.embanet.com/uma" target="_blank">24/7 Support Center</a></p>
     </div>
     <div class="uma-helpitem">
-      <h3>New CPE Students</h3>
+      <h3>New Students</h3>
       <p><a href="https://www.it.umass.edu/accounts/activate-your-account" target="_blank">Activate your UMass Amherst IT Account</a></p>
-      <p>If you have questions about registration in UMass Amherst Continuing & Professional Education classes, email:<br>
+      <p>If you have questions about registration, email:<br>
       <a href="mailto:regoff@oe.umass.edu">regoff@oe.umass.edu</a></p>
     </div>
   </aside>
