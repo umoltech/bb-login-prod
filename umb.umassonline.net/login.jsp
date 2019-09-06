@@ -190,11 +190,6 @@
 						<li><a href="https://www.umb.edu/registrar/academic_calendar">Regular/On Campus</a></li>
 						<li>Your course may not be available before the official listed course start date.</li>						
 					</ul>
-					<hr>
-					<h3 >Getting Blackboard Help</h3>
-					<ul class="unstyled">
-						<li><a href="http://umb.echelp.org" target="_blank">Contact 24/7 Blackboard Help</a></li>
-					</ul>
 				</div>
 			</div>
 
@@ -218,7 +213,7 @@
 		<div class="footer-base">
 			<div class="units-row footer-base-inner">
 				<div class="unit-100">
-					<p>&copy; 2018  University of Massachusetts Boston</p>
+					<p>&copy; 2019  University of Massachusetts Boston</p>
 					<p>100 William T. Morrissey Blvd., Boston, MA 02125 |  <a href="tel:6172875000">Tel: 617.287.5000</a></p>
 					<p><a href="https://www.umassp.edu/privacy-policy" target="_blank">Privacy Policy</a></p>
 				</div>
