@@ -26,22 +26,21 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="https://continuinged.uml.edu/"><img src="/bbcswebdav/library/login/uml/images/uml-logo.gif" class="logo"/></a>
-                  <a class="oce" href="https://continuinged.uml.edu/"><img src="/bbcswebdav/library/login/uml/images/oce-logo.png" alt="Division of Online & Continuing Education"/></a>
-                  <a class="oce-small" href="https://continuinged.uml.edu/"><img src="/bbcswebdav/library/login/uml/images/oce-small.png" alt="Division of Online & Continuing Education"/></a>
-                  <!--<a href="http://continuinged.uml.edu" class="oce">Division of Online &<br/>Continuing Education</a>-->
+                  <a class="navbar-brand" href="https://gps.uml.edu/"><img src="/bbcswebdav/library/login/uml/images/umass-lowell-logo.svg" class="logo"/></a>
+                  <a class="oce" href="https://gps.uml.edu/">Division of Graduate,<br/>Online &amp; Professional Studies</a>
+                  <a class="oce-small" href="https://gps.uml.edu/">Graduate,<br/>Online &amp;<br/>Professional Studies</a> 
                </div>
                <!-- Collect the nav links, forms, and other content for toggling -->
                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
                      <li>
-                        <a href="https://continuinged.uml.edu/general/advising.cfm">Advising</a>
+                        <a href="https://gps.uml.edu/general/advising.cfm">Advising</a>
                      </li>
                      <li>
-                        <a href="https://continuinged.uml.edu/general/calendar.cfm" >Academic Calendar</a>
+                        <a href="https://gps.uml.edu/general/calendar.cfm">Academic Calendar</a>
                      </li>
                      <li>
-                        <a href="https://continuinged.uml.edu/" >Online and Continuing Ed</a>
+                        <a href="https://gps.uml.edu/">Online and Continuing Ed</a>
                      </li>
                   </ul>
                </div>
@@ -89,10 +88,10 @@
     </div>
   </div>
   <div class="campaign-ba">
-    <a href="https://continuinged.uml.edu/catalog/search/?sem=0&yr=2019&sm=Fall&utm_campaign=fall-2019-blackboard-login&utm_medium=online&utm_source=umol&utm_content=reboot-your-career">
+    <a href="https://gps.uml.edu/catalog/search/?sem=0&yr=2019&sm=Fall&utm_campaign=fall-2019-blackboard-login&utm_medium=online&utm_source=umol&utm_content=reboot-your-career">
     <picture>
-      <source srcset="/bbcswebdav/library/login/uml/campaign/fall-wide2019.jpg" media="(min-width: 768px)">
-      <img src="/bbcswebdav/library/login/uml/campaign/fall-tall2019.jpg" class="img-responsive" alt="View Fall Courses">
+      <source srcset="/bbcswebdav/library/login/uml/campaign/fall-banner-wide2019.jpg" media="(min-width: 768px)">
+      <img src="/bbcswebdav/library/login/uml/campaign/fall-banner-tall2019.jpg" class="img-responsive" alt="Fall 2019 Calendar">
     </picture>
     </a>
   </div>
@@ -108,13 +107,13 @@
         <div class="col-md-4">
           <div class="icon tech-req">
             <h2>Technical Requirements</h2>
-            Technical requirements for online courses can be reviewed on the <a href="http://continuinged.uml.edu/online/techrequire.cfm">OCE Technical Requirements Page</a>
+            Technical requirements for online courses can be reviewed on the <a href="http://gps.uml.edu/online/techrequire.cfm">OCE Technical Requirements Page</a>
           </div>
         </div>
         <div class="col-md-4">
           <div class="icon quick">
             <h2> Quick Start Guide</h2>
-            Visit our <a href="https://continuinged.uml.edu/online/123.cfm">Getting Started</a> page for helpful info about accessing your online course.
+            Visit our <a href="https://gps.uml.edu/online/123.cfm">Getting Started</a> page for helpful info about accessing your online course.
           </div>
         </div>
       </div>
@@ -158,13 +157,13 @@
       </div>
       <div class="row footer">
         <div class="col-sm-7">
-          Copyright 2018, University of Massachusetts Lowell, Division of Online and Continuing Education
+          Copyright 2019, University of Massachusetts Lowell, Division of Online and Continuing Education
         </div>
         <div class="col-sm-5">
           <ul>
-            <li><a href="https://continuinged.uml.edu/">OCE Website</a></li>
-            <li><a href="https://continuinged.uml.edu/general/advising.cfm">Advising</a></li>
-            <li><a href="https://continuinged.uml.edu/general/calendar.cfm">Academic Calendar</a></li>
+            <li><a href="https://gps.uml.edu/">OCE Website</a></li>
+            <li><a href="https://gps.uml.edu/general/advising.cfm">Advising</a></li>
+            <li><a href="https://gps.uml.edu/general/calendar.cfm">Academic Calendar</a></li>
           </ul>
         </div>
       </div>
@@ -220,8 +219,8 @@ hr.blue {background: #0066b2; border: 0; height: 1px; clear:both;}
 .mbl-more,.hero-text-double,.aspect-holder{display:none;}
 a.login {margin: 10px 0; display:inline-block; font-size: 22px; color: #fff; font-weight: 700; padding: 15px 60px; background: #f06e35; box-shadow:1px 1px 1px #888; text-shadow: 1px 1px 1px #dd852c; text-transform: uppercase;} 
 a.login:hover {text-decoration: none; background: #fdb56d;}
-.oce {color: #fff; margin: 15px 0 0 104px; float:left;}
-.oce-small {display:none; margin: 10px 0 0 67px; float:left;}
+.oce {color: #fff; margin: 15px 0 0 104px; float:left; font-family: "Times New Roman", Times, serif;line-height: 1em;}
+.oce-small {display:none; margin: 10px 0 0 67px; float:left; color: #fff; font-family: "Times New Roman", Times, serif; line-height: 1em; font-size: 12px;}
 .main-content {padding-top: 30px;}
 .display-box {background: #e2f1fd; padding: 25px; font-size: 14px;}
 .display-box h2 {margin: 0 0 5px;}
@@ -301,7 +300,7 @@ h4 {color: #333; text-transform: uppercase; margin: 20px 0 0; font-size: 14px;}
   .aspect-holder{display:block;width:100%;height:auto;margin:-1px 0 0;}
   h2{font-size:22px;}
   .hero{background-position:right 54px;}
-  .logo{padding: 5px; width:55px;}
+  .logo{padding: 15px; width:55px;}
   .hero-text{position:absolute;top:-185px;margin:10px 0 29px;}
   .footer ul li {display: inline-block; float:left; border: none; padding: 0 20px 0 0; margin: 0;}
   .navbar-inverse .navbar-toggle{background:#115384;margin-right:0;border:0;color:#0066b2;border-radius:0;}
