@@ -40,7 +40,7 @@
                         <a href="https://gps.uml.edu/general/calendar.cfm">Academic Calendar</a>
                      </li>
                      <li>
-                        <a href="https://gps.uml.edu/">Online and Continuing Ed</a>
+                        <a href="https://gps.uml.edu/">GPS Website</a>
                      </li>
                   </ul>
                </div>
@@ -88,7 +88,7 @@
     </div>
   </div>
   <div class="campaign-ba">
-    <a href="https://gps.uml.edu/catalog/search/?sem=0&yr=2019&sm=Fall&utm_campaign=fall-2019-blackboard-login&utm_medium=online&utm_source=umol&utm_content=reboot-your-career">
+    <a href="https://gps.uml.edu/calendar/?utm_campaign=blackboard-login&utm_medium=online&utm_source=umol&utm_content=calendar">
     <picture>
       <source srcset="/bbcswebdav/library/login/uml/campaign/fall-banner-wide2019.jpg" media="(min-width: 768px)">
       <img src="/bbcswebdav/library/login/uml/campaign/fall-banner-tall2019.jpg" class="img-responsive" alt="Fall 2019 Calendar">
@@ -107,7 +107,7 @@
         <div class="col-md-4">
           <div class="icon tech-req">
             <h2>Technical Requirements</h2>
-            Technical requirements for online courses can be reviewed on the <a href="http://gps.uml.edu/online/techrequire.cfm">OCE Technical Requirements Page</a>
+            Technical requirements for online courses can be reviewed on the <a href="http://gps.uml.edu/online/techrequire.cfm">GPS Technical Requirements Page</a>
           </div>
         </div>
         <div class="col-md-4">
@@ -136,7 +136,7 @@
           </ul>
           <p>
             <h4>Phone</h4>
-            Call Online and Continuing Education Technical Support at <b>(978) 934-2467</b> or <b>(800) 480-3190</b> during business hours Monday – Friday 8:30 am – 5:00 pm EST or <b>(800) 480-3190</b> during non-business hours, Monday – Friday 5:00 pm – 8:30 am EST, Sundays & Holidays
+            Call Graduate, Online &amp; Professional Studies Technical Support at <b>(978) 934-2467</b> or <b>(800) 480-3190</b> during business hours Monday - Friday 8:30 am - 5:00 pm EST or <b>(800) 480-3190</b> during non-business hours, Monday - Friday 5:00 pm - 8:30 am EST, Sundays &amp; Holidays
           </p>
           <p>
             <h4>Email</h4>
@@ -157,11 +157,11 @@
       </div>
       <div class="row footer">
         <div class="col-sm-7">
-          Copyright 2019, University of Massachusetts Lowell, Division of Online and Continuing Education
+          Copyright 2019, University of Massachusetts Lowell, Division of Graduate, Online &amp; Professional Studies
         </div>
         <div class="col-sm-5">
           <ul>
-            <li><a href="https://gps.uml.edu/">OCE Website</a></li>
+            <li><a href="https://gps.uml.edu/">GPS Website</a></li>
             <li><a href="https://gps.uml.edu/general/advising.cfm">Advising</a></li>
             <li><a href="https://gps.uml.edu/general/calendar.cfm">Academic Calendar</a></li>
           </ul>
@@ -193,7 +193,7 @@ h3 {font-size: 14px; text-transform: uppercase; font-weight: bold; margin-bottom
 h4{font-size:inherit;font-weight:700;color:#0066b2;margin-top:35px;}
 h5{font-size:18px;}
 h6{text-transform:uppercase;font-weight:700;color:#f93;font-size:16px;}
-.logo{position:absolute; padding: 9px; background: #fff; box-shadow:1px 1px 1px #888;top:0;left:0;z-index:2000;}
+.logo{position:absolute; padding: 15px; background: #fff; box-shadow:1px 1px 1px #888;top:0;left:0;z-index:2000;}
 a{outline:0; color: #de7a16;}
 .footer a {color: #0066b2;}
 .clear{clear:both;}
@@ -241,7 +241,7 @@ h4 {color: #333; text-transform: uppercase; margin: 20px 0 0; font-size: 14px;}
 #loginAnnouncements ul,  #loginAnnouncements ul li {list-style-type: none; margin: 0; padding: 0;}
 #loginAnnouncements ul li {border-top: 1px solid #0066b2;}
 #loginAnnouncements ul li strong{color: #0066b2;float: left;font-size: 16px;line-height: 19px;padding: 10px 0 10px; width: 70%;}
-.announcementDate {background: #0066b2 none repeat scroll 0 0;color: #fff;display: block;float: right;font-size: 12px;padding: 6px;text-align: center; margin: 0 0 30px 20px; white-space: nowrap; }
+.announcementDate {display:none; background: #0066b2 none repeat scroll 0 0;color: #fff;display: block;float: right;font-size: 12px;padding: 6px;text-align: center; margin: 0 0 30px 20px; white-space: nowrap; }
 .top-b {border-top: 1px solid #0066b2; margin:0 0 10px;}
 #loginAnnouncements ul li p {font-size: 14px; line-height: 18px}
 .site-container{background: #e2f1fd;}
@@ -300,7 +300,7 @@ h4 {color: #333; text-transform: uppercase; margin: 20px 0 0; font-size: 14px;}
   .aspect-holder{display:block;width:100%;height:auto;margin:-1px 0 0;}
   h2{font-size:22px;}
   .hero{background-position:right 54px;}
-  .logo{padding: 15px; width:55px;}
+  .logo{padding: 7px; width:55px;}
   .hero-text{position:absolute;top:-185px;margin:10px 0 29px;}
   .footer ul li {display: inline-block; float:left; border: none; padding: 0 20px 0 0; margin: 0;}
   .navbar-inverse .navbar-toggle{background:#115384;margin-right:0;border:0;color:#0066b2;border-radius:0;}
@@ -381,8 +381,9 @@ ul { padding-left: 40px; }
     }
    
     jQuery(".announcementDate").each(function(){
-      var string = jQuery(this).text().replace('(', '').replace(')', '');
-      jQuery(this).text(string);
+      jQuery(this).css('visibility', 'hidden');
+      //var string = jQuery(this).text().replace('(', '').replace(')', '');
+      //jQuery(this).text(string);
     });
     
     var ssoLoginUrl = jQuery('#loginRedirectProviderList').children('li:first-child').children('a:first-child').attr('href');
