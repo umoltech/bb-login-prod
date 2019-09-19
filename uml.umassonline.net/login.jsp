@@ -27,7 +27,7 @@
                   <span class="icon-bar"></span>
                   </button>
                   <a class="navbar-brand" href="https://gps.uml.edu/"><img src="/bbcswebdav/library/login/uml/images/umass-lowell-logo.svg" class="logo"/></a>
-                  <a class="oce" href="https://gps.uml.edu/">Division of Graduate,<br/>Online &amp; Professional Studies</a>
+                  <a class="oce" href="https://gps.uml.edu/">Graduate,<br/>Online &amp; Professional Studies</a>
                   <a class="oce-small" href="https://gps.uml.edu/">Graduate,<br/>Online &amp;<br/>Professional Studies</a> 
                </div>
                <!-- Collect the nav links, forms, and other content for toggling -->
@@ -88,7 +88,7 @@
     </div>
   </div>
   <div class="campaign-ba">
-    <a href="https://gps.uml.edu/calendar/?utm_campaign=blackboard-login&utm_medium=online&utm_source=umol&utm_content=calendar">
+    <a href="https://gps.uml.edu/calendar/?utm_campaign=blackboard-login&utm_medium=referral&utm_source=umol&utm_content=calendar">
     <picture>
       <source srcset="/bbcswebdav/library/login/uml/campaign/fall-banner-wide2019.jpg" media="(min-width: 768px)">
       <img src="/bbcswebdav/library/login/uml/campaign/fall-banner-tall2019.jpg" class="img-responsive" alt="Fall 2019 Calendar">
