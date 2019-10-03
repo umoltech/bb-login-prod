@@ -27,12 +27,15 @@
                   <span class="icon-bar"></span>
                   </button>
                   <a class="navbar-brand" href="https://gps.uml.edu/"><img src="/bbcswebdav/library/login/uml/images/umass-lowell-logo.svg" class="logo"/></a>
-                  <a class="oce" href="https://gps.uml.edu/">Graduate,<br/>Online &amp; Professional Studies</a>
-                  <a class="oce-small" href="https://gps.uml.edu/">Graduate,<br/>Online &amp;<br/>Professional Studies</a> 
+                  <a class="oce" href="https://gps.uml.edu/">Graduate, Online<br />&amp; Professional Studies</a>
+                  <a class="oce-small" href="https://gps.uml.edu/">Graduate, Online<br />&amp; Professional Studies</a> 
                </div>
                <!-- Collect the nav links, forms, and other content for toggling -->
                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
+                     <li>
+                        <a href="https://gps.uml.edu/login/bbmobile_info.cfm"><span class="hidden-sm">Blackboard </span>Mobile App</a>
+                     </li>
                      <li>
                         <a href="https://gps.uml.edu/general/advising.cfm">Advising</a>
                      </li>
