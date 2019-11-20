@@ -90,14 +90,25 @@
        <!-- /.row -->
     </div>
   </div>
+
   <div class="campaign-ba">
-    <a href="https://gps.uml.edu/calendar/?utm_campaign=blackboard-login&utm_medium=referral&utm_source=umol&utm_content=calendar">
-    <picture>
-      <source srcset="/bbcswebdav/library/login/uml/campaign/fall-banner-wide2019.jpg" media="(min-width: 768px)">
-      <img src="/bbcswebdav/library/login/uml/campaign/fall-banner-tall2019.jpg" class="img-responsive" alt="Fall 2019 Calendar">
-    </picture>
-    </a>
+    <style></style>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <a href="https://gps.uml.edu/referrer?link=bblgn-left">
+              <img src="https://gps.uml.edu/images/2019/bblgn-left.png"/>
+            </a>
+          </div>                   
+          <div class="col-md-6">
+            <a href="https://gps.uml.edu/referrer?link=bblgn-right">
+              <img src="https://gps.uml.edu/images/2019/bblgn-right.png"/>
+            </a>
+        </div>   
+      </div>
+    </div>
   </div>
+
   <div class="stripe">   
     <div class="container ">
       <div class="row">
@@ -255,6 +266,7 @@ h4 {color: #333; text-transform: uppercase; margin: 20px 0 0; font-size: 14px;}
 .announce {font-weight: bold; color: #cf202f;} 
 .campaign-ba {text-align: center; padding: 30px 0; background: #fff;}
 .campaign-ba a {margin: 0 auto; display: inline-block;}
+.campaign-ba img {width: 100%; height: auto; margin: 0 0 20px;}
 
 @media (max-width: 1650px) {
   .hero-text{margin:135px 0 86px;} 
