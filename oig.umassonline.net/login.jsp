@@ -172,10 +172,8 @@
             Please click the link to the right and follow the instructions.</p> 
             <div class="helpBlock">
               <p><strong>Need Help?</strong></p>
-              <p>Monday through Friday 7:30 AM - 5:30 PM (EST):<br>
-              Call 508-856-8643 or email the Help Desk. Expect to receive a response within 24 hours.</p>
-              <p>Weekends, Holidays and After Hours:<br>
-              Call 1-855-789-7056 or visit http://helpdesk.org.</p>
+              <p>For support please contact <a href="mailto:oigsupport@umassonline.net">oigsupport@umassonline.net</a>.</p>
+              <p>Expect to receive a response within 24 hours.</p>
             </div>
           </div>
           
