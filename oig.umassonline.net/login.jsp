@@ -168,8 +168,6 @@
             <p>Helpful tips for first time users:</p>
             <p>Your USERNAME is the email address you used to register for your course. 
             Please log in with the email address where you received your registration confirmation.</p>
-            <p>If you are using Blackboard for the FIRST TIME, you need to set your password. 
-            Please click the link to the right and follow the instructions.</p> 
             <div class="helpBlock">
               <p><strong>Need Help?</strong></p>
               <p>For support please contact <a href="mailto:oigsupport@umassonline.net">oigsupport@umassonline.net</a>.</p>
@@ -180,7 +178,7 @@
           <div id="loginBox">
             <h3>Log in to your course</h3>
             
-            <loginUI:loginForm forgotPasswordText="First time logging in? Click here to set your password. Returning user? Click here if you need to retrieve your password." />
+            <loginUI:loginForm forgotPasswordText="Returning user? Click here if you need to retrieve your password." />
             
             <div id="loginLogoSmall"><img src="/bbcswebdav/library/login/dese/bb-learn.jpg" /></div>			
           </div>
