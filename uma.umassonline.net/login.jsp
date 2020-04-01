@@ -45,6 +45,9 @@
 <loginUI:errorMessage />
  
 <div id="pagewrap">
+  <div class="covid">
+  	Coronavirus updates and resources can be found at 
+  	<a href="https://umass.edu/coronavirus" target="_blank">umass.edu/coronavirus</a>.</div>
   <! -- Begin top banner -->
   <div class="top">
     <div id="logo">
@@ -119,7 +122,7 @@
       <h3>New Students</h3>
       <p><a href="https://www.it.umass.edu/accounts/activate-your-account" target="_blank">Activate your UMass Amherst IT Account</a></p>
       <p>If you have questions about registration, email:<br>
-      <a href="mailto:regoff@oe.umass.edu">regoff@oe.umass.edu</a></p>
+      <a href="mailto:regoff@uww.umass.edu">regoff@uww.umass.edu</a></p>
     </div>
     <div class="uma-helpitem">
       <h3>How Do I Enroll?</h3>
@@ -142,7 +145,7 @@
     </div>
         
     <div class="footdisclaimer">        
-      <p>©2018 University of Massachusetts&nbsp;•&nbsp;<a href="http://umass.edu/site-policies" target="_blank">Site Policies</a>
+      <p>©2020 University of Massachusetts&nbsp;•&nbsp;<a href="http://umass.edu/site-policies" target="_blank">Site Policies</a>
       <a href="mailto:info@oe.umass.edu">Site Contact</a></p>
     </div>
   </footer>
@@ -193,6 +196,10 @@ a {
 	box-shadow: 6px 0 10px -7px #888, -6px 0 10px -7px #888;
 	margin: 0 auto;
 }	
+div.covid {
+	padding: 10px 20px;
+	background-color: #ECBA0E;
+}
 div.top {
     background-color: #881C1C;
     height: 65px;
