@@ -170,8 +170,8 @@
             Please log in with the email address where you received your registration confirmation.</p>
             <div class="helpBlock">
               <p><strong>Need Help?</strong></p>
-              <p>For support please contact <a href="mailto:oigsupport@umassonline.net">oigsupport@umassonline.net</a>.</p>
-              <p>Expect to receive a response within 24 hours.</p>
+              <p>For support please visit: 
+                <a href="http://oig.echelp.org" target="_blank">oig.echelp.org</a></p>
             </div>
           </div>
           
