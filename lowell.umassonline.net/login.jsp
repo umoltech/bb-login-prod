@@ -25,6 +25,16 @@
       
       jQuery('#loginBox').show();
     </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-793538-22"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-793538-22');
+    </script>
   </bbNG:jsBlock>
   
   <bbNG:cssBlock>
