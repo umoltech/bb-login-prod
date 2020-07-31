@@ -13,7 +13,7 @@
 <bbNG:cssBlock>
 <style type="text/css">
   body { background-color: #FFF; background-image: none; font-size: 10pt; }
-  #loginContainer { width: 940px; margin: 0 auto; }
+  #loginContainer { width: 940px; max-width: 100%; margin: 0 auto; }
   div.loginBodyNew { width: auto; margin: 0; padding: 0; background-image: none; }
   div.loginBodyNew div.loginTop { background-color: #003399; height: 65px; overflow: hidden; }
   div.loginBodyNew div.loginTop .search {
@@ -163,11 +163,17 @@
   }
 
   @media all and (max-width: 939px) {
-    body { margin: 0; min-width: 400px;  }    
+    body { margin: 0; min-width: 300px;  }    
     #loginContainer { width: 100%; margin: 0; overflow: hidden; }
     #loginContainer .loginSplash img { width: 100%; }
     div.loginBodyNew div.loginTop .search { width: 40%; }
     .login-page div#copyright { width: 80%; }
+    #loginPageContainer #copyright {
+      left: auto;
+      width: 90%;
+      position: relative;
+      margin: 25px auto;
+    }
   }
 </style>
 <link rel="stylesheet" type="text/css" href="/bbcswebdav/library/login/umw/css/flexgrid.css" />
@@ -218,7 +224,7 @@
         <h1 class="hideoff">University of Massachusetts Medical School | Blackboard Learn</h1>
       </div>
 
-      <div class="clearfix loginBodyNew" style="width:940px">
+      <div class="clearfix loginBodyNew" style="width:940px;max-width:100%;">
         <div class="loginTop">
           <div class="float-left"><img src="/bbcswebdav/library/login/umw/umms-formal-logo.png" /></div>     
           <div class="search">
