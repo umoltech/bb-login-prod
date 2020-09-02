@@ -20,8 +20,14 @@
       var ssoLoginUrl = umolJQ('#loginRedirectProviderList').children('li:first-child').children('a:first-child').attr('href');
       
       umolJQ('#login-submit').attr('href', ssoLoginUrl);
+
+      umolJQ('#redirectProvidersDropdownButton').remove();
+      umolJQ('#loginRedirectProviderList').remove();
       
-      umolJQ('#hiddenLoginContainer').remove();
+      umolJQ('#internalLoginToggle').click( function() {
+        umolJQ(this).hide();
+        umolJQ('#internalLoginForm').show(500);      
+      });
       
     });
   </script>
@@ -108,6 +114,25 @@
       background-color: #8a1123;
     }
 
+    .internal-login-button {
+      margin-top: 40px;
+    }
+
+    a#internalLoginToggle {
+      display: inline-block;
+      padding: 20px 40px;
+      color: #000;
+      font-weight: bold;
+      font-size: 18px;
+      background-color: #999;
+      width: 400px;
+    }
+
+    a#internalLoginToggle:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
     #footerContainer {
       background-color: #000;
       color: #fff;
@@ -190,6 +215,13 @@
     <div id="loginBoxContainer">
       <p><img src="/bbcswebdav/library/login/dese/bb-learn.jpg" /></p>
       <div class="login-button"><a id="login-submit" href="#">UMPO Secure Login</a></div>
+
+      <div class="internal-login-button">
+        <a id="internalLoginToggle">Internal Users Login Here</a>
+        <div id="internalLoginForm" style="display:none">
+          <loginUI:loginForm loginText="Submit" forgotPasswordText="Need Your Password?" />
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -198,10 +230,6 @@
       <p><img src="/bbcswebdav/library/login/upst/po-logo.png" /></p>
       <p>&copy;2020 University of Massachusetts</p>
   </div>
-</div>
-
-<div id="hiddenLoginContainer" style="display:none">
-  <loginUI:loginForm />
 </div>
 
 </bbNG:genericPage>
