@@ -25,8 +25,7 @@
       umolJQ('#loginRedirectProviderList').remove();
       
       umolJQ('#internalLoginToggle').click( function() {
-        umolJQ(this).hide();
-        umolJQ('#internalLoginForm').show(500);      
+        umolJQ('#internalLoginForm').toggle();      
       });
       
     });
@@ -116,6 +115,14 @@
 
     .internal-login-button {
       margin-top: 40px;
+    }
+
+    #internalLoginForm {
+      width: 400px;
+      margin: 0 auto;
+      max-width: 100%;
+      padding: 40px;
+      background-color: #eee;
     }
 
     a#internalLoginToggle {
@@ -217,7 +224,7 @@
       <div class="login-button"><a id="login-submit" href="#">UMPO Secure Login</a></div>
 
       <div class="internal-login-button">
-        <a id="internalLoginToggle">Internal Users Login Here</a>
+        <a id="internalLoginToggle">Non-UMPO (A/B/D/L/W) Login</a>
         <div id="internalLoginForm" style="display:none">
           <loginUI:loginForm loginText="Submit" forgotPasswordText="Need Your Password?" />
         </div>
