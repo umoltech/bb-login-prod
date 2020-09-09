@@ -14,6 +14,19 @@
 
 <%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
 
+<bbNG:jsBlock>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript">  
+    var umolJQ = jQuery.noConflict();
+    
+    umolJQ(document).ready( function() {
+    
+      umolJQ('.forgot').remove();
+
+    });
+  </script>
+</bbNG:jsBlock>  
+
 <bbNG:cssBlock>
 <style type="text/css">
 	body.login-page { 
@@ -170,15 +183,15 @@
             Please log in with the email address where you received your registration confirmation.</p>
             <div class="helpBlock">
               <p><strong>Need Help?</strong></p>
-              <p>For support please visit: 
-                <a href="http://oig.echelp.org" target="_blank">oig.echelp.org</a></p>
+              <p>For support please e-mail: 
+                <a href="mailto:Ask-the-OIG-Instructor@mass.gov">Ask-the-OIG-Instructor@mass.gov</a></p>
             </div>
           </div>
           
           <div id="loginBox">
             <h3>Log in to your course</h3>
             
-            <loginUI:loginForm forgotPasswordText="Returning user? Click here if you need to retrieve your password." />
+            <loginUI:loginForm />
             
             <div id="loginLogoSmall"><img src="/bbcswebdav/library/login/dese/bb-learn.jpg" /></div>			
           </div>
