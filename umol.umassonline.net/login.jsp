@@ -64,16 +64,19 @@
           'uml.umassonline.net': 'UMass Lowell',
           'lowell.umassonline.net': 'UMass Lowell Day',
           'umassmed.umassonline.net': 'UMass Medical School',				
+          'acsc.umassonline.net': 'ACSC',
           'lei.umassonline.net': 'Lean Enterprise Institute',
           'lhaboardtraining.umassonline.net': 'Local Housing Authority Board Member Training Program',
           'ddslearning.umassonline.net': 'Massachusetts Department of Developmental Services',
           'dese.umassonline.net': 'Massachusetts Department of Elementary and Secondary Education (DESE)',
+          'dhe.umassonline.net': 'Massachusetts Department of Higher Education',
           'nciia.umassonline.net': 'National Collegiate Inventors and Innovators Association (NCIIA)',
           'oig.umassonline.net': 'Office of the Inspector General',
           'springfieldurbanleague.umassonline.net': 'Springfield Urban League',
           'umdi-learningsolutions.umassonline.net': 'UMass Donahue Institute',
           'udiscovering.umassonline.net': 'U Discovering',
-          'civicinitiative.umassonline.net': 'UMDI Civic Initiative'				
+          'civicinitiative.umassonline.net': 'UMDI Civic Initiative',	
+          'upst.umassonline.net': 'Unified Procurement Services Team (UPST)'
         }
       };
       
