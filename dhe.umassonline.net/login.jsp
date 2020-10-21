@@ -138,6 +138,13 @@
       float: none;
       width: 100%;
     }
+
+    #loginPageContainer #copyright {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      left: unset;
+    }
   }
 
 </style>
