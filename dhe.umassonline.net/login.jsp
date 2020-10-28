@@ -125,7 +125,7 @@
       border: none;
       padding: 30% 5% 10% 5%; 
       background-size: 80% auto;
-    }
+    }do you 
 
     #loginBox {
       float: none;
@@ -182,7 +182,7 @@
         
         <div id="loginBoxContainer">
           <div id="loginBlockColumnLeft">
-            <p>Enter your username and password on the right to access your course materials
+            <p>Enter your username and password to access your course materials
             and to interact with your instructor and other course participants.</p>
             <p>Helpful tips for first time users:</p>
             <p>Your USERNAME is the email address you used to register for your course. 
@@ -190,7 +190,7 @@
             <div class="helpBlock">
               <p><strong>Need Help?</strong></p>
               <p>For support please e-mail: 
-                <a href="mailto:Ask-the-OIG-Instructor@mass.gov">Ask-the-OIG-Instructor@mass.gov</a></p>
+                <a href="mailto:TrusteeTraining@dhe.mass.edu">TrusteeTraining@dhe.mass.edu</a></p>
             </div>
           </div>
           
