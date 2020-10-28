@@ -110,7 +110,8 @@
     }
 
     a#login-submit:hover {
-      background-color: #8a1123;
+      background-color: #000;
+      color: #fff;
     }
 
     .internal-login-button {
@@ -128,10 +129,10 @@
     a#internalLoginToggle {
       display: inline-block;
       padding: 20px 40px;
-      color: #000;
+      color: #fff;
       font-weight: bold;
       font-size: 18px;
-      background-color: #999;
+      background-color: #9d2235;
       width: 400px;
     }
 
@@ -224,7 +225,7 @@
       <div class="login-button"><a id="login-submit" href="#">UMPO Secure Login</a></div>
 
       <div class="internal-login-button">
-        <a id="internalLoginToggle">Non-UMPO (A/B/D/L/W) Login</a>
+        <a id="internalLoginToggle">UMA-UMB-UMD-UML-UMMS Login</a>
         <div id="internalLoginForm" style="display:none">
           <loginUI:loginForm loginText="Submit" forgotPasswordText="Need Your Password?" />
         </div>
