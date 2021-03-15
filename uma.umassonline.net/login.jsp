@@ -41,14 +41,13 @@
 <bbNG:genericPage authentication="N" wrapper="false" globalNavigation="false">
 
  <%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
-
-<loginUI:errorMessage />
  
 <div id="pagewrap">
   <div class="covid">
-  	Coronavirus updates and resources can be found at 
-  	<a href="https://umass.edu/coronavirus" target="_blank">umass.edu/coronavirus</a>.</div>
-  <! -- Begin top banner -->
+    Coronavirus updates and resources can be found at 
+  	<a href="https://umass.edu/coronavirus" target="_blank">umass.edu/coronavirus</a>.
+  </div>
+  <!-- Begin top banner -->
   <div class="top">
     <div id="logo">
       <a href="http://www.umass.edu/" title="Home" rel="home" target="_blank"><img src="/bbcswebdav/library/login/uma/images/template/UMwordmark.png" width="204" height="26" alt="UMass Amherst"/></a>
@@ -105,10 +104,12 @@
     for more information.</p>
   </section>
   
-  <section id="middle">
+  <section id="middle">   
+    <loginUI:errorMessage />
+
     <!-- placeholder content -->
-    <h3>News & Announcements</h3>
-    
+    <h3>News & Announcements</h3> 
+
     <loginUI:systemAnnouncements maxItems="5" />
     <!-- End placeholder content -->
   </section>
@@ -145,7 +146,7 @@
     </div>
         
     <div class="footdisclaimer">        
-      <p>©2020 University of Massachusetts&nbsp;•&nbsp;<a href="http://umass.edu/site-policies" target="_blank">Site Policies</a>
+      <p>©2021 University of Massachusetts&nbsp;•&nbsp;<a href="http://umass.edu/site-policies" target="_blank">Site Policies</a>
       <a href="mailto:info@oe.umass.edu">Site Contact</a></p>
     </div>
   </footer>
@@ -597,6 +598,38 @@ footer {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+</bbNG:jsBlock>
+
+<bbNG:jsBlock>
+<!-- BRU - Bing Pixel -->
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"27003796"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","http://bat.bing.com/bat.js","uetq");</script>
+<!-- BRU - Fb Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1037955113033742');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1037955113033742&ev=PageView&noscript=1"
+/></noscript>
+<!-- BRU - Global site tag (gtag.js) - Google Ads: 801260051 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-801260051"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-801260051');
+</script>
+<!-- BRU - Lotame Pixel -->
+<img src="https://bcp.crwdcntrl.net/5/c=14957/b=87264979" width="1" height="1"/>
 </bbNG:jsBlock>
 
 </bbNG:genericPage>
