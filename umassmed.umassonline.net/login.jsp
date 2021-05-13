@@ -183,10 +183,21 @@
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">  
   var umolJQ = jQuery.noConflict();
-  
+  var thisText = "";
+  var thisInnerHtml = "";
+  var ssoLoginUrl = "";
+
   umolJQ(document).ready( function() {
+
+    ssoLoginUrl = umolJQ('#loginRedirectProviderList > li:first-child > a:first-child').attr('href');
   
-    var ssoLoginUrl = umolJQ('#loginRedirectProviderList').children('li:first-child').children('a:first-child').attr('href');
+    umolJQ('#loginRedirectProviderList > li > a').each( function(idx) {
+      thisInnerHtml = umolJQ(this).html();
+
+      if (thisInnerHtml.search("UMMS Users Login Here")) {
+        ssoLoginUrl = umolJQ(this).attr('href');
+      }
+    });
     
     umolJQ('#ssoLoginButton').attr('href', ssoLoginUrl);
     
@@ -274,7 +285,7 @@
             <div class="blue">
               <h3>Need Help?</h3>
               <p>Monday through Friday 7:30 AM - 5:30 PM (EST):</p>
-              <p>Call 508-856-8643 or email the <a href="mailto:helpdesk@umassmed.edu">UMMS Help Desk</a>.</p>
+              <p>Call 508-856-8643 or email the <a href="mailto:helpdesk@umassmed.edu">UMMS Help Desk</a>. Expect to receive a response within 24 hours.</p>
               <p>Weekends, Holidays and After Hours:</p>
               <p>Call 1-855-789-7056 or visit <a href="http://umw.echelp.org" target="_blank">http://umw.echelp.org</a>.</p>
             </div>
