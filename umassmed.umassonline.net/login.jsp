@@ -183,21 +183,11 @@
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">  
   var umolJQ = jQuery.noConflict();
-  var thisText = "";
-  var thisInnerHtml = "";
   var ssoLoginUrl = "";
 
   umolJQ(document).ready( function() {
 
     ssoLoginUrl = umolJQ('#loginRedirectProviderList > li:first-child > a:first-child').attr('href');
-  
-    umolJQ('#loginRedirectProviderList > li > a').each( function(idx) {
-      thisInnerHtml = umolJQ(this).html();
-
-      if (thisInnerHtml.search("UMMS Users Login Here")) {
-        ssoLoginUrl = umolJQ(this).attr('href');
-      }
-    });
     
     umolJQ('#ssoLoginButton').attr('href', ssoLoginUrl);
     
