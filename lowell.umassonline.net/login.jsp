@@ -13,18 +13,6 @@
   <%@ include file="/webapis/ui/cookie-disclosure-login.jspf"%>
   
   <bbNG:jsBlock>	
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript">	
-      jQuery.noConflict();
-      
-      jQuery('#loginBox').children('form').remove();
-      
-      jQuery('#loginRedirectProviders').children('h3').remove();
-      
-      jQuery('#redirectProvidersDropdownButton').remove();
-      
-      jQuery('#loginBox').show();
-    </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-793538-22"></script>
@@ -88,6 +76,25 @@
         background-color: #000;
         text-decoration: none;
       }
+
+      h3.hilite {
+        margin: 0 auto;
+        padding: 20px 40px;
+        background-color: #FF9;
+        color: #000;
+        font-weight: bold;
+        font-size: 200%;
+        text-align: center;
+      }
+
+      #loginBox.downtime {
+        max-width: 800px; 
+        width: 100%;
+        background-color: #cfe2ff;
+        border: 1px solid #b6d4fe;
+        border-radius: 10px;
+        padding: 0 40px 40px 40px;
+      }
     </style>
   </bbNG:cssBlock>  
 
@@ -104,15 +111,30 @@
           <loginUI:localePicker />
         </div>
 
-        <div class="clearfix loginBody">          
+        <div class="clearfix loginBody" style="padding-top: 190px;">          
           <loginUI:errorMessage />
 
-          <div id="loginBox" style="display:none">
-            <loginUI:loginForm />         
-          </div>
-
-          <div id="loginOptions">
-            <loginUI:gatewayButtons />
+          <div id="loginBox" class="downtime">
+            <p>On-Campus Blackboard is disabled for emergency maintenance<br>
+            until Tuesday, June 1 at noon (EST). Please accept our apologies 
+            for any inconvenience caused.</p>
+            <p>Regrettably, we must take emergency action and disable access 
+            to On-Campus Blackboard from Friday, May 28 at 10pm to 
+            Tuesday, June 1 at noon (EST). Following our migration to SaaS last week, 
+            we began to recognize inconsistencies in our spring 2021 course copies 
+            (e.g., missing content, students, grades). Blackboard has identified a 
+            building block that caused the errors and they have disabled the building 
+            block on our instance. We had to take immediate action to avoid problems 
+            for students with incompletes or faculty who were planning to copy content 
+            from spring 2021 to summer or fall. Additionally, faculty annotations may 
+            not appear in the spring 2021 restores until June 4. Please accept our 
+            apologies for any inconvenience caused.</p>
+            <p>This maintenance window does not impact summer classes supported by GPS.</p>
+            <p><strong>For faculty:</strong>
+            We have also paused our fall 2021 course development process until this 
+            issue has been resolved. We plan to restart the copy process when we reopen. 
+            If you have requested content, the request will execute when the system 
+            resumes by late afternoon on June 1.</p>
           </div>
         </div>
 
