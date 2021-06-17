@@ -53,6 +53,17 @@
       </div>
       <!-- /.container -->
   </nav>
+  <div class="" style="background: #fbd209;">
+    <div class="container">
+        <div style="padding: 20px 20px 20px 137px;">
+            <strong>UML Alert 6/16/21:</strong> Blackboard and Zoom are not 
+            available due to an IT outage. IT is working to restore systems 
+            however we anticipate this outage will continue through Wednesday, 
+            June 16.  We will continue to update messages on this site, and at 
+            <a href="https://www.umasslowell.com" target="_blank">umasslowell.com</a>.
+        </div>
+    </div>
+  </div>
   <div class="hero">
     <img src="/bbcswebdav/library/login/uml/images/hero.jpg" class="aspect-holder"/>
     <div class="container">
@@ -257,7 +268,7 @@ h4 {color: #333; text-transform: uppercase; margin: 20px 0 0; font-size: 14px;}
 #loginAnnouncements ul li strong{color: #0066b2;float: left;font-size: 16px;line-height: 19px;padding: 10px 0 10px; width: 70%;}
 .announcementDate {display:none; background: #0066b2 none repeat scroll 0 0;color: #fff;display: block;float: right;font-size: 12px;padding: 6px;text-align: center; margin: 0 0 30px 20px; white-space: nowrap; }
 .top-b {border-top: 1px solid #0066b2; margin:0 0 10px;}
-#loginAnnouncements ul li p {font-size: 14px; line-height: 18px}
+#loginAnnouncements ul li p {font-size: 14px; line-height: 18px; margin-top:  20px;}
 .site-container{background: #e2f1fd;}
 #loginAnnouncements {padding: 0 20px 0 0;  height: 300px;overflow-x: hidden;overflow-y: auto;}
 .margin-b {margin-bottom: 30px;}
