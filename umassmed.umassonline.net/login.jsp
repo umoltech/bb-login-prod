@@ -162,6 +162,11 @@
     font-weight: bold;
   }
 
+  .col_4 img {
+    width:  100%;
+    max-width: 100%;
+  }
+
   @media all and (max-width: 939px) {
     body { margin: 0; min-width: 300px;  }    
     #loginContainer { width: 100%; margin: 0; overflow: hidden; }
@@ -272,6 +277,8 @@
             <loginUI:systemAnnouncements maxItems="5" />
           </div>
           <div class="col_4 last">
+            <p><img src="/bbcswebdav/library/login/umw/saas-upgrade-outage.png" alt="System Upgrade" /></p>
+              
             <div class="blue">
               <h3>Need Help?</h3>
               <p>Monday through Friday 7:30 AM - 5:30 PM (EST):</p>
