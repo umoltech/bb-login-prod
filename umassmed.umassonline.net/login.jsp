@@ -260,25 +260,13 @@
       
         <div class="loginCols row">
           <div class="col_4 white">
-            <div class="loginFormBubble">
-              <h3>NEW!<br />Have a UMassMed Network Account?</h3>
-              <a class="ssoButton" id="ssoLoginButton" href="#">UMMS Users Login Here</a>
-            </div>
-            <div class="loginFormBubble gray">
-              <h3>No UMassMed Network Account?</h3>
-              <button id="externalLoginButton">Non-UMMS Users Login Here</button>
-              <div id="externalLoginForm" style="display:none">
-                <loginUI:loginForm loginText="Submit" forgotPasswordText="Need Your Password?" />
-              </div>
-            </div>
+            <img src="/bbcswebdav/library/login/umw/saas-upgrade-outage.png" alt="System Upgrade" />
           </div>
           <div class="col_4 orange">
             <h3>News and Announcements</h3>
             <loginUI:systemAnnouncements maxItems="5" />
           </div>
           <div class="col_4 last">
-            <p><img src="/bbcswebdav/library/login/umw/saas-upgrade-outage.png" alt="System Upgrade" /></p>
-              
             <div class="blue">
               <h3>Need Help?</h3>
               <p>Monday through Friday 7:30 AM - 5:30 PM (EST):</p>
