@@ -162,11 +162,6 @@
     font-weight: bold;
   }
 
-  .col_4 img {
-    width:  100%;
-    max-width: 100%;
-  }
-
   @media all and (max-width: 939px) {
     body { margin: 0; min-width: 300px;  }    
     #loginContainer { width: 100%; margin: 0; overflow: hidden; }
@@ -260,7 +255,17 @@
       
         <div class="loginCols row">
           <div class="col_4 white">
-            <img src="/bbcswebdav/library/login/umw/saas-upgrade-outage.png" alt="System Upgrade" />
+            <div class="loginFormBubble">
+              <h3>NEW!<br />Have a UMassMed Network Account?</h3>
+              <a class="ssoButton" id="ssoLoginButton" href="#">UMMS Users Login Here</a>
+            </div>
+            <div class="loginFormBubble gray">
+              <h3>No UMassMed Network Account?</h3>
+              <button id="externalLoginButton">Non-UMMS Users Login Here</button>
+              <div id="externalLoginForm" style="display:none">
+                <loginUI:loginForm loginText="Submit" forgotPasswordText="Need Your Password?" />
+              </div>
+            </div>
           </div>
           <div class="col_4 orange">
             <h3>News and Announcements</h3>
