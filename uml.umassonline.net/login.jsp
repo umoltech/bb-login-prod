@@ -56,11 +56,14 @@
   <div class="" style="background: #fbd209;">
     <div class="container">
         <div style="padding: 20px 20px 20px 137px;">
-            <strong>UML Alert 6/16/21:</strong> Blackboard and Zoom are not 
-            available due to an IT outage. IT is working to restore systems 
-            however we anticipate this outage will continue through Wednesday, 
-            June 16.  We will continue to update messages on this site, and at 
-            <a href="https://www.umasslowell.com" target="_blank">umasslowell.com</a>.
+            <strong>UML Alert 6/20/21:</strong> 
+            Blackboard and Zoom access as been restored. 
+            Classes and business operations will resume on Monday, June 21.  
+            In order to access your online course and related resources 
+            you will need to reset your password. 
+            Directions for this password reset are available at 
+            <a href="https://www.umasslowell.com/password_reset.pdf" 
+            target="_blank">https://www.umasslowell.com/password_reset.pdf</a>.
         </div>
     </div>
   </div>
