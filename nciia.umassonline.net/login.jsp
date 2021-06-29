@@ -54,9 +54,22 @@
   
   #loginAnnouncements { padding-top: 5px; margin: 20px 0 30px 0; }
   #loginAnnouncements ul { width: 830px; }
-  #loginAnnouncements li { background-color: #FFFFCC; background-image: url('/bbcswebdav/library/login/nciia/announcements-bot.jpg'); background-position: center bottom; background-repeat: no-repeat;  }
+  #loginAnnouncements li { 
+    background-color: #FFFFCC; 
+    background-image: url('/bbcswebdav/library/login/nciia/announcements-bot.jpg'); 
+    background-position: center bottom; 
+    background-repeat: no-repeat;  
+  }
   
   .login-page #copyright { margin-top: 0; position: relative; }
+  
+  #loginPageContainer #copyright { 
+    position: relative; 
+    margin-left: auto; 
+    margin-right: auto; 
+    left: auto; 
+  }
+  
 </style>
 </bbNG:cssBlock>
 
