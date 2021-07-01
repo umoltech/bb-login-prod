@@ -56,12 +56,11 @@
   <div class="" style="background: #fbd209;">
     <div class="container">
         <div style="padding: 20px 20px 20px 137px;">
-            <strong>UML Alert 6/20/21:</strong> 
-            Blackboard and Zoom access as been restored. 
-            Classes and business operations will resume on Monday, June 21.  
-            In order to access your online course and related resources 
-            you will need to reset your password. 
-            Directions for this password reset are available at 
+            <strong>UML Alert 6/30/21:</strong> 
+            Blackboard and Zoom access has been restored. 
+            If you are still having trouble accessing online courses 
+            and related resources you may need to reset your password. 
+            Directions for this password reset are available at
             <a href="https://www.umasslowell.com/password_reset.pdf" 
             target="_blank">https://www.umasslowell.com/password_reset.pdf</a>.
         </div>
